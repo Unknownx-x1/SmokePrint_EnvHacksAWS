@@ -94,8 +94,8 @@ def test_regional_case_numbers_tied_to_case_json():
         assert summary["reporting_stations"] == 22
         assert summary["stations_over_200"] == 21
         assert summary["elevated_pct"] == 95.5
-        assert summary["max_station_name"] == "CRRI Mathura Road, New Delhi - IMD"
-        assert summary["max_station_pm25"] == 959.0
+        assert summary["max_station_name"] == "Sector - 125, Noida, UP - UPPCB"
+        assert summary["max_station_pm25"] == 881.0
 
 def test_gurugram_fault_detector_rows_and_refusal():
     """Verify Gurugram instrument fault detector rows and refusal text."""

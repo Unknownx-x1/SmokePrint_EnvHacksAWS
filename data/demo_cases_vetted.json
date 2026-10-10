@@ -22,6 +22,7 @@
   },
   "case_2_anand_vihar_spring": {
     "case_id": "case_anand_vihar_20260405",
+    "hidden_from_demo": true,
     "station_id": 235,
     "station_name": "Anand Vihar, New Delhi - DPCC",
     "timestamp_utc": "2026-04-06T00:00:00Z",
@@ -82,8 +83,8 @@
     "reporting_stations": 22,
     "stations_over_200": 21,
     "elevated_stations_pct": 95.5,
-    "max_station_name": "CRRI Mathura Road, New Delhi - IMD",
-    "max_station_pm25": 959.0,
+    "max_station_name": "Sector - 125, Noida, UP - UPPCB",
+    "max_station_pm25": 881.0,
     "corroboration": {
       "status": "regional",
       "reason": "Airshed-wide coherent spike across 95.5% of reporting stations in Delhi, Noida, Ghaziabad, and Gurugram simultaneously. Median PM2.5 jumped to 678 ug/m3. No localized point excess."
@@ -95,23 +96,23 @@
     "case_id": "case_rkpuram_20251112",
     "station_id": 17,
     "station_name": "R K Puram, Delhi - DPCC",
-    "timestamp_utc": "2025-11-12T16:00:00Z",
-    "timestamp_ist": "2025-11-12 21:30:00 IST",
-    "station_pm25": 427.0,
-    "station_pm10": 549.0,
-    "ratio_pm25_pm10": 0.78,
-    "no2_ugm3": 81.1,
-    "regional_median_pm25": 244.5,
-    "local_excess_pm25": 182.5,
+    "timestamp_utc": "2025-11-12T15:00:00Z",
+    "timestamp_ist": "2025-11-12 20:30:00 IST",
+    "station_pm25": 487.0,
+    "station_pm10": 619.0,
+    "ratio_pm25_pm10": 0.787,
+    "no2_ugm3": 90.5,
+    "regional_median_pm25": 222.0,
+    "local_excess_pm25": 265.0,
     "duration_hours": 5,
     "corroboration": {
       "status": "corroborated",
-      "co_pollutant": "Strong chemical co-movement: NO2 surged concurrently to 81.1 ug/m3. Physical PM2.5/PM10 ratio of 0.78.",
+      "co_pollutant": "Strong chemical co-movement: NO2 surged concurrently to 90.5 ug/m3. Physical PM2.5/PM10 ratio of 0.79.",
       "unresponsive_neighbours": [
-        {"station": "Sirifort (4.2 km E)", "pm25": 244.0, "excess": -0.5},
-        {"station": "IGI Airport T3 (7.8 km W)", "pm25": 243.0, "excess": -1.5},
-        {"station": "Lodhi Road (6.5 km NE)", "pm25": 209.0, "excess": -35.5},
-        {"station": "Aya Nagar (9.1 km S)", "pm25": 250.0, "excess": 5.5}
+        {"station": "Sirifort (4.2 km E)", "pm25": 226.0, "excess": 4.0},
+        {"station": "IGI Airport T3 (7.8 km W)", "pm25": 212.0, "excess": -10.0},
+        {"station": "Lodhi Road (6.5 km NE)", "pm25": 167.0, "excess": -55.0},
+        {"station": "Aya Nagar (9.1 km S)", "pm25": 218.0, "excess": -4.0}
       ]
     },
     "classification": "corroborated",

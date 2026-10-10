@@ -521,8 +521,8 @@
       "operating_status": "active_presumed",
       "operating_status_text": "Active industrial in OpenStreetMap",
       "reasons": [
-        "Located 0.69 km from station (bearing 94.4\u00b0), off the main wind line (108.4\u00b0 angular offset).",
-        "Off the main wind line (108.4\u00b0 angular offset)."
+        "Located 0.69 km from station (bearing 94.4\u00b0), downwind (108.4\u00b0 angular offset).",
+        "Downwind (108.4\u00b0 angular offset)."
       ],
       "shortlist_score": 0.211
     },
@@ -662,5 +662,6 @@
         "pm25_ugm3": 123.0
       }
     ]
-  }
+  },
+  "hidden_from_demo": true
 }

@@ -188,6 +188,8 @@ def build_enriched_shortlist(case_data: Dict[str, Any]) -> Dict[str, Any]:
                 reasons.append(f"Located {d_val:.2f} km upwind from station (bearing {b_val:.1f}°).")
             elif ang_offset is not None and ang_offset <= 45.0:
                 reasons.append(f"Located {d_val:.2f} km from station (bearing {b_val:.1f}°), somewhat off the wind line ({ang_offset:.1f}° angular offset).")
+            elif ang_offset is not None and ang_offset > 90.0:
+                reasons.append(f"Located {d_val:.2f} km from station (bearing {b_val:.1f}°), downwind ({ang_offset:.1f}° angular offset).")
             else:
                 offset_str = f" ({ang_offset:.1f}° angular offset)" if ang_offset is not None else ""
                 reasons.append(f"Located {d_val:.2f} km from station (bearing {b_val:.1f}°), off the main wind line{offset_str}.")
@@ -202,6 +204,8 @@ def build_enriched_shortlist(case_data: Dict[str, Any]) -> Dict[str, Any]:
                 reasons.append(f"Aligned within upwind corridor ({ang_offset:.1f}° offset from wind).")
             elif ang_offset <= 45.0:
                 reasons.append(f"Somewhat off the wind line ({ang_offset:.1f}° angular offset).")
+            elif ang_offset > 90.0:
+                reasons.append(f"Downwind ({ang_offset:.1f}° angular offset).")
             else:
                 reasons.append(f"Off the main wind line ({ang_offset:.1f}° angular offset).")
 

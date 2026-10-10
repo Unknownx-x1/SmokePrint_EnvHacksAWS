@@ -88,6 +88,7 @@ def handler(event, context):
             if cases_table:
                 res = cases_table.scan()
                 items = res.get("Items", [])
+                items = [c for c in items if not c.get("hidden_from_demo", False)]
                 items.sort(key=lambda x: x.get("case_id", ""))
                 return response(200, {"count": len(items), "cases": items})
             return response(500, {"error": "Cases table not configured"})

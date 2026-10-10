@@ -14,8 +14,8 @@ from decimal import Decimal
 import boto3
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-sys.stdout.reconfigure(encoding="utf-8")
-sys.stderr.reconfigure(encoding="utf-8")
+sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
 
 from core.ranking import haversine_km, calculate_bearing_deg
 
@@ -231,6 +231,9 @@ def seed_dynamodb_cases(table_name: str, session: boto3.Session):
             "other_explanations_considered": cdata.get("other_explanations_considered", []) if cdata else [],
             "agent_validation_passed": trace_verdict
         }
+
+        if c.get("hidden_from_demo"):
+            item["hidden_from_demo"] = True
 
         def to_dynamo(val):
             if isinstance(val, float):

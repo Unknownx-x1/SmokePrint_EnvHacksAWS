@@ -18,10 +18,9 @@ BASE_URL = "http://smokeprint-demo-k9f2a1.s3-website-us-east-1.amazonaws.com"
 QA_DIR = "docs/qa"
 os.makedirs(QA_DIR, exist_ok=True)
 
-ALL_7_CASES = [
+VISIBLE_6_CASES = [
     "case_anand_vihar_20251102",
     "case_anand_vihar_20260131",
-    "case_anand_vihar_20260405",
     "case_rkpuram_20251112",
     "case_crri_20260515",
     "case_gurugram_20260630",
@@ -120,9 +119,9 @@ def test_officer_page_all_cases_and_features(browser_instance):
     expect(page.locator("body")).to_contain_text("Rajghat Bus Depot")
 
     # Click row for Rajghat Thermal Power Station to test row expand & disused sentence
-    rajghat_row = page.locator("tr:has-text('Rajghat Thermal Power Station')").first
-    expect(rajghat_row).to_be_visible()
-    rajghat_row.click()
+    rajghat_elem = page.locator("text=Rajghat Thermal Power Station").first
+    expect(rajghat_elem).to_be_visible()
+    rajghat_elem.click()
     page.wait_for_selector("text=Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.", timeout=5000)
     expect(page.locator("body")).to_contain_text("Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.")
     page.screenshot(path=f"{QA_DIR}/officer_anand_vihar_disused_desktop.png")
@@ -132,8 +131,8 @@ def test_officer_page_all_cases_and_features(browser_instance):
     expect(page.locator("body")).to_contain_text("hourly means, interval midpoint, IST")
     page.screenshot(path=f"{QA_DIR}/officer_timeseries_chart.png")
 
-    # 3. Test clicking each of the 7 cases and verify detail panel updates
-    for cid in ALL_7_CASES:
+    # 3. Test clicking each of the 6 cases and verify detail panel updates
+    for cid in VISIBLE_6_CASES:
         btn = page.locator(f"button[data-case-id='{cid}']")
         btn.click()
         page.wait_for_timeout(400)
@@ -225,7 +224,7 @@ def test_field_page_all_7_cases(browser_instance):
     ctx_mobile = browser_instance.new_context(viewport={"width": 390, "height": 844})
     page = ctx_mobile.new_page()
 
-    for cid in ALL_7_CASES:
+    for cid in VISIBLE_6_CASES:
         url = f"{BASE_URL}/field/{cid}/"
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(400)

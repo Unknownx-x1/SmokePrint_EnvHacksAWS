@@ -1,24 +1,24 @@
 {
   "case_id": "case_rkpuram_20251112",
   "station_name": "R K Puram, Delhi - DPCC",
-  "timestamp_utc": "2025-11-12T16:00:00Z",
+  "timestamp_utc": "2025-11-12T15:00:00Z",
   "target_station": {
     "station_id": 17,
     "name": "R K Puram, Delhi - DPCC",
     "latitude": 28.6468,
     "longitude": 77.316,
-    "pm25": 427.0,
-    "pm10": 549.0,
-    "no2_ugm3": 81.1
+    "pm25": 487.0,
+    "pm10": 619.0,
+    "no2_ugm3": 90.5
   },
-  "regional_median": 244.5,
-  "local_excess": 182.5,
+  "regional_median": 222.0,
+  "local_excess": 265.0,
   "classification": "corroborated",
   "fault_flags": [],
   "wind": {
-    "wind_speed_ms": 1.17,
-    "wind_direction_deg": 306,
-    "wording": "wind from 306\u00b0"
+    "wind_speed_ms": 1.42,
+    "wind_direction_deg": 309,
+    "wording": "wind from 309\u00b0"
   },
   "candidates": [
     {

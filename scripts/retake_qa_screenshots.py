@@ -5,6 +5,15 @@ BASE_URL = "http://smokeprint-demo-k9f2a1.s3-website-us-east-1.amazonaws.com"
 QA_DIR = "docs/qa"
 os.makedirs(QA_DIR, exist_ok=True)
 
+VISIBLE_CASES = [
+    ("case_anand_vihar_20251102", "anand_vihar_nov"),
+    ("case_anand_vihar_20260131", "anand_vihar_jan"),
+    ("case_rkpuram_20251112", "rkpuram_nov"),
+    ("case_crri_20260515", "crri_may"),
+    ("case_gurugram_20260630", "gurugram_jun"),
+    ("case_regional_smog_20251020", "regional_smog_oct"),
+]
+
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -13,41 +22,11 @@ def main():
         ctx_desktop = browser.new_context(viewport={"width": 1280, "height": 800})
         page = ctx_desktop.new_page()
 
-        # Regional smog case
-        print("Capturing regional smog case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_regional_smog_20251020", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_case_regional_smog.png")
-
-        # Gurugram case
-        print("Capturing Gurugram case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_gurugram_20260630", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_case_gurugram.png")
-
-        # CRRI case
-        print("Capturing CRRI case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_crri_20260515", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_case_crri.png")
-
-        # November Anand Vihar case
-        print("Capturing Anand Vihar Nov case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_anand_vihar_20251102", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_anand_vihar_nov_desktop.png")
-
-        # November RK Puram case
-        print("Capturing RK Puram Nov case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_rkpuram_20251112", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_rkpuram_nov_desktop.png")
-
-        # April Anand Vihar case
-        print("Capturing Anand Vihar April case (desktop)...")
-        page.goto(f"{BASE_URL}/officer/?caseId=case_anand_vihar_20260405", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
-        page.screenshot(path=f"{QA_DIR}/officer_anand_vihar_apr_desktop.png")
+        for cid, label in VISIBLE_CASES:
+            print(f"Capturing {cid} (desktop)...")
+            page.goto(f"{BASE_URL}/officer/?caseId={cid}", wait_until="domcontentloaded")
+            page.wait_for_timeout(1500)
+            page.screenshot(path=f"{QA_DIR}/officer_{label}_desktop.png")
 
         ctx_desktop.close()
 
@@ -55,39 +34,15 @@ def main():
         ctx_mobile = browser.new_context(viewport={"width": 390, "height": 844})
         page_m = ctx_mobile.new_page()
 
-        # Regional smog mobile
-        print("Capturing regional smog case (mobile)...")
-        page_m.goto(f"{BASE_URL}/field/case_regional_smog_20251020/", wait_until="domcontentloaded")
-        page_m.wait_for_timeout(1500)
-        page_m.screenshot(path=f"{QA_DIR}/field_case_regional_smog_mobile.png")
-
-        # Gurugram mobile
-        print("Capturing Gurugram case (mobile)...")
-        page_m.goto(f"{BASE_URL}/field/case_gurugram_20260630/", wait_until="domcontentloaded")
-        page_m.wait_for_timeout(1500)
-        page_m.screenshot(path=f"{QA_DIR}/field_case_gurugram_mobile.png")
-
-        # CRRI mobile
-        print("Capturing CRRI case (mobile)...")
-        page_m.goto(f"{BASE_URL}/field/case_crri_20260515/", wait_until="domcontentloaded")
-        page_m.wait_for_timeout(1500)
-        page_m.screenshot(path=f"{QA_DIR}/field_case_crri_mobile.png")
-
-        # November Anand Vihar mobile
-        print("Capturing Anand Vihar Nov case (mobile)...")
-        page_m.goto(f"{BASE_URL}/field/case_anand_vihar_20251102/", wait_until="domcontentloaded")
-        page_m.wait_for_timeout(1500)
-        page_m.screenshot(path=f"{QA_DIR}/field_anand_vihar_nov_mobile.png")
-
-        # November RK Puram mobile
-        print("Capturing RK Puram Nov case (mobile)...")
-        page_m.goto(f"{BASE_URL}/field/case_rkpuram_20251112/", wait_until="domcontentloaded")
-        page_m.wait_for_timeout(1500)
-        page_m.screenshot(path=f"{QA_DIR}/field_rkpuram_nov_mobile.png")
+        for cid, label in VISIBLE_CASES:
+            print(f"Capturing {cid} (mobile)...")
+            page_m.goto(f"{BASE_URL}/field/{cid}/", wait_until="domcontentloaded")
+            page_m.wait_for_timeout(1500)
+            page_m.screenshot(path=f"{QA_DIR}/field_{label}_mobile.png")
 
         ctx_mobile.close()
         browser.close()
-        print("All QA screenshots retaken successfully.")
+        print("\nAll 6 visible case QA screenshots retaken successfully.")
 
 if __name__ == "__main__":
     main()

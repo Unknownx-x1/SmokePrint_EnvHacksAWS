@@ -97,6 +97,8 @@ def test_transport_wording_3_tier_thresholds():
                     assert "upwind" in geom_reason
                 elif 25.0 < offset <= 45.0:
                     assert "somewhat off the wind line" in geom_reason
+                elif offset > 90.0:
+                    assert "downwind" in geom_reason
                 else:
                     assert "off the main wind line" in geom_reason
 

@@ -218,12 +218,12 @@ export default function OfficerPage() {
 
       {/* RIGHT: Case Detail, Shortlist, and Evidence Panels (54% width) */}
       <div className="w-full lg:w-[54%] overflow-y-auto p-4 sm:p-6 space-y-6">
-        {/* Top Header & 7-Case Switcher */}
+        {/* Top Header & 6-Case Switcher */}
         <div className="space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono uppercase tracking-wider text-stone-500">
-                CASE SELECTION (7 VETTED EPISODES)
+                CASE SELECTION (6 VETTED EPISODES)
               </span>
               {isOfflineCopy && (
                 <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-stone-200 text-stone-800 border border-stone-300">
@@ -241,7 +241,7 @@ export default function OfficerPage() {
             </Link>
           </div>
 
-          {/* 7 Case Tabs */}
+          {/* 6 Case Tabs */}
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-2">
             {ALL_CASE_IDS.map((cId) => {
               const isSelected = cId === selectedCaseId;

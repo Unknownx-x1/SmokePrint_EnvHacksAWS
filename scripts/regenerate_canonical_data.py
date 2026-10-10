@@ -318,11 +318,14 @@ def main():
                 "reporting_stations": 22,
                 "stations_over_200": 21,
                 "elevated_pct": 95.5,
-                "max_station_name": "CRRI Mathura Road, New Delhi - IMD",
-                "max_station_pm25": 959.0
+                "max_station_name": "Sector - 125, Noida, UP - UPPCB",
+                "max_station_pm25": 881.0
             }
         else:
             ranked_case["hourly_series"] = extract_hourly_series(cid, sid, ts)
+
+        if case_meta.get("hidden_from_demo"):
+            ranked_case["hidden_from_demo"] = True
 
         # Save to data/cases_out/ and web/src/data/cases/
         cpath = f"data/cases_out/{cid}.json"
@@ -332,20 +335,21 @@ def main():
         with open(web_cpath, "w", encoding="utf-8") as f:
             json.dump(ranked_case, f, indent=2)
 
-        offline_cases_dict[cid] = ranked_case
+        if not case_meta.get("hidden_from_demo"):
+            offline_cases_dict[cid] = ranked_case
         print(f"[{cid}] Wind={ws} m/s @ {wd}° | LowWind={is_low} | Refused={ranked_case['dispatch_refused']} | Shortlist={len(ranked_case['shortlist'])}")
 
-    # 8. Update web/src/lib/offlineData.ts
-    all_case_ids = [c["case_id"] for c in cases_dict.values()]
+    # 8. Update web/src/lib/offlineData.ts (only visible cases)
+    visible_case_ids = [c["case_id"] for c in cases_dict.values() if not c.get("hidden_from_demo")]
     offline_file_content = (
         'import { CaseData } from "./types";\n\n'
-        f'export const ALL_CASE_IDS = {json.dumps(all_case_ids, indent=2)};\n\n'
+        f'export const ALL_CASE_IDS = {json.dumps(visible_case_ids, indent=2)};\n\n'
         f'export const OFFLINE_CASES: Record<string, CaseData> = {json.dumps(offline_cases_dict, indent=2)};\n'
     )
     with open("web/src/lib/offlineData.ts", "w", encoding="utf-8") as f:
         f.write(offline_file_content)
 
-    print("\nSuccessfully regenerated all 7 cases and updated web/src/lib/offlineData.ts!")
+    print(f"\nSuccessfully regenerated canonical cases ({len(visible_case_ids)} visible) and updated web/src/lib/offlineData.ts!")
 
 if __name__ == "__main__":
     main()
