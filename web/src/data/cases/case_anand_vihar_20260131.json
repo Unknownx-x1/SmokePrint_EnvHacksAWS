@@ -616,8 +616,8 @@
       "id": "outcome_possible_fault",
       "name": "Instrument / Sensor Bias Artifact",
       "type": "possible_fault",
-      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault.",
-      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.",
+      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour rule out sensor fault; wind direction is unreliable in low wind.",
+      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour; wind direction is unreliable in low wind.",
       "relative_score": 0.077
     }
   ],
@@ -625,5 +625,45 @@
   "classification": "corroborated",
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
-  "replayed_note": "replayed from validated core output"
+  "replayed_note": "replayed from validated core output",
+  "hourly_series": {
+    "station_id": 235,
+    "sensor_id": 12235610,
+    "source_file": "data/stations_12m/station_235_12m.json",
+    "parameter": "pm25",
+    "unit": "ug/m3",
+    "label": "hourly means, interval midpoint, IST",
+    "readings": [
+      {
+        "timestamp_utc": "2026-01-31T03:30:00Z",
+        "time_ist": "09:00 IST",
+        "offset_label": "-2h",
+        "pm25_ugm3": 269.0
+      },
+      {
+        "timestamp_utc": "2026-01-31T04:30:00Z",
+        "time_ist": "10:00 IST",
+        "offset_label": "-1h",
+        "pm25_ugm3": 298.0
+      },
+      {
+        "timestamp_utc": "2026-01-31T05:30:00Z",
+        "time_ist": "11:00 IST",
+        "offset_label": "T0 (Midpoint)",
+        "pm25_ugm3": 345.0
+      },
+      {
+        "timestamp_utc": "2026-01-31T06:30:00Z",
+        "time_ist": "12:00 IST",
+        "offset_label": "+1h",
+        "pm25_ugm3": 274.0
+      },
+      {
+        "timestamp_utc": "2026-01-31T07:30:00Z",
+        "time_ist": "13:00 IST",
+        "offset_label": "+2h",
+        "pm25_ugm3": 194.0
+      }
+    ]
+  }
 }

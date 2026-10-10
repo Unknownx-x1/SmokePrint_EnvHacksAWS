@@ -23,8 +23,8 @@
   "regional_median": 47.0,
   "local_excess": 267.0,
   "footprint_discriminability": {
-    "discriminability_metric": 0.723,
-    "top_to_k_spread": 0.723,
+    "discriminability_metric": 0.848,
+    "top_to_k_spread": 0.848,
     "k_candidates_evaluated": 5,
     "is_uniform": false,
     "state": "discriminable_corridor",
@@ -107,24 +107,10 @@
   "three_way_rankings": {
     "ranked_by_heuristic_priors": [
       {
-        "id": "osm_way_1565156209",
-        "name": "Kadipur Industrial Area",
-        "type": "industrial",
-        "score": 0.1517,
-        "operating_status": "active_presumed"
-      },
-      {
         "id": "osm_way_44350312",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
         "score": 0.1477,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_1408786402",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.0633,
         "operating_status": "active_presumed"
       },
       {
@@ -140,6 +126,20 @@
         "type": "construction",
         "score": 0.0339,
         "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1331281993",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0252,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1247511239",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0186,
+        "operating_status": "active_presumed"
       }
     ],
     "ranked_by_flat_priors": [
@@ -148,20 +148,6 @@
         "name": "Unnamed Industrial Site",
         "type": "industrial",
         "score": 1.25,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_1408786402",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.5357,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_1565156209",
-        "name": "Kadipur Industrial Area",
-        "type": "industrial",
-        "score": 0.5134,
         "operating_status": "active_presumed"
       },
       {
@@ -176,6 +162,20 @@
         "name": "Unnamed Industrial Site",
         "type": "industrial",
         "score": 0.1116,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1247512613",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0969,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1331281993",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0719,
         "operating_status": "active_presumed"
       }
     ],
@@ -195,24 +195,24 @@
         "operating_status": "active_presumed"
       },
       {
-        "id": "osm_way_1408786402",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.4286,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_1565156209",
-        "name": "Kadipur Industrial Area",
-        "type": "industrial",
-        "score": 0.4107,
-        "operating_status": "active_presumed"
-      },
-      {
         "id": "osm_way_1247512613",
         "name": "Unnamed Construction Site",
         "type": "construction",
         "score": 0.2768,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1331281993",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.2054,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1247511239",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.1518,
         "operating_status": "active_presumed"
       }
     ]
@@ -265,5 +265,45 @@
   "classification": "uncorroborated",
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
-  "replayed_note": "replayed from validated core output"
+  "replayed_note": "replayed from validated core output",
+  "hourly_series": {
+    "station_id": 301,
+    "sensor_id": 14258988,
+    "source_file": "data/stations_12m/station_301_12m.json",
+    "parameter": "pm25",
+    "unit": "ug/m3",
+    "label": "hourly means, interval midpoint, IST",
+    "readings": [
+      {
+        "timestamp_utc": "2026-06-30T04:30:00Z",
+        "time_ist": "10:00 IST",
+        "offset_label": "-2h",
+        "pm25_ugm3": 275.0
+      },
+      {
+        "timestamp_utc": "2026-06-30T05:30:00Z",
+        "time_ist": "11:00 IST",
+        "offset_label": "-1h",
+        "pm25_ugm3": 209.0
+      },
+      {
+        "timestamp_utc": "2026-06-30T06:30:00Z",
+        "time_ist": "12:00 IST",
+        "offset_label": "T0 (Midpoint)",
+        "pm25_ugm3": 314.0
+      },
+      {
+        "timestamp_utc": "2026-06-30T07:30:00Z",
+        "time_ist": "13:00 IST",
+        "offset_label": "+1h",
+        "pm25_ugm3": 316.0
+      },
+      {
+        "timestamp_utc": "2026-06-30T08:30:00Z",
+        "time_ist": "14:00 IST",
+        "offset_label": "+2h",
+        "pm25_ugm3": 306.0
+      }
+    ]
+  }
 }

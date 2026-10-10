@@ -55,21 +55,21 @@ export default async function FieldPage({
   }
 
   return (
-    <div className="flex-1 bg-stone-100 py-4 sm:py-8 px-2 sm:px-4 flex justify-center">
+    <div className="flex-1 bg-stone-100 py-2 sm:py-8 px-0 sm:px-4 flex justify-center w-full min-w-0 overflow-x-hidden">
       {/* 390px mobile viewport frame */}
-      <div className="w-full max-w-[390px] bg-white min-h-[720px] rounded-xl border border-stone-300 shadow-md flex flex-col overflow-hidden">
+      <div data-field-page="true" className="w-full max-w-full sm:max-w-[390px] bg-white min-h-[720px] sm:rounded-xl sm:border border-stone-300 shadow-sm flex flex-col overflow-hidden min-w-0">
         {/* Mobile Header */}
         <div className="bg-stone-900 text-white p-4 sticky top-0 z-20">
           <div className="flex items-center justify-between mb-2">
             <Link
               href="/officer"
-              className="inline-flex items-center gap-1 text-xs text-stone-300 hover:text-white"
+              className="inline-flex items-center gap-1 text-xs text-stone-300 hover:text-white min-h-[48px] px-2 -ml-2"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Officer Desk</span>
             </Link>
             <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-800 text-stone-300 border border-stone-700">
-              FIELD MOBILE (390px)
+              MOBILE INSPECTION DISPATCH
             </span>
           </div>
 
@@ -87,12 +87,12 @@ export default async function FieldPage({
           <label className="block text-[10px] font-mono uppercase text-stone-500 mb-1">
             Selected Episode
           </label>
-          <div className="flex gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
+          <div className="flex gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none items-center">
             {ALL_CASE_IDS.map((cId) => (
               <Link
                 key={cId}
                 href={`/field/${cId}`}
-                className={`px-2.5 py-1.5 rounded whitespace-nowrap text-xs font-mono transition-colors min-h-[36px] flex items-center ${
+                className={`px-3 py-2 rounded whitespace-nowrap text-xs font-mono transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center ${
                   cId === caseId
                     ? 'bg-stone-900 text-white font-bold'
                     : 'bg-white border border-stone-300 text-stone-700 hover:bg-stone-100'

@@ -375,5 +375,45 @@
   "classification": "uncorroborated",
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
-  "replayed_note": "replayed from validated core output"
+  "replayed_note": "replayed from validated core output",
+  "hourly_series": {
+    "station_id": 5627,
+    "sensor_id": 12234678,
+    "source_file": "data/stations_12m/station_5627_12m.json",
+    "parameter": "pm25",
+    "unit": "ug/m3",
+    "label": "hourly means, interval midpoint, IST",
+    "readings": [
+      {
+        "timestamp_utc": "2026-05-15T21:30:00Z",
+        "time_ist": "03:00 IST",
+        "offset_label": "-2h",
+        "pm25_ugm3": 84.0
+      },
+      {
+        "timestamp_utc": "2026-05-15T22:30:00Z",
+        "time_ist": "04:00 IST",
+        "offset_label": "-1h",
+        "pm25_ugm3": 121.0
+      },
+      {
+        "timestamp_utc": "2026-05-15T23:30:00Z",
+        "time_ist": "05:00 IST",
+        "offset_label": "T0 (Midpoint)",
+        "pm25_ugm3": 175.0
+      },
+      {
+        "timestamp_utc": "2026-05-16T00:30:00Z",
+        "time_ist": "06:00 IST",
+        "offset_label": "+1h",
+        "pm25_ugm3": 154.0
+      },
+      {
+        "timestamp_utc": "2026-05-16T01:30:00Z",
+        "time_ist": "07:00 IST",
+        "offset_label": "+2h",
+        "pm25_ugm3": 103.0
+      }
+    ]
+  }
 }

@@ -394,5 +394,6 @@
   "classification": "regional",
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
-  "replayed_note": "replayed from validated core output"
+  "replayed_note": "replayed from validated core output",
+  "hourly_series": null
 }

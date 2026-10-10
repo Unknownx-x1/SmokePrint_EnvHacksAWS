@@ -100,8 +100,15 @@ def build_enriched_shortlist(case_data: Dict[str, Any]) -> Dict[str, Any]:
                 det_reason = "Local excess above regional baseline detected; localized transport corridor evaluated against diffuse background." if not dispatch_refused else f"Telemetry or spatial gradient insufficient to isolate point emitter ({refusal_basis})."
                 sentence = "Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike." if not dispatch_refused else "Insufficient evidence: localized transport corridor could not be distinguished from diffuse background or regional elevation."
             elif hid == "outcome_possible_fault":
-                det_reason = f"Single-station instrument failure confirmed by QA detector ({refusal_basis})." if is_fault else "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault."
-                sentence = f"Sensor fault artifact: confirmed by detector ({refusal_basis})." if is_fault else "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations."
+                if is_fault:
+                    det_reason = f"Single-station instrument failure confirmed by QA detector ({refusal_basis})."
+                    sentence = f"Sensor fault artifact: confirmed by detector ({refusal_basis})."
+                elif is_low_wind:
+                    det_reason = "Multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour rule out sensor fault; wind direction is unreliable in low wind."
+                    sentence = "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour; wind direction is unreliable in low wind."
+                else:
+                    det_reason = "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault."
+                    sentence = "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations."
             elif hid == "outcome_regional":
                 det_reason = "Simultaneous multi-station elevation across 95.5% of reporting stations in network."
                 sentence = "Regional airshed elevation: simultaneous multi-station elevation observed across 95.5% of reporting stations in the Delhi-NCR network."

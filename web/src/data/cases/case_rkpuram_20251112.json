@@ -646,8 +646,8 @@
       "id": "outcome_possible_fault",
       "name": "Instrument / Sensor Bias Artifact",
       "type": "possible_fault",
-      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault.",
-      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.",
+      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour rule out sensor fault; wind direction is unreliable in low wind.",
+      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour; wind direction is unreliable in low wind.",
       "relative_score": 0.073
     }
   ],
@@ -655,5 +655,45 @@
   "classification": "corroborated",
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
-  "replayed_note": "replayed from validated core output"
+  "replayed_note": "replayed from validated core output",
+  "hourly_series": {
+    "station_id": 17,
+    "sensor_id": 12234787,
+    "source_file": "data/stations_12m/station_17_12m.json",
+    "parameter": "pm25",
+    "unit": "ug/m3",
+    "label": "hourly means, interval midpoint, IST",
+    "readings": [
+      {
+        "timestamp_utc": "2025-11-12T14:30:00Z",
+        "time_ist": "20:00 IST",
+        "offset_label": "-2h",
+        "pm25_ugm3": 460.0
+      },
+      {
+        "timestamp_utc": "2025-11-12T15:30:00Z",
+        "time_ist": "21:00 IST",
+        "offset_label": "-1h",
+        "pm25_ugm3": 487.0
+      },
+      {
+        "timestamp_utc": "2025-11-12T16:30:00Z",
+        "time_ist": "22:00 IST",
+        "offset_label": "T0 (Midpoint)",
+        "pm25_ugm3": 427.0
+      },
+      {
+        "timestamp_utc": "2025-11-12T17:30:00Z",
+        "time_ist": "23:00 IST",
+        "offset_label": "+1h",
+        "pm25_ugm3": 378.0
+      },
+      {
+        "timestamp_utc": "2025-11-12T18:30:00Z",
+        "time_ist": "00:00 IST",
+        "offset_label": "+2h",
+        "pm25_ugm3": 341.0
+      }
+    ]
+  }
 }

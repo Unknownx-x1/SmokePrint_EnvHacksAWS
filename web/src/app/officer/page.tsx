@@ -22,6 +22,7 @@ import {
   Smartphone
 } from 'lucide-react';
 import Link from 'next/link';
+import TimeSeriesChart from '../../components/TimeSeriesChart';
 
 // Dynamically import map component to disable SSR for WebGL / MapLibre
 const OfficerMap = dynamic(() => import('../../components/OfficerMap'), {
@@ -56,6 +57,17 @@ export default function OfficerPage() {
     message: null,
   });
 
+  // Handle case selection with URL search param sync
+  const handleSelectCase = (cId: string) => {
+    setSelectedCaseId(cId);
+    setSelectedCandidateId(null);
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      url.searchParams.set('caseId', cId);
+      window.history.replaceState(null, '', url.toString());
+    }
+  };
+
   // Check query parameter for initial case selection (e.g. ?caseId=...)
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -76,7 +88,6 @@ export default function OfficerPage() {
       if (!isCancelled) {
         setCaseData(res.caseData);
         setIsOfflineCopy(res.isOfflineCopy);
-        setSelectedCandidateId(null);
         setIsLoading(false);
       }
     }
@@ -103,24 +114,47 @@ export default function OfficerPage() {
         message: `Execution ${runId} RUNNING in AWS Step Functions (labelled "replayed")...`,
       });
 
-      // Poll status every 2 seconds
+      let attempts = 0;
+      // Poll status every 2 seconds (with 30-second timeout)
       const pollInterval = setInterval(async () => {
-        const statusRes = await pollRunStatus(runId);
-        if (statusRes.status === 'SUCCEEDED') {
-          clearInterval(pollInterval);
-          setReplayState({
-            isRunning: false,
-            runId: runId,
-            status: 'SUCCEEDED',
-            message: `Step Functions run ${runId} SUCCEEDED (source: replayed from validated core output).`,
-          });
-        } else if (statusRes.status === 'FAILED') {
+        attempts += 1;
+        if (attempts > 15) {
           clearInterval(pollInterval);
           setReplayState({
             isRunning: false,
             runId: runId,
             status: 'FAILED',
-            message: `Execution ${runId} failed.`,
+            message: `Polling timed out after 30 seconds for ${runId}.`,
+          });
+          return;
+        }
+
+        try {
+          const statusRes = await pollRunStatus(runId);
+          if (statusRes.status === 'SUCCEEDED') {
+            clearInterval(pollInterval);
+            setReplayState({
+              isRunning: false,
+              runId: runId,
+              status: 'SUCCEEDED',
+              message: `Step Functions run ${runId} SUCCEEDED (source: replayed from validated core output).`,
+            });
+          } else if (statusRes.status === 'FAILED') {
+            clearInterval(pollInterval);
+            setReplayState({
+              isRunning: false,
+              runId: runId,
+              status: 'FAILED',
+              message: `Execution ${runId} failed.`,
+            });
+          }
+        } catch (pollErr: any) {
+          clearInterval(pollInterval);
+          setReplayState({
+            isRunning: false,
+            runId: runId,
+            status: 'FAILED',
+            message: `Polling error: ${pollErr.message}`,
           });
         }
       }, 2000);
@@ -203,7 +237,7 @@ export default function OfficerPage() {
               className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-stone-700 hover:text-stone-900 bg-white border border-stone-200 hover:bg-stone-50 px-2.5 py-1 rounded shadow-sm"
             >
               <Smartphone className="w-3.5 h-3.5" />
-              <span>Open in Field Mobile (390px) →</span>
+              <span>Open Mobile Inspection Dispatch →</span>
             </Link>
           </div>
 
@@ -224,7 +258,8 @@ export default function OfficerPage() {
               return (
                 <button
                   key={cId}
-                  onClick={() => setSelectedCaseId(cId)}
+                  data-case-id={cId}
+                  onClick={() => handleSelectCase(cId)}
                   className={`text-left p-2 rounded border transition-all text-xs flex flex-col justify-between ${
                     isSelected
                       ? 'bg-white border-stone-900 shadow-sm ring-1 ring-stone-900'
@@ -258,7 +293,7 @@ export default function OfficerPage() {
               </div>
             </div>
 
-            <div className="flex flex-col items-end gap-1">
+            <div className="flex flex-col items-end gap-1.5">
               <div className="flex items-center gap-1.5 flex-wrap justify-end">
                 {getCaseStatusChip(selectedCaseId)}
                 {(caseData.is_low_wind || (caseData.wind?.wind_speed_ms != null && caseData.wind?.wind_speed_ms < 1.5)) && (
@@ -266,7 +301,44 @@ export default function OfficerPage() {
                     <span>Low wind: direction unreliable</span>
                   </span>
                 )}
+
+                {/* Replay on AWS Button */}
+                <button
+                  onClick={handleTriggerReplay}
+                  disabled={replayState.isRunning}
+                  className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors ${
+                    replayState.isRunning
+                      ? 'bg-amber-100 text-amber-900 border border-amber-300 cursor-not-allowed'
+                      : 'bg-stone-900 text-white hover:bg-stone-800 active:bg-black'
+                  }`}
+                  title="Replay core pipeline execution on AWS Step Functions"
+                >
+                  <RotateCw className={`w-3.5 h-3.5 ${replayState.isRunning ? 'animate-spin' : ''}`} />
+                  <span>{replayState.isRunning ? 'Replaying...' : 'Replay on AWS'}</span>
+                </button>
               </div>
+
+              {/* Replay Status Display */}
+              {replayState.status !== 'IDLE' && (
+                <div className="flex items-center gap-2 mt-1">
+                  {replayState.status === 'RUNNING' && (
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-100 text-amber-900 border border-amber-300 animate-pulse">
+                      STATUS: RUNNING
+                    </span>
+                  )}
+                  {replayState.status === 'SUCCEEDED' && (
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+                      STATUS: SUCCEEDED (source: replayed)
+                    </span>
+                  )}
+                  {replayState.status === 'FAILED' && (
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-rose-100 text-rose-900 border border-rose-300">
+                      STATUS: FAILED ({replayState.message})
+                    </span>
+                  )}
+                </div>
+              )}
+
               <span className="text-[11px] font-mono text-stone-500">
                 1-hour interval midpoint convention
               </span>
@@ -311,6 +383,21 @@ export default function OfficerPage() {
               </div>
               <div className="text-[10px] text-stone-400 mt-0.5">Converted standard</div>
             </div>
+          </div>
+        </div>
+
+        {/* Spatial Transport Map & Time Series Analytics Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="bg-white rounded border border-stone-200 overflow-hidden shadow-sm min-h-[380px] flex flex-col">
+            <OfficerMap
+              caseData={caseData}
+              selectedCandidateId={selectedCandidateId}
+              onSelectCandidate={(cId) => setSelectedCandidateId(cId)}
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <TimeSeriesChart caseData={caseData} />
           </div>
         </div>
 
@@ -384,7 +471,7 @@ export default function OfficerPage() {
                           ? 'bg-stone-900 text-white font-mono'
                           : cand.confidence_tier === 'medium'
                           ? 'bg-stone-100 text-stone-800 border border-stone-300 font-mono'
-                          : 'bg-stone-50 text-stone-500 border border-stone-200 font-mono';
+                          : 'bg-stone-100 text-stone-700 border border-stone-300 font-mono';
 
                       return (
                         <React.Fragment key={cand.id}>
