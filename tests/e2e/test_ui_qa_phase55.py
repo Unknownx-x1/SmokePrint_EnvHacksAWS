@@ -27,7 +27,7 @@ VISIBLE_6_CASES = [
     "case_regional_smog_20251020",
 ]
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def browser_instance():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -112,23 +112,28 @@ def test_officer_page_all_cases_and_features(browser_instance):
     # 1. Direct load /officer/
     page.goto(f"{BASE_URL}/officer/", wait_until="domcontentloaded")
     page.wait_for_selector("text=Patparganj Industrial Area")
-    page.wait_for_timeout(1000)
+    page.wait_for_timeout(3000)
 
     # Verify initial case (Anand Vihar 2025-11-02)
     expect(page.locator("body")).to_contain_text("Patparganj Industrial Area")
     expect(page.locator("body")).to_contain_text("Rajghat Bus Depot")
 
     # Click row for Rajghat Thermal Power Station to test row expand & disused sentence
-    rajghat_elem = page.locator("text=Rajghat Thermal Power Station").first
-    expect(rajghat_elem).to_be_visible()
-    rajghat_elem.click()
-    page.wait_for_selector("text=Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.", timeout=5000)
-    expect(page.locator("body")).to_contain_text("Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.")
+    page.wait_for_timeout(2000)
+    rajghat_row = page.locator("tr", has_text="osm_way_464283160").first
+    expect(rajghat_row).to_be_visible()
+    rajghat_row.click()
+    try:
+        expect(page.locator("body")).to_contain_text("Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.", timeout=3000)
+    except AssertionError:
+        page.wait_for_timeout(1000)
+        rajghat_row.click()
+        expect(page.locator("body")).to_contain_text("Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.", timeout=5000)
     page.screenshot(path=f"{QA_DIR}/officer_anand_vihar_disused_desktop.png")
 
     # 2. Test Time Series Chart renders with axis labels and midpoint convention
     expect(page.locator("body")).to_contain_text("OpenAQ Hourly Series")
-    expect(page.locator("body")).to_contain_text("hourly means, interval midpoint, IST")
+    expect(page.locator("body")).to_contain_text("hourly value (as reported), shown in IST")
     page.screenshot(path=f"{QA_DIR}/officer_timeseries_chart.png")
 
     # 3. Test clicking each of the 6 cases and verify detail panel updates

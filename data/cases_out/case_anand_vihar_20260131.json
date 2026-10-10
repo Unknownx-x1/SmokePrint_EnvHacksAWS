@@ -7,24 +7,24 @@
     "longitude": 77.316032
   },
   "time_window": {
-    "interval_midpoint_utc": "2026-01-31T05:00:00Z",
-    "interval_start_utc": "2026-01-31T04:30:00Z",
-    "interval_end_utc": "2026-01-31T05:30:00Z",
-    "interval_midpoint_ist": "2026-01-31 10:30:00 IST",
-    "interval_start_ist": "2026-01-31 10:00:00 IST",
-    "interval_end_ist": "2026-01-31 11:00:00 IST",
+    "interval_midpoint_utc": "2026-01-31T06:00:00Z",
+    "interval_start_utc": "2026-01-31T05:30:00Z",
+    "interval_end_utc": "2026-01-31T06:30:00Z",
+    "interval_midpoint_ist": "2026-01-31 11:30:00 IST",
+    "interval_start_ist": "2026-01-31 11:00:00 IST",
+    "interval_end_ist": "2026-01-31 12:00:00 IST",
     "timezone_storage": "UTC",
     "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
     "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
   },
-  "label": "local",
-  "n_stations_background": 30,
-  "background_iqr": 88.75,
-  "regional_median": 202.0,
-  "local_excess": 143.0,
+  "label": "corroborated",
+  "n_stations_background": 34,
+  "background_iqr": 72.0,
+  "regional_median": 205.0,
+  "local_excess": 154.0,
   "footprint_discriminability": {
-    "discriminability_metric": 0.687,
-    "top_to_k_spread": 0.687,
+    "discriminability_metric": 0.825,
+    "top_to_k_spread": 0.825,
     "k_candidates_evaluated": 5,
     "is_uniform": false,
     "state": "discriminable_corridor",
@@ -32,10 +32,10 @@
   },
   "signature": {
     "source_type_label": "fine-particulate dominant (combustion-compatible ratio 0.7)",
-    "pm25": 345.0,
-    "pm10": 491.0,
-    "ratio_pm25_pm10": 0.7,
-    "no2_ugm3": 54.9,
+    "pm25": 359.0,
+    "pm10": 511.0,
+    "ratio_pm25_pm10": 0.703,
+    "no2_ugm3": 98.7,
     "co_mgm3": null
   },
   "downwind_neighbour_corroboration": [
@@ -45,8 +45,8 @@
       "distance_km": 11.37,
       "bearing_deg": 176.5,
       "is_downwind": false,
-      "expected_lag_hours": 2.7,
-      "neighbour_pm25": 253.0,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": 223.0,
       "wind_consistent": false
     },
     {
@@ -55,8 +55,8 @@
       "distance_km": 7.59,
       "bearing_deg": 254.5,
       "is_downwind": true,
-      "expected_lag_hours": 1.8,
-      "neighbour_pm25": 219.0,
+      "expected_lag_hours": 1.3,
+      "neighbour_pm25": 205.0,
       "wind_consistent": true
     },
     {
@@ -65,8 +65,8 @@
       "distance_km": 4.76,
       "bearing_deg": 121.3,
       "is_downwind": false,
-      "expected_lag_hours": 1.1,
-      "neighbour_pm25": 198.0,
+      "expected_lag_hours": 0.8,
+      "neighbour_pm25": 138.0,
       "wind_consistent": false
     },
     {
@@ -75,8 +75,8 @@
       "distance_km": 11.41,
       "bearing_deg": 201.3,
       "is_downwind": false,
-      "expected_lag_hours": 2.7,
-      "neighbour_pm25": 158.0,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": 163.0,
       "wind_consistent": false
     },
     {
@@ -85,8 +85,8 @@
       "distance_km": 10.6,
       "bearing_deg": 234.8,
       "is_downwind": false,
-      "expected_lag_hours": 2.5,
-      "neighbour_pm25": 180.0,
+      "expected_lag_hours": 1.8,
+      "neighbour_pm25": 172.0,
       "wind_consistent": false
     },
     {
@@ -95,8 +95,8 @@
       "distance_km": 4.29,
       "bearing_deg": 69.5,
       "is_downwind": false,
-      "expected_lag_hours": 1.0,
-      "neighbour_pm25": 332.0,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": 279.0,
       "wind_consistent": false
     },
     {
@@ -105,8 +105,8 @@
       "distance_km": 11.28,
       "bearing_deg": 264.1,
       "is_downwind": true,
-      "expected_lag_hours": 2.6,
-      "neighbour_pm25": 228.0,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": 176.0,
       "wind_consistent": true
     },
     {
@@ -115,8 +115,8 @@
       "distance_km": 4.04,
       "bearing_deg": 341.0,
       "is_downwind": false,
-      "expected_lag_hours": 0.9,
-      "neighbour_pm25": 154.0,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": 149.0,
       "wind_consistent": false
     },
     {
@@ -125,8 +125,8 @@
       "distance_km": 4.1,
       "bearing_deg": 90.9,
       "is_downwind": false,
-      "expected_lag_hours": 1.0,
-      "neighbour_pm25": 336.0,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": 273.0,
       "wind_consistent": false
     },
     {
@@ -134,10 +134,10 @@
       "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
       "distance_km": 8.6,
       "bearing_deg": 242.7,
-      "is_downwind": true,
-      "expected_lag_hours": 2.0,
-      "neighbour_pm25": 221.0,
-      "wind_consistent": true
+      "is_downwind": false,
+      "expected_lag_hours": 1.5,
+      "neighbour_pm25": 216.0,
+      "wind_consistent": false
     },
     {
       "station_id": 6938,
@@ -145,8 +145,8 @@
       "distance_km": 2.84,
       "bearing_deg": 358.5,
       "is_downwind": false,
-      "expected_lag_hours": 0.7,
-      "neighbour_pm25": 377.0,
+      "expected_lag_hours": 0.5,
+      "neighbour_pm25": 317.0,
       "wind_consistent": false
     },
     {
@@ -155,8 +155,8 @@
       "distance_km": 10.92,
       "bearing_deg": 227.3,
       "is_downwind": false,
-      "expected_lag_hours": 2.5,
-      "neighbour_pm25": 254.0,
+      "expected_lag_hours": 1.8,
+      "neighbour_pm25": 263.0,
       "wind_consistent": false
     },
     {
@@ -165,8 +165,8 @@
       "distance_km": 3.81,
       "bearing_deg": 227.6,
       "is_downwind": false,
-      "expected_lag_hours": 0.9,
-      "neighbour_pm25": 248.0,
+      "expected_lag_hours": 0.6,
+      "neighbour_pm25": 246.0,
       "wind_consistent": false
     }
   ],
@@ -184,78 +184,18 @@
         "satellite_factor": 1.0,
         "raw_compound_score": 0.1921
       },
-      "relative_score": 0.253,
+      "relative_score": 0.372,
       "interval": [
-        0.175,
-        0.301
+        0.317,
+        0.395
       ],
-      "confidence_tier": "low",
+      "confidence_tier": "high",
       "evidence_for": [
         "Located 0.69 km upwind from station along plume advection corridor.",
         "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
         "Prior weight: 0.118 (heuristic, uncalibrated).",
         "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
-        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
-        "Satellite FIRMS detections unavailable for this window."
-      ],
-      "evidence_against": [
-        "Candidate geometry: industrial (not a point culprit)."
-      ]
-    },
-    {
-      "id": "osm_way_76727509",
-      "name": "Ghazipur Landfill",
-      "type": "landfill",
-      "operating_status": "active_presumed",
-      "score_decomposition": {
-        "prior_weight": 0.85,
-        "footprint_likelihood": 0.1102,
-        "signature_likelihood": 1.45,
-        "satellite_factor": 1.0,
-        "raw_compound_score": 0.1359
-      },
-      "relative_score": 0.196,
-      "interval": [
-        0.139,
-        0.263
-      ],
-      "confidence_tier": "low",
-      "evidence_for": [
-        "Located 2.77 km upwind from station along plume advection corridor.",
-        "Plume footprint likelihood: 0.1102 (relative to peak corridor density).",
-        "Prior weight: 0.850 (heuristic, uncalibrated).",
-        "High PM2.5/PM10 ratio (0.7) is physically consistent with fine combustion smoke.",
-        "Satellite FIRMS detections unavailable for this window."
-      ],
-      "evidence_against": [
-        "Candidate geometry: landfill (not a point culprit).",
-        "Thermal NOx (54.9 ug/m3) is not typical for low-temperature landfill processes."
-      ]
-    },
-    {
-      "id": "osm_way_287054788",
-      "name": "Unnamed Industrial Site",
-      "type": "industrial",
-      "operating_status": "active_presumed",
-      "score_decomposition": {
-        "prior_weight": 0.1182,
-        "footprint_likelihood": 0.4681,
-        "signature_likelihood": 1.625,
-        "satellite_factor": 1.0,
-        "raw_compound_score": 0.0899
-      },
-      "relative_score": 0.118,
-      "interval": [
-        0.091,
-        0.176
-      ],
-      "confidence_tier": "low",
-      "evidence_for": [
-        "Located 0.71 km upwind from station along plume advection corridor.",
-        "Plume footprint likelihood: 0.4681 (relative to peak corridor density).",
-        "Prior weight: 0.118 (heuristic, uncalibrated).",
-        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
-        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Elevated NO2 (98.7 ug/m3) indicates high-temperature thermal NOx co-emission.",
         "Satellite FIRMS detections unavailable for this window."
       ],
       "evidence_against": [
@@ -266,12 +206,12 @@
       "id": "outcome_insufficient_evidence",
       "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
       "type": "insufficient_evidence",
-      "relative_score": 0.117,
+      "relative_score": 0.163,
       "interval": [
-        0.082,
-        0.166
+        0.136,
+        0.192
       ],
-      "confidence_tier": "low",
+      "confidence_tier": "medium",
       "score_decomposition": {
         "prior_weight": 1.0,
         "footprint_likelihood": 0.0,
@@ -284,63 +224,33 @@
         "Directional advection separates candidates"
       ],
       "evidence_against": [
-        "Local excess of +143.0 ug/m3 detected above regional median."
+        "Local excess of +154.0 ug/m3 detected above regional median."
       ]
     },
     {
-      "id": "osm_way_287054784",
-      "name": "Unnamed Industrial Site",
-      "type": "industrial",
-      "operating_status": "active_presumed",
-      "score_decomposition": {
-        "prior_weight": 0.1182,
-        "footprint_likelihood": 0.4681,
-        "signature_likelihood": 1.625,
-        "satellite_factor": 1.0,
-        "raw_compound_score": 0.0899
-      },
-      "relative_score": 0.111,
-      "interval": [
-        0.071,
-        0.184
-      ],
-      "confidence_tier": "low",
-      "evidence_for": [
-        "Located 0.74 km upwind from station along plume advection corridor.",
-        "Plume footprint likelihood: 0.4681 (relative to peak corridor density).",
-        "Prior weight: 0.118 (heuristic, uncalibrated).",
-        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
-        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
-        "Satellite FIRMS detections unavailable for this window."
-      ],
-      "evidence_against": [
-        "Candidate geometry: industrial (not a point culprit)."
-      ]
-    },
-    {
-      "id": "osm_way_287054776",
-      "name": "Inland Container Depot",
+      "id": "osm_way_283808810",
+      "name": "Cold Storage",
       "type": "industrial",
       "operating_status": "active_presumed",
       "score_decomposition": {
         "prior_weight": 0.2955,
-        "footprint_likelihood": 0.1741,
+        "footprint_likelihood": 0.1084,
         "signature_likelihood": 1.625,
         "satellite_factor": 1.0,
-        "raw_compound_score": 0.0836
+        "raw_compound_score": 0.0521
       },
-      "relative_score": 0.106,
+      "relative_score": 0.104,
       "interval": [
-        0.07,
-        0.145
+        0.086,
+        0.124
       ],
-      "confidence_tier": "low",
+      "confidence_tier": "medium",
       "evidence_for": [
-        "Located 1.15 km upwind from station along plume advection corridor.",
-        "Plume footprint likelihood: 0.1741 (relative to peak corridor density).",
+        "Located 2.47 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1084 (relative to peak corridor density).",
         "Prior weight: 0.295 (heuristic, uncalibrated).",
         "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
-        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Elevated NO2 (98.7 ug/m3) indicates high-temperature thermal NOx co-emission.",
         "Satellite FIRMS detections unavailable for this window."
       ],
       "evidence_against": [
@@ -351,12 +261,12 @@
       "id": "outcome_possible_fault",
       "name": "Instrument / Sensor Bias Artifact",
       "type": "possible_fault",
-      "relative_score": 0.077,
+      "relative_score": 0.104,
       "interval": [
-        0.042,
-        0.106
+        0.076,
+        0.123
       ],
-      "confidence_tier": "low",
+      "confidence_tier": "medium",
       "score_decomposition": {
         "prior_weight": 1.0,
         "footprint_likelihood": 0.0,
@@ -370,6 +280,96 @@
       "evidence_against": [
         "Multi-pollutant co-movement and wind-consistent downwind response."
       ]
+    },
+    {
+      "id": "osm_way_357481072",
+      "name": "Sector 64",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.1017,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0489
+      },
+      "relative_score": 0.093,
+      "interval": [
+        0.071,
+        0.122
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 7.05 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1017 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (98.7 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_71686902",
+      "name": "Sector 65",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.0924,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0444
+      },
+      "relative_score": 0.087,
+      "interval": [
+        0.075,
+        0.107
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 7.8 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.0924 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (98.7 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_802304540",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.2289,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.044
+      },
+      "relative_score": 0.083,
+      "interval": [
+        0.066,
+        0.099
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.45 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2289 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (98.7 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
     }
   ],
   "three_way_rankings": {
@@ -382,31 +382,31 @@
         "operating_status": "active_presumed"
       },
       {
-        "id": "osm_way_76727509",
-        "name": "Ghazipur Landfill",
-        "type": "landfill",
-        "score": 0.1359,
+        "id": "osm_way_283808810",
+        "name": "Cold Storage",
+        "type": "industrial",
+        "score": 0.0521,
         "operating_status": "active_presumed"
       },
       {
-        "id": "osm_way_287054784",
+        "id": "osm_way_357481072",
+        "name": "Sector 64",
+        "type": "industrial",
+        "score": 0.0489,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_71686902",
+        "name": "Sector 65",
+        "type": "industrial",
+        "score": 0.0444,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_802304540",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.0899,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_287054788",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.0899,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_287054776",
-        "name": "Inland Container Depot",
-        "type": "industrial",
-        "score": 0.0836,
+        "score": 0.044,
         "operating_status": "active_presumed"
       }
     ],
@@ -419,31 +419,31 @@
         "operating_status": "active_presumed"
       },
       {
+        "id": "osm_way_802304540",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.372,
+        "operating_status": "active_presumed"
+      },
+      {
         "id": "osm_way_287054784",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.7606,
+        "score": 0.3328,
         "operating_status": "active_presumed"
       },
       {
         "id": "osm_way_287054788",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.7606,
+        "score": 0.3328,
         "operating_status": "active_presumed"
       },
       {
-        "id": "osm_way_802304540",
+        "id": "osm_way_1162538022",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.5996,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_661784209",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.5088,
+        "score": 0.285,
         "operating_status": "active_presumed"
       }
     ],
@@ -456,31 +456,31 @@
         "operating_status": "active_presumed"
       },
       {
+        "id": "osm_way_802304540",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.2289,
+        "operating_status": "active_presumed"
+      },
+      {
         "id": "osm_way_287054784",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.4681,
+        "score": 0.2048,
         "operating_status": "active_presumed"
       },
       {
         "id": "osm_way_287054788",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.4681,
+        "score": 0.2048,
         "operating_status": "active_presumed"
       },
       {
-        "id": "osm_way_802304540",
+        "id": "osm_way_1162538022",
         "name": "Unnamed Industrial Site",
         "type": "industrial",
-        "score": 0.369,
-        "operating_status": "active_presumed"
-      },
-      {
-        "id": "osm_way_661784209",
-        "name": "Unnamed Industrial Site",
-        "type": "industrial",
-        "score": 0.3131,
+        "score": 0.1754,
         "operating_status": "active_presumed"
       }
     ]
@@ -497,19 +497,18 @@
     "satellite_evidence_status": "unavailable"
   },
   "wind": {
-    "wind_speed_ms": 1.19,
-    "wind_direction_deg": 105.0,
-    "from_direction_deg": 105.0,
-    "wording": "wind from 105.0 deg",
-    "boundary_layer_height_m": 150.0,
-    "is_low_wind": true,
-    "source": "ERA5 hourly reanalysis (2026-01-31T05:00 UTC)"
+    "wind_speed_ms": 1.64,
+    "wind_direction_deg": 113.0,
+    "from_direction_deg": 113.0,
+    "wording": "wind from 113.0 deg",
+    "boundary_layer_height_m": 325.0,
+    "is_low_wind": false,
+    "source": "ERA5 hourly reanalysis (2026-01-31T06:00 UTC)"
   },
-  "is_low_wind": true,
+  "is_low_wind": false,
   "dispatch_refused": false,
   "refusal_basis": null,
   "refusal_reason": null,
-  "low_wind_label": "Low wind: direction unreliable",
   "shortlist": [
     {
       "id": "osm_way_1498754706",
@@ -519,87 +518,87 @@
       "lon": 77.3230478,
       "bearing_deg": 94.4,
       "distance_km": 0.69,
-      "angular_offset_deg": 10.6,
-      "confidence_tier": "low",
+      "angular_offset_deg": 18.6,
+      "confidence_tier": "high",
       "operating_status": "active_presumed",
       "operating_status_text": "Active industrial in OpenStreetMap",
       "reasons": [
         "Located 0.69 km upwind from station (bearing 94.4\u00b0).",
-        "Directly aligned with prevailing wind axis (10.6\u00b0 offset)."
+        "Aligned within upwind corridor (18.6\u00b0 offset from wind)."
       ],
-      "shortlist_score": 0.253
+      "shortlist_score": 0.372
     },
     {
-      "id": "osm_way_76727509",
-      "name": "Ghazipur Landfill",
-      "type": "landfill",
-      "lat": 28.6240472,
-      "lon": 77.3274258,
-      "bearing_deg": 156.3,
-      "distance_km": 2.77,
-      "angular_offset_deg": 51.3,
-      "confidence_tier": "low",
+      "id": "osm_way_283808810",
+      "name": "Cold Storage",
+      "type": "industrial",
+      "lat": 28.6297662,
+      "lon": 77.3321596,
+      "bearing_deg": 140.3,
+      "distance_km": 2.47,
+      "angular_offset_deg": 27.3,
+      "confidence_tier": "medium",
       "operating_status": "active_presumed",
-      "operating_status_text": "Active landfill in OpenStreetMap",
+      "operating_status_text": "Active industrial in OpenStreetMap",
       "reasons": [
-        "Located 2.77 km from station (bearing 156.3\u00b0), off the main wind line (51.3\u00b0 angular offset).",
-        "Off the main wind line (51.3\u00b0 angular offset)."
+        "Located 2.47 km from station (bearing 140.3\u00b0), somewhat off the wind line (27.3\u00b0 angular offset).",
+        "Somewhat off the wind line (27.3\u00b0 angular offset)."
       ],
-      "shortlist_score": 0.196
+      "shortlist_score": 0.104
     },
     {
-      "id": "osm_way_287054788",
+      "id": "osm_way_357481072",
+      "name": "Sector 64",
+      "type": "industrial",
+      "lat": 28.6130007,
+      "lon": 77.3770883,
+      "bearing_deg": 122.3,
+      "distance_km": 7.05,
+      "angular_offset_deg": 9.3,
+      "confidence_tier": "medium",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 7.05 km upwind from station (bearing 122.3\u00b0).",
+        "Directly aligned with prevailing wind axis (9.3\u00b0 offset)."
+      ],
+      "shortlist_score": 0.093
+    },
+    {
+      "id": "osm_way_71686902",
+      "name": "Sector 65",
+      "type": "industrial",
+      "lat": 28.6118101,
+      "lon": 77.3853307,
+      "bearing_deg": 119.9,
+      "distance_km": 7.8,
+      "angular_offset_deg": 6.9,
+      "confidence_tier": "medium",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 7.80 km upwind from station (bearing 119.9\u00b0).",
+        "Directly aligned with prevailing wind axis (6.9\u00b0 offset)."
+      ],
+      "shortlist_score": 0.087
+    },
+    {
+      "id": "osm_way_802304540",
       "name": "Unnamed Industrial Site",
       "type": "industrial",
-      "lat": 28.640478,
-      "lon": 77.3160381,
-      "bearing_deg": 180.0,
-      "distance_km": 0.71,
-      "angular_offset_deg": 75.0,
-      "confidence_tier": "low",
+      "lat": 28.648527,
+      "lon": 77.3307456,
+      "bearing_deg": 82.5,
+      "distance_km": 1.45,
+      "angular_offset_deg": 30.5,
+      "confidence_tier": "medium",
       "operating_status": "active_presumed",
       "operating_status_text": "Active industrial in OpenStreetMap",
       "reasons": [
-        "Located 0.71 km from station (bearing 180.0\u00b0), off the main wind line (75.0\u00b0 angular offset).",
-        "Off the main wind line (75.0\u00b0 angular offset)."
+        "Located 1.45 km from station (bearing 82.5\u00b0), somewhat off the wind line (30.5\u00b0 angular offset).",
+        "Somewhat off the wind line (30.5\u00b0 angular offset)."
       ],
-      "shortlist_score": 0.118
-    },
-    {
-      "id": "osm_way_287054784",
-      "name": "Unnamed Industrial Site",
-      "type": "industrial",
-      "lat": 28.6401521,
-      "lon": 77.3163257,
-      "bearing_deg": 177.8,
-      "distance_km": 0.74,
-      "angular_offset_deg": 72.8,
-      "confidence_tier": "low",
-      "operating_status": "active_presumed",
-      "operating_status_text": "Active industrial in OpenStreetMap",
-      "reasons": [
-        "Located 0.74 km from station (bearing 177.8\u00b0), off the main wind line (72.8\u00b0 angular offset).",
-        "Off the main wind line (72.8\u00b0 angular offset)."
-      ],
-      "shortlist_score": 0.111
-    },
-    {
-      "id": "osm_way_287054776",
-      "name": "Inland Container Depot",
-      "type": "industrial",
-      "lat": 28.6364928,
-      "lon": 77.3168548,
-      "bearing_deg": 176.0,
-      "distance_km": 1.15,
-      "angular_offset_deg": 71.0,
-      "confidence_tier": "low",
-      "operating_status": "active_presumed",
-      "operating_status_text": "Active industrial in OpenStreetMap",
-      "reasons": [
-        "Located 1.15 km from station (bearing 176.0\u00b0), off the main wind line (71.0\u00b0 angular offset).",
-        "Off the main wind line (71.0\u00b0 angular offset)."
-      ],
-      "shortlist_score": 0.106
+      "shortlist_score": 0.083
     }
   ],
   "shortlist_count": 5,
@@ -610,15 +609,15 @@
       "type": "insufficient_evidence",
       "deterministic_reason": "Local excess above regional baseline detected; localized transport corridor evaluated against diffuse background.",
       "sentence": "Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.",
-      "relative_score": 0.117
+      "relative_score": 0.163
     },
     {
       "id": "outcome_possible_fault",
       "name": "Instrument / Sensor Bias Artifact",
       "type": "possible_fault",
-      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour rule out sensor fault; wind direction is unreliable in low wind.",
-      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and neighbouring station behaviour; wind direction is unreliable in low wind.",
-      "relative_score": 0.077
+      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault.",
+      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.",
+      "relative_score": 0.104
     }
   ],
   "station_name": "Anand Vihar, New Delhi - DPCC",
@@ -632,37 +631,42 @@
     "source_file": "data/stations_12m/station_235_12m.json",
     "parameter": "pm25",
     "unit": "ug/m3",
-    "label": "hourly means, interval midpoint, IST",
+    "label": "hourly value (as reported), shown in IST",
     "readings": [
       {
-        "timestamp_utc": "2026-01-31T03:30:00Z",
-        "time_ist": "09:00 IST",
+        "timestamp_utc": "2026-01-31T04:00:00Z",
+        "time_ist": "09:30 IST",
         "offset_label": "-2h",
-        "pm25_ugm3": 269.0
+        "pm25_ugm3": 266.0,
+        "sensor_id": 12235610
       },
       {
-        "timestamp_utc": "2026-01-31T04:30:00Z",
-        "time_ist": "10:00 IST",
+        "timestamp_utc": "2026-01-31T05:00:00Z",
+        "time_ist": "10:30 IST",
         "offset_label": "-1h",
-        "pm25_ugm3": 298.0
+        "pm25_ugm3": 277.0,
+        "sensor_id": 12235610
       },
       {
-        "timestamp_utc": "2026-01-31T05:30:00Z",
-        "time_ist": "11:00 IST",
+        "timestamp_utc": "2026-01-31T06:00:00Z",
+        "time_ist": "11:30 IST",
         "offset_label": "T0 (Midpoint)",
-        "pm25_ugm3": 345.0
+        "pm25_ugm3": 359.0,
+        "sensor_id": 12235610
       },
       {
-        "timestamp_utc": "2026-01-31T06:30:00Z",
-        "time_ist": "12:00 IST",
+        "timestamp_utc": "2026-01-31T07:00:00Z",
+        "time_ist": "12:30 IST",
         "offset_label": "+1h",
-        "pm25_ugm3": 274.0
+        "pm25_ugm3": 301.0,
+        "sensor_id": 12235610
       },
       {
-        "timestamp_utc": "2026-01-31T07:30:00Z",
-        "time_ist": "13:00 IST",
+        "timestamp_utc": "2026-01-31T08:00:00Z",
+        "time_ist": "13:30 IST",
         "offset_label": "+2h",
-        "pm25_ugm3": 194.0
+        "pm25_ugm3": 191.0,
+        "sensor_id": 12235610
       }
     ]
   }

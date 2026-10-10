@@ -1,24 +1,24 @@
 {
   "case_id": "case_anand_vihar_20260131",
   "station_name": "Anand Vihar, New Delhi - DPCC",
-  "timestamp_utc": "2026-01-31T05:00:00Z",
+  "timestamp_utc": "2026-01-31T06:00:00Z",
   "target_station": {
     "station_id": 235,
     "name": "Anand Vihar, New Delhi - DPCC",
     "latitude": 28.6468,
     "longitude": 77.316,
-    "pm25": 345.0,
-    "pm10": 491.0,
-    "no2_ugm3": 54.9
+    "pm25": 359.0,
+    "pm10": 511.0,
+    "no2_ugm3": 98.7
   },
-  "regional_median": 204.0,
-  "local_excess": 141.0,
+  "regional_median": 205.0,
+  "local_excess": 154.0,
   "classification": "corroborated",
   "fault_flags": [],
   "wind": {
-    "wind_speed_ms": 1.19,
-    "wind_direction_deg": 105,
-    "wording": "wind from 105\u00b0"
+    "wind_speed_ms": 1.64,
+    "wind_direction_deg": 113,
+    "wording": "wind from 113\u00b0"
   },
   "candidates": [
     {

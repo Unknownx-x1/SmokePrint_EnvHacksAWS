@@ -1,26 +1,26 @@
 {
   "case_id": "case_crri_20260515",
   "station_name": "CRRI Mathura Road, New Delhi - IMD",
-  "timestamp_utc": "2026-05-15T23:00:00Z",
+  "timestamp_utc": "2026-05-16T00:00:00Z",
   "target_station": {
     "station_id": 5627,
     "name": "CRRI Mathura Road, New Delhi - IMD",
     "latitude": 28.6468,
     "longitude": 77.316,
-    "pm25": 175.0,
-    "pm10": 1410.0,
+    "pm25": 180.67,
+    "pm10": 1437.9,
     "no2_ugm3": null
   },
-  "regional_median": 99.6,
-  "local_excess": 75.4,
+  "regional_median": 102.0,
+  "local_excess": 78.7,
   "classification": "uncorroborated",
   "fault_flags": [
     "single_station_uncorroborated_artifact"
   ],
   "wind": {
-    "wind_speed_ms": 1.39,
-    "wind_direction_deg": 305,
-    "wording": "wind from 305\u00b0"
+    "wind_speed_ms": 0.75,
+    "wind_direction_deg": 337,
+    "wording": "wind from 337\u00b0"
   },
   "candidates": [
     {

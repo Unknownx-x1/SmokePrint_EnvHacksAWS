@@ -18,8 +18,8 @@
     "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
   },
   "label": "regional",
-  "n_stations_background": 22,
-  "background_iqr": 142.0,
+  "n_stations_background": 34,
+  "background_iqr": 125.0,
   "regional_median": 678.0,
   "local_excess": 0.0,
   "footprint_discriminability": {
@@ -200,9 +200,9 @@
         "raw_compound_score": 10.0
       },
       "evidence_for": [
-        "Widespread regional event: 95.5% of stations elevated above 150.0 ug/m3. Airshed median is 678.0 ug/m3. Regional smog event, no localized dispatch.",
-        "Network-wide elevation across 95.5% of reporting stations.",
-        "Regional median baseline is 678.0 ug/m3 with spread IQR 142.0 ug/m3."
+        "Widespread regional event: 91.2% of stations elevated above 150.0 ug/m3. Airshed median is 590.1 ug/m3. Regional smog event, no localized dispatch.",
+        "Network-wide elevation across 91.2% of reporting stations.",
+        "Regional median baseline is 590.1 ug/m3 with spread IQR 125.0 ug/m3."
       ],
       "evidence_against": [
         "Zero spatial concentration gradient pointing to an isolated facility."
@@ -368,8 +368,8 @@
   },
   "is_low_wind": true,
   "dispatch_refused": true,
-  "refusal_basis": "Network-wide regional smog elevation: 21/22 reporting stations (95.5%) simultaneously elevated across airshed. Airshed-wide regional smog event.",
-  "refusal_reason": "Network-wide regional smog elevation: 21/22 reporting stations (95.5%) simultaneously elevated across airshed. Airshed-wide regional smog event.",
+  "refusal_basis": "Network-wide regional smog elevation: 31/34 reporting stations (91.2%) simultaneously elevated across airshed (regional median 590.1 ug/m3). Airshed-wide regional smog event.",
+  "refusal_reason": "Network-wide regional smog elevation: 31/34 reporting stations (91.2%) simultaneously elevated across airshed (regional median 590.1 ug/m3). Airshed-wide regional smog event.",
   "shortlist": [],
   "shortlist_count": 0,
   "other_explanations_considered": [
@@ -385,7 +385,7 @@
       "id": "outcome_insufficient_evidence",
       "name": "Insufficient Evidence for Local Inspection",
       "type": "insufficient_evidence",
-      "deterministic_reason": "Telemetry or spatial gradient insufficient to isolate point emitter (Network-wide regional smog elevation: 21/22 reporting stations (95.5%) simultaneously elevated across airshed. Airshed-wide regional smog event.).",
+      "deterministic_reason": "Telemetry or spatial gradient insufficient to isolate point emitter (Network-wide regional smog elevation: 31/34 reporting stations (91.2%) simultaneously elevated across airshed (regional median 590.1 ug/m3). Airshed-wide regional smog event.).",
       "sentence": "Insufficient evidence: localized transport corridor could not be distinguished from diffuse background or regional elevation.",
       "relative_score": 0.048
     }

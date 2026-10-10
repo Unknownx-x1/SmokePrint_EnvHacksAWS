@@ -7,12 +7,12 @@
     "name": "Vikas Sadan, Gurugram - HSPCB",
     "latitude": 28.6468,
     "longitude": 77.316,
-    "pm25": 316.0,
-    "pm10": 523.0,
-    "no2_ugm3": 10.9
+    "pm25": 332.0,
+    "pm10": 553.4,
+    "no2_ugm3": 19.36
   },
-  "regional_median": 47.0,
-  "local_excess": 269.0,
+  "regional_median": 47.5,
+  "local_excess": 284.5,
   "classification": "uncorroborated",
   "fault_flags": [
     "single_station_uncorroborated_artifact"

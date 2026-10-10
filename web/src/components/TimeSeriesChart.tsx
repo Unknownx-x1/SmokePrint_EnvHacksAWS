@@ -32,7 +32,7 @@ export default function TimeSeriesChart({ caseData }: TimeSeriesChartProps) {
           </div>
           <div className="flex items-center gap-1.5 text-[11px] font-mono text-stone-600 bg-stone-100 px-2 py-0.5 rounded border border-stone-200">
             <Clock className="w-3.5 h-3.5 text-stone-500" />
-            <span>hourly means, interval midpoint, IST</span>
+            <span>hourly value (as reported), shown in IST</span>
           </div>
         </div>
 
@@ -106,7 +106,7 @@ export default function TimeSeriesChart({ caseData }: TimeSeriesChartProps) {
   // Real hourly readings from OpenAQ stored rows
   const readings = hourly.readings;
   const sensorId = hourly.sensor_id;
-  const chartLabel = hourly.label || 'hourly means, interval midpoint, IST';
+  const chartLabel = hourly.label || 'hourly value (as reported), shown in IST';
 
   const values = readings.map(r => r.pm25_ugm3);
   const maxVal = Math.max(...values, regionalBaseline) * 1.15;

@@ -107,18 +107,18 @@ def run_case_with_agents(
             "patparganj_nearest_edge_m": 230.0,
             "patparganj_nearest_edge_km": 0.23,
             "patparganj_nearest_edge_bearing": 178.0,
-            "patparganj_nearest_edge_offset_deg": 85.0,
+            "patparganj_nearest_edge_offset_deg": 90.0,
             "patparganj_centroid_km": 0.86,
             "patparganj_centroid_bearing": 218.9,
-            "patparganj_centroid_offset_deg": 44.1,
+            "patparganj_centroid_offset_deg": 49.1,
             "patparganj_cluster_radius_m": 650.0,
-            "boundary_layer_height_m": 120.0,
+            "boundary_layer_height_m": 115.0,
             "vivek_vihar_distance_km": 2.84,
-            "vivek_vihar_pm25": 440.0,
-            "vivek_vihar_excess": 292.0,
+            "vivek_vihar_pm25": 421.0,
+            "vivek_vihar_excess": 273.0,
             "distant_complex_distance_km": 6.05,
             "distant_complex_bearing": 260.2,
-            "distant_complex_offset_deg": 2.8,
+            "distant_complex_offset_deg": 7.8,
             "transit_depot_distance_km": 6.15,
             "transit_depot_bearing": 265.5,
             "transit_depot_offset_deg": 2.5
@@ -153,7 +153,7 @@ def run_case_with_agents(
                 "cluster_radius_m": 850.0,
                 "member_candidate_ids": ["osm_way_464283160"],
                 "confidence_tier": "medium",
-                "rationale": "Distant utility infrastructure located 6.05 km upwind along 260.2° aligned within 2.8° of the wind axis."
+                "rationale": "Distant utility infrastructure located 6.05 km upwind along 260.2° aligned within 7.8° of the wind axis."
             },
             {
                 "rank": 2,
@@ -195,17 +195,17 @@ def run_case_with_agents(
         "execution_mode": f"[{mode}]",
         "objection_fired": True,
         "falsification_summary": (
-            "CRITIC AUDIT & EVIDENCE RECONCILIATION: Meteorological wind is wind from 263.0° at 2.56 m/s. "
+            "CRITIC AUDIT & EVIDENCE RECONCILIATION: Meteorological wind is wind from 268.0° at 2.44 m/s. "
             "Investigator Rank #1 'Regional Industrial Utility Corridor' (osm_way_464283160, Rajghat Thermal Power Station) "
-            "sits at 6.05 km on bearing 260.2° (2.8° offset from the 263.0° upwind axis), but is tagged disused. "
+            "sits at 6.05 km on bearing 260.2° (7.8° offset from the 268.0° upwind axis), but is tagged disused. "
             "Nocturnal boundary layer height is shallow at 115.0 m, suppressing vertical mixing and trapping surface plumes. "
-            "Downwind station Vivek Vihar (located 2.84 km at bearing 358.5°, due North) recorded a concurrent surge to 440.0 ug/m3 "
-            "(+292.0 ug/m3 local excess), confirming localized trans-Yamuna transport. "
+            "Downwind station Vivek Vihar (located 2.84 km at bearing 358.5°, due North) recorded a concurrent surge to 421.0 ug/m3 "
+            "(+273.0 ug/m3 local excess), confirming localized trans-Yamuna transport. "
             "Meanwhile, Patparganj Industrial Area Cluster (osm_relation_3808258) has its centroid at 0.86 km on bearing 218.9° "
-            "(angular offset of 44.1° from the 263.0° upwind axis), with its nearest boundary edge reaching 0.23 km (230.0 m) "
-            "at bearing 178.0° (85.0° crosswind offset). "
-            "Receptor ambient measurements show PM2.5 = 369.0 ug/m3 (+221.0 ug/m3 excess) and NO2 = 189.88 ug/m3. "
-            "Given that Patparganj has a 44.1° angular offset from the upwind axis, Rajghat is disused, and wind is 2.56 m/s, "
+            "(angular offset of 49.1° from the 268.0° upwind axis), with its nearest boundary edge reaching 0.23 km (230.0 m) "
+            "at bearing 178.0° (90.0° crosswind offset). "
+            "Receptor ambient measurements show PM2.5 = 400.0 ug/m3 (+252.0 ug/m3 excess) and NO2 = 208.68 ug/m3. "
+            "Given that Patparganj has a 49.1° angular offset from the upwind axis, Rajghat is disused, and wind is 2.44 m/s, "
             "no single facility accounts for the plume alone with high certainty. "
             "The attribution classification is therefore 'multiple comparable candidates' (triage shortlist across competing active clusters)."
         ),

@@ -3,19 +3,19 @@
     "case_id": "case_crri_20260515",
     "station_id": 5627,
     "station_name": "CRRI Mathura Road, New Delhi - IMD",
-    "timestamp_utc": "2026-05-15T23:00:00Z",
-    "timestamp_ist": "2026-05-16 04:30:00 IST",
-    "station_pm25": 175.0,
-    "station_pm10": 1410.0,
-    "ratio_pm25_pm10": 0.12,
-    "regional_median_pm25": 99.6,
-    "local_excess_pm25": 75.4,
+    "timestamp_utc": "2026-05-16T00:00:00Z",
+    "timestamp_ist": "2026-05-16 05:30:00 IST",
+    "station_pm25": 180.67,
+    "station_pm10": 1437.9,
+    "ratio_pm25_pm10": 0.126,
+    "regional_median_pm25": 102.0,
+    "local_excess_pm25": 78.7,
     "regional_median_pm10": 185.5,
     "local_excess_pm10": 1224.5,
     "duration_hours": 5,
     "corroboration": {
       "status": "uncorroborated",
-      "reason": "Single station PM10 extreme peak under calm wind (0.8 - 1.4 m/s). Downwind stations (Sector 125 Noida, JLN Stadium, Sirifort) showed zero response. Abrupt telemetry collapse to 0.0 ug/m3 immediately following event. Likely hyper-local unpaved road dust at inlet or instrument artifact."
+      "reason": "Non-combustion signature (PM2.5/PM10 ratio 0.126 indicating coarse crustal/road dust resuspension) followed by telemetry collapse to 0/-3.68 ug/m3. Zero neighbouring stations responded. Single-station instrument artifact."
     },
     "classification": "uncorroborated",
     "source_type_label": "unspecified (possible hyper-local road dust or instrument artifact)"
@@ -45,9 +45,24 @@
         "lag": "Concurrent response along Ghazipur/Anand Vihar transport corridor"
       },
       "unresponsive_neighbours": [
-        {"station": "Patparganj", "distance_km": 3.2, "pm25": 88.0, "excess": 17.7},
-        {"station": "IHBAS Dilshad Garden", "distance_km": 3.8, "pm25": 56.9, "excess": -13.4},
-        {"station": "Sector 62 Noida", "distance_km": 4.5, "pm25": 84.1, "excess": 13.8}
+        {
+          "station": "Patparganj",
+          "distance_km": 3.2,
+          "pm25": 88.0,
+          "excess": 17.7
+        },
+        {
+          "station": "IHBAS Dilshad Garden",
+          "distance_km": 3.8,
+          "pm25": 56.9,
+          "excess": -13.4
+        },
+        {
+          "station": "Sector 62 Noida",
+          "distance_km": 4.5,
+          "pm25": 84.1,
+          "excess": 13.8
+        }
       ]
     },
     "classification": "corroborated",
@@ -59,16 +74,16 @@
     "station_name": "Vikas Sadan, Gurugram - HSPCB",
     "timestamp_utc": "2026-06-30T07:00:00Z",
     "timestamp_ist": "2026-06-30 12:30:00 IST",
-    "station_pm25": 316.0,
-    "station_pm10": 523.0,
-    "ratio_pm25_pm10": 0.60,
-    "no2_ugm3": 10.9,
-    "regional_median_pm25": 47.0,
-    "local_excess_pm25": 269.0,
+    "station_pm25": 332.0,
+    "station_pm10": 553.4,
+    "ratio_pm25_pm10": 0.6,
+    "no2_ugm3": 19.36,
+    "regional_median_pm25": 47.5,
+    "local_excess_pm25": 284.5,
     "duration_hours": 11,
     "corroboration": {
       "status": "uncorroborated",
-      "reason": "Instrument fault: PM2.5 and PM10 locked onto an artificial constant ratio of ~0.6000 for 4 consecutive hours from 08:30Z to 11:30Z (306/510, 305/508, 305/509, 307/512) while NO2 froze at 10.9 ug/m3. Both channels abruptly died to NaN at 12:30Z. Zero neighbouring stations responded. Rejected as instrument logger fault."
+      "reason": "Instrument fault: PM2.5 and PM10 locked onto an artificial constant ratio of ~0.6000 across multiple hours from 02:00Z to 12:00Z (332.0/553.4 at peak), followed by complete logger dropout to NaN at 13:00Z. Rejected as instrument logger fault."
     },
     "classification": "uncorroborated",
     "source_type_label": "unspecified (instrument fault)"
@@ -79,15 +94,15 @@
     "station_name": "Airshed Regional Baseline",
     "timestamp_utc": "2025-10-20T17:00:00Z",
     "timestamp_ist": "2025-10-20 22:30:00 IST",
-    "regional_median_pm25": 678.0,
-    "reporting_stations": 22,
-    "stations_over_200": 21,
-    "elevated_stations_pct": 95.5,
+    "regional_median_pm25": 590.1,
+    "reporting_stations": 34,
+    "stations_over_200": 31,
+    "elevated_stations_pct": 91.2,
     "max_station_name": "Sector - 125, Noida, UP - UPPCB",
     "max_station_pm25": 881.0,
     "corroboration": {
       "status": "regional",
-      "reason": "Airshed-wide coherent spike across 95.5% of reporting stations in Delhi, Noida, Ghaziabad, and Gurugram simultaneously. Median PM2.5 jumped to 678 ug/m3. No localized point excess."
+      "reason": "Airshed-wide coherent spike across 91.2% (31/34) of reporting stations in Delhi-NCR simultaneously. Regional network median PM2.5 jumped to 590.1 ug/m3. No localized point excess."
     },
     "classification": "regional",
     "source_type_label": "regional event (reject inspection dispatch)"
@@ -96,23 +111,39 @@
     "case_id": "case_rkpuram_20251112",
     "station_id": 17,
     "station_name": "R K Puram, Delhi - DPCC",
-    "timestamp_utc": "2025-11-12T15:00:00Z",
-    "timestamp_ist": "2025-11-12 20:30:00 IST",
-    "station_pm25": 487.0,
-    "station_pm10": 619.0,
-    "ratio_pm25_pm10": 0.787,
-    "no2_ugm3": 90.5,
-    "regional_median_pm25": 222.0,
-    "local_excess_pm25": 265.0,
+    "timestamp_utc": "2025-11-12T16:00:00Z",
+    "timestamp_ist": "2025-11-12 21:30:00 IST",
+    "station_pm25": 501.0,
+    "station_pm10": 639.0,
+    "ratio_pm25_pm10": 0.784,
+    "no2_ugm3": 166.57,
+    "regional_median_pm25": 216.0,
+    "local_excess_pm25": 285.0,
     "duration_hours": 5,
     "corroboration": {
       "status": "corroborated",
       "co_pollutant": "Strong chemical co-movement: NO2 surged concurrently to 90.5 ug/m3. Physical PM2.5/PM10 ratio of 0.79.",
       "unresponsive_neighbours": [
-        {"station": "Sirifort (4.2 km E)", "pm25": 226.0, "excess": 4.0},
-        {"station": "IGI Airport T3 (7.8 km W)", "pm25": 212.0, "excess": -10.0},
-        {"station": "Lodhi Road (6.5 km NE)", "pm25": 167.0, "excess": -55.0},
-        {"station": "Aya Nagar (9.1 km S)", "pm25": 218.0, "excess": -4.0}
+        {
+          "station": "Sirifort (4.2 km E)",
+          "pm25": 226.0,
+          "excess": 4.0
+        },
+        {
+          "station": "IGI Airport T3 (7.8 km W)",
+          "pm25": 212.0,
+          "excess": -10.0
+        },
+        {
+          "station": "Lodhi Road (6.5 km NE)",
+          "pm25": 167.0,
+          "excess": -55.0
+        },
+        {
+          "station": "Aya Nagar (9.1 km S)",
+          "pm25": 218.0,
+          "excess": -4.0
+        }
       ]
     },
     "classification": "corroborated",
@@ -122,28 +153,38 @@
     "case_id": "case_anand_vihar_20251102",
     "station_id": 235,
     "station_name": "Anand Vihar, New Delhi - DPCC",
-    "timestamp_utc": "2025-11-02T21:00:00Z",
-    "timestamp_ist": "2025-11-03 02:30:00 IST",
-    "station_pm25": 369.0,
-    "station_pm10": 510.0,
-    "ratio_pm25_pm10": 0.72,
-    "no2_ugm3": 101.0,
+    "timestamp_utc": "2025-11-02T22:00:00Z",
+    "timestamp_ist": "2025-11-03 03:30:00 IST",
+    "station_pm25": 400.0,
+    "station_pm10": 536.0,
+    "ratio_pm25_pm10": 0.746,
+    "no2_ugm3": 208.68,
     "regional_median_pm25": 148.0,
-    "local_excess_pm25": 221.0,
+    "local_excess_pm25": 252.0,
     "duration_hours": 4,
     "corroboration": {
       "status": "corroborated",
       "co_pollutant": "Intense NO2 co-movement peaking at 101.0 ug/m3. PM ratio = 0.72.",
       "downwind_neighbour": {
         "station": "Vivek Vihar, Delhi - DPCC",
-        "distance_km": 1.8,
-        "pm25": 440.0,
-        "excess": 292.0,
+        "distance_km": 2.84,
+        "pm25": 421.0,
+        "excess": 273.0,
         "lag": "Concurrent localized transport along Ghazipur/Anand Vihar axis"
       },
       "unresponsive_neighbours": [
-        {"station": "IHBAS Dilshad Garden", "distance_km": 3.8, "pm25": 146.0, "excess": -2.0},
-        {"station": "Sector 62 Noida", "distance_km": 4.5, "pm25": 188.0, "excess": 40.0}
+        {
+          "station": "IHBAS Dilshad Garden",
+          "distance_km": 3.8,
+          "pm25": 146.0,
+          "excess": -2.0
+        },
+        {
+          "station": "Sector 62 Noida",
+          "distance_km": 4.5,
+          "pm25": 188.0,
+          "excess": 40.0
+        }
       ]
     },
     "classification": "corroborated",
@@ -153,14 +194,14 @@
     "case_id": "case_anand_vihar_20260131",
     "station_id": 235,
     "station_name": "Anand Vihar, New Delhi - DPCC",
-    "timestamp_utc": "2026-01-31T05:00:00Z",
-    "timestamp_ist": "2026-01-31 10:30:00 IST",
-    "station_pm25": 345.0,
-    "station_pm10": 491.0,
-    "ratio_pm25_pm10": 0.70,
-    "no2_ugm3": 54.9,
-    "regional_median_pm25": 204.0,
-    "local_excess_pm25": 141.0,
+    "timestamp_utc": "2026-01-31T06:00:00Z",
+    "timestamp_ist": "2026-01-31 11:30:00 IST",
+    "station_pm25": 359.0,
+    "station_pm10": 511.0,
+    "ratio_pm25_pm10": 0.703,
+    "no2_ugm3": 98.7,
+    "regional_median_pm25": 205.0,
+    "local_excess_pm25": 154.0,
     "duration_hours": 4,
     "corroboration": {
       "status": "corroborated",
@@ -173,8 +214,18 @@
         "lag": "Concurrent downwind rise"
       },
       "unresponsive_neighbours": [
-        {"station": "IHBAS Dilshad Garden", "distance_km": 3.8, "pm25": 154.0, "excess": -50.0},
-        {"station": "Sector 62 Noida", "distance_km": 4.5, "pm25": 198.0, "excess": -6.0}
+        {
+          "station": "IHBAS Dilshad Garden",
+          "distance_km": 3.8,
+          "pm25": 154.0,
+          "excess": -50.0
+        },
+        {
+          "station": "Sector 62 Noida",
+          "distance_km": 4.5,
+          "pm25": 198.0,
+          "excess": -6.0
+        }
       ]
     },
     "classification": "corroborated",

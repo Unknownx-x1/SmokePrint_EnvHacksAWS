@@ -14,7 +14,7 @@
       "started_at": "2026-10-10T01:04:23.743477+00:00",
       "completed_at": "2026-10-10T01:04:32.170597+00:00",
       "investigator_response": "Investigation Brief:\n\n**Event:** 'case_regional_smog_20251020'\n**Timestamp:** 2025-10-20T17:00:00Z\n\n**Initial Findings:**\n\n- The case 'case_regional_smog_20251020' exhibits a network-wide regional smog elevation as per the `get_case_telemetry` output.\n- The airshed-wide coherent spike across 95.5% of reporting stations in Delhi, Noida, Ghaziabad, and Gurugram simultaneously suggests a regional event.\n- The median PM2.5 jumped to 678 ug/m3, and no localized point excess was reported.\n\n**Recommendation:**\nDue to the uniform elevation of the regional background across Delhi-NCR, this event is classified as regional ('outcome_regional'). Based on this, no localized inspection dispatch is recommended.\n",
-      "critic_response": "DISPATCH REFUSED: Event 'case_regional_smog_20251020' represents network-wide regional smog elevation across Delhi-NCR. Refusal basis: Network-wide regional smog elevation: 21/22 reporting stations (95.5%) simultaneously elevated across airshed. Airshed-wide regional smog event. Certified outcome: 'outcome_regional'.",
+      "critic_response": "DISPATCH REFUSED: Event 'case_regional_smog_20251020' represents network-wide regional smog elevation across Delhi-NCR. No point-source inspection dispatch recommended. Certified outcome: 'outcome_regional'.",
       "tool_calls": [
         {
           "tool_name": "get_case_telemetry",

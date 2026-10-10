@@ -110,11 +110,10 @@ def test_low_wind_cases_exact_count():
             low_wind_cases.append(case_id)
 
     expected_low_wind = [
-        "case_anand_vihar_20260131",
         "case_anand_vihar_20260405",
         "case_crri_20260515",
         "case_regional_smog_20251020",
         "case_rkpuram_20251112"
     ]
     assert sorted(low_wind_cases) == sorted(expected_low_wind)
-    assert len(low_wind_cases) == 5
+    assert len(low_wind_cases) == 4

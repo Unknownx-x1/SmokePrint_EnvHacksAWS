@@ -33,6 +33,13 @@ export default function OfficerMap({
       if (!mapContainerRef.current) return;
 
       try {
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl') || canvas.getContext('webgl2');
+        if (!gl) {
+          setMapError('Interactive WebGL map unavailable. Rendering fallback atmospheric schematic.');
+          return;
+        }
+
         const maplibre = await import('maplibre-gl');
 
         if (mapInstanceRef.current) {
@@ -254,7 +261,7 @@ export default function OfficerMap({
           <p className="text-xs text-stone-600 max-w-sm mt-1">{mapError}</p>
           <div className="mt-4 p-4 bg-white border border-stone-200 rounded text-left text-xs space-y-1 font-mono">
             <div><strong>Station:</strong> {caseData.station_name} ({stLat.toFixed(4)}, {stLon.toFixed(4)})</div>
-            <div><strong>Prevailing Wind:</strong> from {windFromDeg.toFixed(1)}° at {windSpeed.toFixed(2)} m/s</div>
+            <div><strong>Prevailing wind:</strong> from {windFromDeg.toFixed(1)}° at {windSpeed.toFixed(2)} m/s</div>
             <div><strong>Upwind Candidates:</strong> {caseData.shortlist?.length || 0} sites indexed</div>
             <div><strong>Downwind Neighbour:</strong> Vivek Vihar (2.84 km, 358.5°)</div>
           </div>

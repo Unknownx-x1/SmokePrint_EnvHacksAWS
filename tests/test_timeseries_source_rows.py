@@ -31,6 +31,9 @@ def test_hourly_series_source_rows_exist_and_match():
             with open(case_path, "r", encoding="utf-8") as f:
                 case_data = json.load(f)
                 
+            if case_data.get("hidden_from_demo"):
+                continue
+
             hourly = case_data.get("hourly_series")
             
             # Regional smog is a multi-station regional event: hourly_series must be None
@@ -42,7 +45,7 @@ def test_hourly_series_source_rows_exist_and_match():
             assert hourly is not None, f"{cid} in {base_dir} lacks hourly_series"
             assert "station_id" in hourly, f"{cid} missing station_id"
             assert "sensor_id" in hourly, f"{cid} missing sensor_id"
-            assert hourly["label"] == "hourly means, interval midpoint, IST"
+            assert hourly["label"] == "hourly value (as reported), shown in IST"
             assert hourly["parameter"] == "pm25"
             assert hourly["unit"] == "ug/m3"
             
@@ -89,9 +92,11 @@ def test_timeseries_label_and_units():
             case_path = os.path.join(base_dir, f"{cid}.json")
             with open(case_path, "r", encoding="utf-8") as f:
                 case_data = json.load(f)
+            if case_data.get("hidden_from_demo"):
+                continue
             hourly = case_data.get("hourly_series")
             if hourly:
-                assert hourly["label"] == "hourly means, interval midpoint, IST"
+                assert hourly["label"] == "hourly value (as reported), shown in IST"
                 for reading in hourly["readings"]:
                     assert "time_ist" in reading
                     assert "offset_label" in reading

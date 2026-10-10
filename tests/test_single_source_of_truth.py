@@ -27,23 +27,23 @@ def test_canonical_case_json_consistency():
         case_data = json.load(f)
 
     # 1. Assert telemetry and baseline numbers
-    assert case_data["signature"]["pm25"] == 369.0
-    assert case_data["signature"]["pm10"] == 510.0
+    assert case_data["signature"]["pm25"] == 400.0
+    assert case_data["signature"]["pm10"] == 536.0
     assert case_data["regional_median"] == 148.0
-    assert case_data["local_excess"] == 221.0
+    assert case_data["local_excess"] == 252.0
 
     # 2. Assert wind parameters
     assert "wind" in case_data
-    assert case_data["wind"]["wind_speed_ms"] == 2.56
-    assert case_data["wind"]["wind_direction_deg"] == 263.0
+    assert case_data["wind"]["wind_speed_ms"] == 2.44
+    assert case_data["wind"]["wind_direction_deg"] == 268.0
     assert "wind from" in case_data["wind"]["wording"].lower()
 
     # 3. Assert geometry facts
     geom = case_data["geometry_facts"]
     assert geom["vivek_vihar"]["distance_km"] == 2.84
     assert geom["vivek_vihar"]["bearing_deg"] == 358.5
-    assert geom["vivek_vihar"]["pm25"] == 440.0
-    assert geom["vivek_vihar"]["excess"] == 292.0
+    assert geom["vivek_vihar"]["pm25"] == 421.0
+    assert geom["vivek_vihar"]["excess"] == 273.0
 
     assert geom["patparganj"]["centroid_distance_km"] == 0.86
     assert geom["patparganj"]["centroid_bearing_deg"] == 218.9
@@ -66,9 +66,9 @@ def test_agent_outputs_match_canonical_case_json():
     falsification_text = critic_output["falsification_summary"]
 
     # Assert correct numbers in Critic summary
-    assert "369.0" in falsification_text or "369" in falsification_text
-    assert "440.0" in falsification_text
-    assert "292.0" in falsification_text
+    assert "400.0" in falsification_text or "400" in falsification_text
+    assert "421.0" in falsification_text
+    assert "273.0" in falsification_text
     assert "2.84" in falsification_text
     assert "358.5" in falsification_text
     assert "0.86" in falsification_text
@@ -98,10 +98,10 @@ def test_programmatic_shortlist_markdown():
         md_text = f.read()
 
     # Verify that correct numbers from canonical JSON are rendered
-    assert "369.0" in md_text
-    assert "221.0" in md_text or "222.0" in md_text
-    assert "2.56" in md_text
-    assert "wind from 263" in md_text.lower()
+    assert "400.0" in md_text
+    assert "252.0" in md_text
+    assert "2.44" in md_text
+    assert "wind from 268" in md_text.lower()
     assert "2.84 km" in md_text
     assert "multiple comparable candidates" in md_text.lower()
 

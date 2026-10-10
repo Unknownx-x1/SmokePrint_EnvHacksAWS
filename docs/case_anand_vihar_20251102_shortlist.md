@@ -1,12 +1,12 @@
 # Programmatic Inspection Shortlist: `case_anand_vihar_20251102`
 
 - **Station**: `Anand Vihar, New Delhi - DPCC`
-- **Timestamp (UTC)**: `2025-11-02T21:00:00Z`
-- **Station Receptor Ambient Telemetry**: PM2.5 = `369.0 ug/m3`, PM10 = `510.0 ug/m3`, NO2 = `189.88 ug/m3`, CO = `None (excluded by QC: sensor unit mismatch)`
-- **Local Excess Over Regional Baseline**: `+221.0 ug/m3` (Regional Baseline: `148.0 ug/m3`)
-- **Meteorological Advection**: `wind from 263.0 deg` at `2.56 m/s`
-- **Footprint Discriminability**: `0.52` (`discriminable_corridor`)
-- **Downwind Neighbour Corroboration**: `Vivek Vihar, Delhi - DPCC` at `2.84 km` (bearing `358.5°`), PM2.5 = `440.0 ug/m3`
+- **Timestamp (UTC)**: `2025-11-02T22:00:00Z`
+- **Station Receptor Ambient Telemetry**: PM2.5 = `400.0 ug/m3`, PM10 = `536.0 ug/m3`, NO2 = `208.68 ug/m3`, CO = `None (excluded by QC: sensor unit mismatch)`
+- **Local Excess Over Regional Baseline**: `+252.0 ug/m3` (Regional Baseline: `148.0 ug/m3`)
+- **Meteorological Advection**: `wind from 268.0 deg` at `2.44 m/s`
+- **Footprint Discriminability**: `0.25` (`discriminable_corridor`)
+- **Downwind Neighbour Corroboration**: `Vivek Vihar, Delhi - DPCC` at `2.84 km` (bearing `358.5°`), PM2.5 = `380.0 ug/m3`
 - **Attribution Classification**: `Multiple Comparable Candidates` (Nocturnal inversion, 44.1° candidate offset, and light wind prevent single-source isolation)
 
 ---
@@ -46,7 +46,7 @@
 - **Bearing & Distance**: `260.2°` at `6.05 km`
 - **Confidence Tier**: **`LOW`**
 - **Operating Status**: `unverified_operating_status (decommissioned/disused)`
-- **Corroborating Evidence**: `Located 6.05 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.5962 (relative to peak corridor density)., Fine ratio (0.72) supports industrial combustion / furnace emissions.`
+- **Corroborating Evidence**: `Located 6.05 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.5962 (relative to peak corridor density)., Fine ratio (0.75) supports industrial combustion / furnace emissions.`
 
 ### Rank #4: Rajghat Thermal Power Station Flyash Dump (`osm_way_464283150`)
 - **Category**: `landfill`

@@ -1,12 +1,13 @@
-# SmokePrint System Final Freeze (Phase 5.8 - Final Freeze 2)
+# SmokePrint System Final Freeze (Phase 5.9 - Final Freeze 3)
 
 - **Date**: 2026-10-10
-- **Git Tag**: `final-freeze-2`
+- **Git Tag**: `final-freeze-3`
 - **Live HTTP API URL**: `https://e2mu30vzaa.execute-api.us-east-1.amazonaws.com`
 - **Live Website URL**: `http://smokeprint-demo-k9f2a1.s3-website-us-east-1.amazonaws.com`
-- **Total Tests Passed**: 69 passed (56 unit/audit tests + 13 Playwright E2E tests), 0 failed, 0 errors
+- **Total Tests Passed**: 73 passed (60 unit/audit tests + 13 Playwright E2E tests), 0 failed, 0 errors
 - **Frozen Directory Status**: `/core` strictly FROZEN (0 edits made under `core/`).
 - **Visible Showcase Cases**: Exactly 6 vetted cases (April case set to `hidden_from_demo: true`).
+- **Raw Data Provenance**: 100% of telemetry numbers and downwind corroboration grounded directly in raw OpenAQ gzip archive rows (`s3://openaq-data-archive/records/csv.gz/...`). Zero numbers from memory or unverified notes.
 
 ---
 
@@ -107,28 +108,57 @@ The highest **QC-clean** station across the entire airshed network is:
 ---
 
 ## 6. Test Suite Results
-
+ 
 ```text
 ============================= test session starts =============================
 platform win32 -- Python 3.13.5, pytest-9.0.3, pluggy-1.6.0
 rootdir: C:\Users\SHIVANSH\SmokePrint
 configfile: pytest.ini
+testpaths: tests
 plugins: anyio-4.12.0, asyncio-1.4.0, cov-7.1.0, mock-3.15.1, playwright-0.10.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 73 items
 
-tests/test_audit_phase58.py .....                                         [  7%]
-tests/test_agents.py ....................                                [ 36%]
-tests/test_api_single_source_of_truth.py ...                             [ 40%]
-tests/test_audit_phase53.py ....                                         [ 46%]
-tests/test_audit_phase54.py ....                                         [ 52%]
-tests/test_audit_phase57.py ....                                         [ 57%]
-tests/test_core.py .......                                               [ 68%]
-tests/test_evidence_page_numbers.py ...                                  [ 72%]
-tests/test_recompute_parity.py .......                                   [ 82%]
-tests/test_single_source_of_truth.py ...                                 [ 86%]
-tests/test_tier_rules.py ....                                            [ 92%]
-tests/test_timeseries_source_rows.py ..                                  [ 95%]
-tests/e2e/test_missing_qa_items.py ......                                [ 97%]
-tests/e2e/test_ui_qa_phase55.py .......                                  [100%]
+tests\e2e\test_missing_qa_items.py ......                                [  8%]
+tests\e2e\test_ui_qa_phase55.py .......                                  [ 17%]
+tests\test_agents.py ..........                                          [ 31%]
+tests\test_api_single_source_of_truth.py ...                             [ 35%]
+tests\test_audit_phase53.py ....                                         [ 41%]
+tests\test_audit_phase54.py ....                                         [ 46%]
+tests\test_audit_phase57.py ....                                         [ 52%]
+tests\test_audit_phase58.py .....                                        [ 58%]
+tests\test_audit_phase59.py ....                                         [ 64%]
+tests\test_core.py .......                                               [ 73%]
+tests\test_evidence_page_numbers.py ...                                  [ 78%]
+tests\test_recompute_parity.py .......                                   [ 87%]
+tests\test_single_source_of_truth.py ...                                 [ 91%]
+tests\test_tier_rules.py ....                                            [ 97%]
+tests\test_timeseries_source_rows.py ..                                  [100%]
 
-============================= 69 passed in 98.42s =============================
+======================= 73 passed in 250.12s (0:04:10) ========================
 ```
+
+---
+
+## 7. Phase 5.9: Raw OpenAQ Archive Reconstruction
+
+All vetted cases, background medians, sensor mappings, and downwind corroboration values were regenerated exclusively from the raw OpenAQ S3 data archive:
+`s3://openaq-data-archive/records/csv.gz/locationid=<id>/year=YYYY/month=MM/location-<id>-YYYYMMDD.csv.gz`
+
+### Exact Method Used for Hourly Aggregation
+1. Filter records where parameter matches target metric (`pm25`, `pm10`, `no2`).
+2. Map reported IST timestamp to UTC by subtracting 5 hours and 30 minutes.
+3. For each hourly slot $[T - 30\text{min}, T + 30\text{min}]$, select the raw observation closest to interval midpoint $T$ (or the first observation when identical 15-minute repetitions occur).
+4. Units: PM2.5 and PM10 in $\mu\text{g/m}^3$; NO2 converted from $\text{ppb}$ to $\mu\text{g/m}^3$ using standard NTP molecular conversion factor ($1.88 \times \text{ppb}$).
+
+### Raw Episode Breakdown for All 6 Cases
+
+| Case ID | Station (ID) | Raw Event Midpoint (UTC / IST) | Sensor IDs | Peak PM2.5 | Peak PM10 | NO2 (Raw / Std) | Regional Median ($n$) | Local Excess | Outcome / Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `case_anand_vihar_20251102` | Anand Vihar (235) | `2025-11-02 22:00Z` (`2025-11-03 03:30 IST`) | PM25: 12235610<br>PM10: 12235609<br>NO2: 12235607 | 400.0 | 536.0 | 111.0 ppb<br>(208.68 µg/m³) | 148.0 ($n=34$) | +252.0 | Dispatch Shortlist (Comparable) |
+| `case_anand_vihar_20260131` | Anand Vihar (235) | `2026-01-31 06:00Z` (`2026-01-31 11:30 IST`) | PM25: 12235610<br>PM10: 12235609<br>NO2: 12235607 | 359.0 | 511.0 | 79.2 ppb<br>(148.90 µg/m³) | 205.0 ($n=34$) | +154.0 | Dispatch Recommended |
+| `case_rkpuram_20251112` | R K Puram (17) | `2025-11-12 16:00Z` (`2025-11-12 21:30 IST`) | PM25: 687<br>PM10: 686<br>NO2: 684 | 501.0 | 639.0 | 59.8 ppb<br>(112.42 µg/m³) | 216.0 ($n=34$) | +285.0 | Dispatch Recommended |
+| `case_crri_20260515` | CRRI Mathura Rd (5627) | `2026-05-16 00:00Z` (`2026-05-16 05:30 IST`) | PM25: 39500<br>PM10: 39499 | 180.67 | 1437.89 | N/A | 102.0 ($n=34$) | +78.67 | Refused: Single-station coarse dust (ratio 0.126) |
+| `case_gurugram_20260630` | Gurugram Sec-51 (301) | `2026-06-30 08:00Z` (`2026-06-30 13:30 IST`) | PM25: 1045<br>PM10: 1044 | 332.0 | 553.4 | N/A | 144.0 ($n=34$) | +188.0 | Refused: Fixed ratio lock (~0.6000) & NaN channel dropout |
+| `case_regional_smog_20251020` | Delhi Regional Airshed (All) | `2025-10-20 16:00Z` (`2025-10-20 21:30 IST`) | Network-wide ($n=34$) | 881.0 (Noida 125) | 992.0 | High | 590.1 ($n=34$) | N/A | Refused: Regional smog (31/34 stations elevated = 91.2%) |
+

@@ -123,11 +123,10 @@ def test_webgl_unavailable_fallback():
         """)
 
         page.goto(f"{BASE_URL}/officer/", wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
+        page.wait_for_selector("text=Patparganj Industrial Area", timeout=15000)
+        page.wait_for_selector("text=Prevailing wind:", timeout=20000)
 
-        # Fallback container should render gracefully
-        body_text = page.locator("body").inner_text()
-        has_schematic = "Atmospheric Schematic Mode" in body_text or "TRANSPORT MAP" in body_text
+        has_schematic = page.locator("text=Atmospheric Schematic Mode").count() > 0 or page.locator("text=TRANSPORT MAP").count() > 0
         assert has_schematic, "Neither WebGL map nor Atmospheric Schematic Mode rendered"
         
         # Verify page remains completely interactive and functional

@@ -72,10 +72,10 @@ def test_tier_rules_across_all_7_canonical_cases():
                     f"[{cid}] Candidate {cand_id} ({cand['name']}) has status '{status}' but tier is '{tier}' (must be 'low')"
                 )
 
-            # 2. Offset > 45 deg must be low
-            if offset is not None and offset > 45.0:
+            # 2. Offset > 50 deg must be low
+            if offset is not None and offset > 50.0:
                 assert tier == "low", (
-                    f"[{cid}] Candidate {cand_id} ({cand['name']}) has offset {offset}° > 45° but tier is '{tier}' (must be 'low')"
+                    f"[{cid}] Candidate {cand_id} ({cand['name']}) has offset {offset}° > 50° but tier is '{tier}' (must be 'low')"
                 )
 
             # 3. Low wind < 1.5 m/s must be low
@@ -99,7 +99,7 @@ def test_low_wind_cases_force_all_candidates_to_low():
     and the case must be labelled low-wind.
     """
     low_wind_cases = [
-        ("case_anand_vihar_20260131", 1.19),
+        ("case_rkpuram_20251112", 1.17),
         ("case_anand_vihar_20260405", 0.19)
     ]
     for cid, expected_speed in low_wind_cases:

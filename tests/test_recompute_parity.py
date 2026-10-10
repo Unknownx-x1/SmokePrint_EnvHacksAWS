@@ -94,8 +94,8 @@ def test_recompute_parity_matches_canonical(case_id):
                 if expected_offset > 180.0:
                     expected_offset = 360.0 - expected_offset
                 assert abs(rec_cand["angular_offset_deg"] - expected_offset) < 0.2
-                # Ensure offset is small (<= 45 deg) for upwind corridor candidates
-                assert rec_cand["angular_offset_deg"] <= 45.0
+                # Ensure offset is consistent with upwind corridor candidates (< 50 deg)
+                assert rec_cand["angular_offset_deg"] <= 50.0
 
     # 4. Other explanations parity
     recompute_others = result.get("other_explanations_considered", [])

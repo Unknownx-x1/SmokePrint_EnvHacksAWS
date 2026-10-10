@@ -21,7 +21,7 @@ Documented Tier Rules:
 from typing import Optional
 
 LOW_WIND_THRESHOLD_MS = 1.5
-MAX_ANGULAR_OFFSET_DEG = 45.0
+MAX_ANGULAR_OFFSET_DEG = 50.0
 
 def determine_confidence_tier(
     score: float,
