@@ -1,0 +1,507 @@
+{
+  "case_id": "synth_trial_334",
+  "station": "Aya Nagar, New Delhi - IMD",
+  "station_id": 5570,
+  "coordinates": {
+    "latitude": 28.474261,
+    "longitude": 77.131606
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-13T20:00:00Z",
+    "interval_start_utc": "2025-10-13T19:30:00Z",
+    "interval_end_utc": "2025-10-13T20:30:00Z",
+    "interval_midpoint_ist": "2025-10-14 01:30:00 IST",
+    "interval_start_ist": "2025-10-14 01:00:00 IST",
+    "interval_end_ist": "2025-10-14 02:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 63.0,
+  "local_excess": 77.0,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.417,
+    "top_to_k_spread": 0.417,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "coarse-particulate dominant (mechanical dust ratio 0.3)",
+    "pm25": 140.0,
+    "pm10": 460.5,
+    "ratio_pm25_pm10": 0.3,
+    "no2_ugm3": 39.5,
+    "co_mgm3": 1.12
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "R K Puram, Delhi - DPCC",
+      "distance_km": 11.28,
+      "bearing_deg": 28.6,
+      "is_downwind": false,
+      "expected_lag_hours": 6.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Vikas Sadan, Gurugram - HSPCB",
+      "distance_km": 10.64,
+      "bearing_deg": 255.4,
+      "is_downwind": false,
+      "expected_lag_hours": 5.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sirifort, Delhi - CPCB",
+      "distance_km": 11.82,
+      "bearing_deg": 44.2,
+      "is_downwind": false,
+      "expected_lag_hours": 6.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "distance_km": 9.93,
+      "bearing_deg": 352.3,
+      "is_downwind": false,
+      "expected_lag_hours": 5.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sri Aurobindo Marg, Delhi - DPCC",
+      "distance_km": 8.55,
+      "bearing_deg": 42.0,
+      "is_downwind": false,
+      "expected_lag_hours": 4.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-51, Gurugram - HSPCB",
+      "distance_km": 8.55,
+      "bearing_deg": 227.9,
+      "is_downwind": false,
+      "expected_lag_hours": 4.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Teri Gram, Gurugram - HSPCB",
+      "distance_km": 5.4,
+      "bearing_deg": 164.4,
+      "is_downwind": false,
+      "expected_lag_hours": 3.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "NISE Gwal Pahari, Gurugram - IMD",
+      "distance_km": 5.98,
+      "bearing_deg": 163.5,
+      "is_downwind": false,
+      "expected_lag_hours": 3.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Santushti Apartments, Vasant Kunj",
+      "distance_km": 6.07,
+      "bearing_deg": 16.5,
+      "is_downwind": false,
+      "expected_lag_hours": 3.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Uptitude Cloud Pvt Ltd - Sector 62, GGN",
+      "distance_km": 9.21,
+      "bearing_deg": 209.8,
+      "is_downwind": false,
+      "expected_lag_hours": 5.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IIT Delhi, Delhi - IITM",
+      "distance_km": 9.59,
+      "bearing_deg": 37.7,
+      "is_downwind": false,
+      "expected_lag_hours": 5.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "JNU, Delhi - DPCC",
+      "distance_km": 8.22,
+      "bearing_deg": 26.0,
+      "is_downwind": false,
+      "expected_lag_hours": 4.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGNOU_Maidan Garhi, Delhi - DPCC",
+      "distance_km": 7.13,
+      "bearing_deg": 72.4,
+      "is_downwind": true,
+      "expected_lag_hours": 4.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_way_419656566",
+      "name": "Maruti Suzuki India Limited",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.5833,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1724
+      },
+      "relative_score": 0.197,
+      "interval": [
+        0.13,
+        0.241
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 6.52 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.5833 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_relation_16164905",
+      "name": "DLF Mall of India",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1125,
+        "footprint_likelihood": 0.875,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1575
+      },
+      "relative_score": 0.196,
+      "interval": [
+        0.137,
+        0.262
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 4.63 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.8750 (relative to peak corridor density).",
+        "Prior weight: 0.113 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.3) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1379318627",
+      "name": "Unnamed Construction Site",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.0875,
+        "footprint_likelihood": 0.9583,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1342
+      },
+      "relative_score": 0.158,
+      "interval": [
+        0.119,
+        0.224
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.69 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.9583 (relative to peak corridor density).",
+        "Prior weight: 0.087 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.3) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1317848344",
+      "name": "Unnamed Construction Site",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.0875,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.14
+      },
+      "relative_score": 0.151,
+      "interval": [
+        0.099,
+        0.236
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 4.08 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.087 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.3) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_859811753",
+      "name": "indus",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3472,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1026
+      },
+      "relative_score": 0.113,
+      "interval": [
+        0.075,
+        0.153
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 6.09 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3472 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.101,
+      "interval": [
+        0.071,
+        0.142
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +77.0 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.067,
+      "interval": [
+        0.036,
+        0.092
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_419656566",
+        "name": "Maruti Suzuki India Limited",
+        "type": "industrial",
+        "score": 0.1724,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_16164905",
+        "name": "DLF Mall of India",
+        "type": "construction",
+        "score": 0.1575,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1317848344",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.14,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318627",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.1342,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_859811753",
+        "name": "indus",
+        "type": "industrial",
+        "score": 0.1026,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1317848344",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.6,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318627",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.5333,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_16164905",
+        "name": "DLF Mall of India",
+        "type": "construction",
+        "score": 1.4,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318629",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.7111,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_143671274",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.625,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1317848344",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318627",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.9583,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_16164905",
+        "name": "DLF Mall of India",
+        "type": "construction",
+        "score": 0.875,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_143671274",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.625,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_419656566",
+        "name": "Maruti Suzuki India Limited",
+        "type": "industrial",
+        "score": 0.5833,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

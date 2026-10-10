@@ -1,0 +1,399 @@
+{
+  "case_id": "synth_trial_265",
+  "station": "Arya Nagar, Bahadurgarh - HSPCB",
+  "station_id": 6936,
+  "coordinates": {
+    "latitude": 28.6701,
+    "longitude": 76.9254
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-10T08:00:00Z",
+    "interval_start_utc": "2025-10-10T07:30:00Z",
+    "interval_end_utc": "2025-10-10T08:30:00Z",
+    "interval_midpoint_ist": "2025-10-10 13:30:00 IST",
+    "interval_start_ist": "2025-10-10 13:00:00 IST",
+    "interval_end_ist": "2025-10-10 14:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 69.0,
+  "local_excess": 51.3,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.647,
+    "top_to_k_spread": 0.647,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.55)",
+    "pm25": 120.3,
+    "pm10": 219.4,
+    "ratio_pm25_pm10": 0.55,
+    "no2_ugm3": 95.6,
+    "co_mgm3": 1.68
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "Arya Nagar, Bahadurgarh - HSPCB",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Najafgarh, Delhi - DPCC",
+      "distance_km": 11.14,
+      "bearing_deg": 175.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "NSUT Jaffarpur, Delhi - DPCC",
+      "distance_km": 8.6,
+      "bearing_deg": 190.4,
+      "is_downwind": false,
+      "expected_lag_hours": 1.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_way_206152781",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1537
+      },
+      "relative_score": 0.191,
+      "interval": [
+        0.128,
+        0.235
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.22 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Elevated NO2 (95.6 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_508950020",
+      "name": "Hindustan petroleum corporation limited",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3333,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.128
+      },
+      "relative_score": 0.175,
+      "interval": [
+        0.12,
+        0.24
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 9.49 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3333 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (95.6 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_919824627",
+      "name": "Hindustan petroleum corporation limited",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3333,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.128
+      },
+      "relative_score": 0.152,
+      "interval": [
+        0.098,
+        0.237
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 9.22 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3333 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (95.6 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_269435884",
+      "name": "Modern Industrial Estate, Part-B",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.2941,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.113
+      },
+      "relative_score": 0.145,
+      "interval": [
+        0.109,
+        0.21
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.11 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2941 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (95.6 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_206152775",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.7059,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1085
+      },
+      "relative_score": 0.131,
+      "interval": [
+        0.088,
+        0.177
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 5.71 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.7059 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Elevated NO2 (95.6 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.111,
+      "interval": [
+        0.078,
+        0.155
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +51.3 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.073,
+      "interval": [
+        0.04,
+        0.101
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_206152781",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1537,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_508950020",
+        "name": "Hindustan petroleum corporation limited",
+        "type": "industrial",
+        "score": 0.128,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_919824627",
+        "name": "Hindustan petroleum corporation limited",
+        "type": "industrial",
+        "score": 0.128,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_269435884",
+        "name": "Modern Industrial Estate, Part-B",
+        "type": "industrial",
+        "score": 0.113,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_206152775",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1085,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_206152781",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.3,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_206152775",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.9176,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_773679120",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.7392,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_919824626",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.5608,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1144702727",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4588,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_206152781",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_206152775",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.7059,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_773679120",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.5686,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_919824626",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4314,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1144702727",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.3529,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

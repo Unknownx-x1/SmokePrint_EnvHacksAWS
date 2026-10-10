@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "case_crri_20260515",
+    "classification": "uncorroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": true,
+    "rejections": []
+  },
+  {
+    "case_id": "case_anand_vihar_20260405",
+    "classification": "corroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": false,
+    "rejections": []
+  },
+  {
+    "case_id": "case_gurugram_20260630",
+    "classification": "uncorroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": true,
+    "rejections": []
+  },
+  {
+    "case_id": "case_regional_smog_20251020",
+    "classification": "regional",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": true,
+    "rejections": []
+  },
+  {
+    "case_id": "case_rkpuram_20251112",
+    "classification": "corroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": false,
+    "rejections": []
+  },
+  {
+    "case_id": "case_anand_vihar_20251102",
+    "classification": "corroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": false,
+    "rejections": []
+  },
+  {
+    "case_id": "case_anand_vihar_20260131",
+    "classification": "corroborated",
+    "attempts": 1,
+    "validator_passed": true,
+    "dispatch_refused": false,
+    "rejections": []
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "case_id": "test_diwali",
+  "station": "Airshed Regional Baseline",
+  "station_id": null,
+  "coordinates": {
+    "latitude": 28.6139,
+    "longitude": 77.209
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-20T17:00:00Z",
+    "interval_start_utc": "2025-10-20T16:30:00Z",
+    "interval_end_utc": "2025-10-20T17:30:00Z",
+    "interval_midpoint_ist": "2025-10-20 22:30:00 IST",
+    "interval_start_ist": "2025-10-20 22:00:00 IST",
+    "interval_end_ist": "2025-10-20 23:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "regional",
+  "n_stations_background": 22,
+  "background_iqr": 142.0,
+  "regional_median": 678.0,
+  "local_excess": 0.0,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.673,
+    "top_to_k_spread": 0.673,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified",
+    "pm25": null,
+    "pm10": null,
+    "ratio_pm25_pm10": null,
+    "no2_ugm3": null,
+    "co_mgm3": null
+  },
+  "downwind_neighbour_corroboration": [],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "outcome_regional",
+      "name": "Airshed Regional Smog (No Point Source Dispatch)",
+      "type": "regional",
+      "relative_score": 0.952,
+      "interval": [
+        0.922,
+        0.976
+      ],
+      "confidence_tier": "high",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 10.0
+      },
+      "evidence_for": [
+        "Widespread regional event: 95.5% of stations elevated above 150.0 ug/m3. Airshed median is 678.0 ug/m3. Regional smog event, no localized dispatch.",
+        "Network-wide elevation across 95.5% of reporting stations.",
+        "Regional median baseline is 678.0 ug/m3 with spread IQR 142.0 ug/m3."
+      ],
+      "evidence_against": [
+        "Zero spatial concentration gradient pointing to an isolated facility."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence for Local Inspection",
+      "type": "insufficient_evidence",
+      "relative_score": 0.048,
+      "interval": [
+        0.024,
+        0.078
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.5
+      },
+      "evidence_for": [
+        "Excess is statistically indistinguishable from broad regional background."
+      ],
+      "evidence_against": [
+        "N/A"
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_1218426669",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0875,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426670",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0875,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_5232390466",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.0824,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1548439801",
+        "name": "Delhi Metro construction",
+        "type": "construction",
+        "score": 0.0522,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426668",
+        "name": "Common Central Secretariat",
+        "type": "construction",
+        "score": 0.0441,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1218426669",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426670",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1548439801",
+        "name": "Delhi Metro construction",
+        "type": "construction",
+        "score": 0.4641,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426668",
+        "name": "Common Central Secretariat",
+        "type": "construction",
+        "score": 0.3922,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1548439800",
+        "name": "Delhi Metro construction",
+        "type": "construction",
+        "score": 0.3268,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1218426669",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426670",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1548439801",
+        "name": "Delhi Metro construction",
+        "type": "construction",
+        "score": 0.4641,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1218426668",
+        "name": "Common Central Secretariat",
+        "type": "construction",
+        "score": 0.3922,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1548439800",
+        "name": "Delhi Metro construction",
+        "type": "construction",
+        "score": 0.3268,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "missing",
+      "co": "missing"
+    },
+    "satellite_evidence_status": "unavailable"
+  }
+}

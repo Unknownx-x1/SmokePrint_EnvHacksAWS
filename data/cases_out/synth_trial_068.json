@@ -1,0 +1,679 @@
+{
+  "case_id": "synth_trial_068",
+  "station": "Sirifort, Delhi - CPCB",
+  "station_id": 5586,
+  "coordinates": {
+    "latitude": 28.5504249,
+    "longitude": 77.2159377
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-03T08:00:00Z",
+    "interval_start_utc": "2025-10-03T07:30:00Z",
+    "interval_end_utc": "2025-10-03T08:30:00Z",
+    "interval_midpoint_ist": "2025-10-03 13:30:00 IST",
+    "interval_start_ist": "2025-10-03 13:00:00 IST",
+    "interval_end_ist": "2025-10-03 14:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 72.0,
+  "local_excess": 111.2,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.6,
+    "top_to_k_spread": 0.6,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.58)",
+    "pm25": 183.2,
+    "pm10": 316.8,
+    "ratio_pm25_pm10": 0.58,
+    "no2_ugm3": 51.8,
+    "co_mgm3": 1.23
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "R K Puram, Delhi - DPCC",
+      "distance_km": 3.17,
+      "bearing_deg": 296.8,
+      "is_downwind": true,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "distance_km": 11.82,
+      "bearing_deg": 224.2,
+      "is_downwind": false,
+      "expected_lag_hours": 2.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sirifort, Delhi - CPCB",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "distance_km": 10.49,
+      "bearing_deg": 93.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "ITO, New Delhi - CPCB",
+      "distance_km": 9.03,
+      "bearing_deg": 15.7,
+      "is_downwind": false,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "distance_km": 5.63,
+      "bearing_deg": 89.1,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 4.74,
+      "bearing_deg": 13.6,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "distance_km": 9.66,
+      "bearing_deg": 278.2,
+      "is_downwind": true,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "distance_km": 9.67,
+      "bearing_deg": 351.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "distance_km": 7.09,
+      "bearing_deg": 17.5,
+      "is_downwind": false,
+      "expected_lag_hours": 1.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+      "distance_km": 7.49,
+      "bearing_deg": 140.3,
+      "is_downwind": false,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 3.75,
+      "bearing_deg": 27.8,
+      "is_downwind": false,
+      "expected_lag_hours": 0.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Patparganj, Delhi - DPCC",
+      "distance_km": 10.72,
+      "bearing_deg": 40.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-1, Noida - UPPCB",
+      "distance_km": 11.22,
+      "bearing_deg": 67.3,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "New Delhi",
+      "distance_km": 9.53,
+      "bearing_deg": 5.0,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Okhla Phase-2, Delhi - DPCC",
+      "distance_km": 5.83,
+      "bearing_deg": 112.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Nehru Nagar, Delhi - DPCC",
+      "distance_km": 3.9,
+      "bearing_deg": 60.1,
+      "is_downwind": false,
+      "expected_lag_hours": 0.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sri Aurobindo Marg, Delhi - DPCC",
+      "distance_km": 3.29,
+      "bearing_deg": 229.9,
+      "is_downwind": false,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Chandni Chowk, Delhi - IITM",
+      "distance_km": 11.87,
+      "bearing_deg": 5.3,
+      "is_downwind": false,
+      "expected_lag_hours": 2.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, Delhi - IITM",
+      "distance_km": 4.25,
+      "bearing_deg": 7.6,
+      "is_downwind": false,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "GK1 (Oberoi Terrace)",
+      "distance_km": 2.65,
+      "bearing_deg": 91.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "New Moti Bagh, Delhi - MHUA",
+      "distance_km": 4.4,
+      "bearing_deg": 314.9,
+      "is_downwind": true,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Santushti Apartments, Vasant Kunj",
+      "distance_km": 7.03,
+      "bearing_deg": 247.9,
+      "is_downwind": true,
+      "expected_lag_hours": 1.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Air Check",
+      "distance_km": 8.27,
+      "bearing_deg": 12.4,
+      "is_downwind": false,
+      "expected_lag_hours": 1.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Anand Lok",
+      "distance_km": 0.96,
+      "bearing_deg": 17.2,
+      "is_downwind": false,
+      "expected_lag_hours": 0.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IIT Delhi, Delhi - IITM",
+      "distance_km": 2.53,
+      "bearing_deg": 249.5,
+      "is_downwind": true,
+      "expected_lag_hours": 0.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Talkatora Garden, Delhi - DPCC",
+      "distance_km": 8.21,
+      "bearing_deg": 345.2,
+      "is_downwind": false,
+      "expected_lag_hours": 1.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "JNU, Delhi - DPCC",
+      "distance_km": 4.75,
+      "bearing_deg": 256.9,
+      "is_downwind": true,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Commonwealth Sports Complex, Delhi - DPCC",
+      "distance_km": 9.1,
+      "bearing_deg": 37.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGNOU_Maidan Garhi, Delhi - DPCC",
+      "distance_km": 6.48,
+      "bearing_deg": 192.9,
+      "is_downwind": false,
+      "expected_lag_hours": 1.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Cantonment Area, Delhi - DPCC",
+      "distance_km": 10.12,
+      "bearing_deg": 298.8,
+      "is_downwind": true,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_node_5950267741",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.6
+      },
+      "relative_score": 0.312,
+      "interval": [
+        0.224,
+        0.377
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.34 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (51.8 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_node_9504493214",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.5438,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.3263
+      },
+      "relative_score": 0.191,
+      "interval": [
+        0.127,
+        0.254
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.09 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.5438 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (51.8 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_557597155",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.5,
+        "footprint_likelihood": 0.5125,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.2563
+      },
+      "relative_score": 0.139,
+      "interval": [
+        0.11,
+        0.202
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.59 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.5125 (relative to peak corridor density).",
+        "Prior weight: 0.500 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (51.8 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_node_13096639852",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.45,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.27
+      },
+      "relative_score": 0.134,
+      "interval": [
+        0.09,
+        0.22
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.27 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4500 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (51.8 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_node_6750512444",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.4,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.24
+      },
+      "relative_score": 0.127,
+      "interval": [
+        0.078,
+        0.172
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.79 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4000 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (51.8 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.046,
+      "interval": [
+        0.033,
+        0.071
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +111.2 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.031,
+      "interval": [
+        0.017,
+        0.044
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_node_5950267741",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.6,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_9504493214",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.3263,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_13096639852",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.27,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_557597155",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.2563,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_6750512444",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.24,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_node_5950267741",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_9504493214",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.5438,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_557597155",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.5125,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_13096639852",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.45,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_6750512444",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.4,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_node_5950267741",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_9504493214",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.5438,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_557597155",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.5125,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_13096639852",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.45,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_6750512444",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.4,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

@@ -1,0 +1,993 @@
+{
+  "stations_processed": 35,
+  "total_raw_readings": 503531,
+  "total_clean_readings": 486058,
+  "readings_removed_pct": 3.47,
+  "co_raw": 131734,
+  "co_clean": 115562,
+  "co_flagged_pct": 12.28,
+  "fault_summary": {
+    "pm_ratio_violations": 401,
+    "constant_ratio_hours": 7886,
+    "collapse_after_peak_hours": 3626,
+    "repeated_high_hours": 442,
+    "total_suspect_hours": 13175
+  },
+  "average_station_reliability": 0.886,
+  "details": [
+    {
+      "station_id": 17,
+      "name": "R K Puram, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3869,
+        "pm10": 3872,
+        "no2": 3957,
+        "co": 3904
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 237,
+        "pm_ratio_violation": 1,
+        "constant_ratio_hours": 33,
+        "collapse_after_peak_hours": 110,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 147
+      },
+      "clean_counts": {
+        "pm25": 3868,
+        "pm10": 3871,
+        "no2": 3957,
+        "co": 3667
+      },
+      "reliability_score": 0.962,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 235,
+      "name": "Anand Vihar, New Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3831,
+        "pm10": 3675,
+        "no2": 3887,
+        "co": 3820
+      },
+      "flags": {
+        "negative_or_oob": 2,
+        "flatlines": 141,
+        "pm_ratio_violation": 4,
+        "constant_ratio_hours": 77,
+        "collapse_after_peak_hours": 275,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 376
+      },
+      "clean_counts": {
+        "pm25": 3779,
+        "pm10": 3671,
+        "no2": 3885,
+        "co": 3727
+      },
+      "reliability_score": 0.901,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 301,
+      "name": "Vikas Sadan, Gurugram - HSPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 1997,
+        "pm10": 3549,
+        "no2": 3571,
+        "co": 3723
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 376,
+        "pm_ratio_violation": 21,
+        "constant_ratio_hours": 1028,
+        "collapse_after_peak_hours": 174,
+        "repeated_high_hours": 66,
+        "total_suspect_hours": 1188
+      },
+      "clean_counts": {
+        "pm25": 1976,
+        "pm10": 3504,
+        "no2": 3376,
+        "co": 3566
+      },
+      "reliability_score": 0.405,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 50,
+      "name": "Punjabi Bagh, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3887,
+        "pm10": 3943,
+        "no2": 3976,
+        "co": 3975
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 340,
+        "pm_ratio_violation": 4,
+        "constant_ratio_hours": 40,
+        "collapse_after_peak_hours": 142,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 198
+      },
+      "clean_counts": {
+        "pm25": 3883,
+        "pm10": 3939,
+        "no2": 3976,
+        "co": 3635
+      },
+      "reliability_score": 0.949,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5404,
+      "name": "Pusa, Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 2000,
+        "pm10": 3971,
+        "no2": 3967,
+        "co": 3981
+      },
+      "flags": {
+        "negative_or_oob": 57,
+        "flatlines": 506,
+        "pm_ratio_violation": 1,
+        "constant_ratio_hours": 27,
+        "collapse_after_peak_hours": 106,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 136
+      },
+      "clean_counts": {
+        "pm25": 1995,
+        "pm10": 3967,
+        "no2": 3951,
+        "co": 3441
+      },
+      "reliability_score": 0.932,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5541,
+      "name": "Burari Crossing, New Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3000,
+        "pm10": 3963,
+        "no2": 4018,
+        "co": 3980
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 220,
+        "pm_ratio_violation": 6,
+        "constant_ratio_hours": 12,
+        "collapse_after_peak_hours": 104,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 149
+      },
+      "clean_counts": {
+        "pm25": 2994,
+        "pm10": 3957,
+        "no2": 4018,
+        "co": 3760
+      },
+      "reliability_score": 0.95,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5570,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "total_hourly_slots": 4191,
+      "raw_counts": {
+        "pm25": 1993,
+        "pm10": 3884,
+        "no2": 3823,
+        "co": 3898
+      },
+      "flags": {
+        "negative_or_oob": 4,
+        "flatlines": 731,
+        "pm_ratio_violation": 7,
+        "constant_ratio_hours": 36,
+        "collapse_after_peak_hours": 54,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 127
+      },
+      "clean_counts": {
+        "pm25": 1986,
+        "pm10": 3877,
+        "no2": 3821,
+        "co": 3165
+      },
+      "reliability_score": 0.936,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5586,
+      "name": "Sirifort, Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3000,
+        "pm10": 4099,
+        "no2": 4136,
+        "co": 4138
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 769,
+        "pm_ratio_violation": 5,
+        "constant_ratio_hours": 46,
+        "collapse_after_peak_hours": 92,
+        "repeated_high_hours": 109,
+        "total_suspect_hours": 273
+      },
+      "clean_counts": {
+        "pm25": 2995,
+        "pm10": 4094,
+        "no2": 4136,
+        "co": 3369
+      },
+      "reliability_score": 0.909,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5598,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3827,
+        "pm10": 3813,
+        "no2": 3820,
+        "co": 3752
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 264,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 108,
+        "collapse_after_peak_hours": 141,
+        "repeated_high_hours": 6,
+        "total_suspect_hours": 250
+      },
+      "clean_counts": {
+        "pm25": 3827,
+        "pm10": 3813,
+        "no2": 3820,
+        "co": 3488
+      },
+      "reliability_score": 0.935,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5610,
+      "name": "North Campus, DU, Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3946,
+        "pm10": 3951,
+        "no2": 3996,
+        "co": 4037
+      },
+      "flags": {
+        "negative_or_oob": 7,
+        "flatlines": 111,
+        "pm_ratio_violation": 7,
+        "constant_ratio_hours": 18,
+        "collapse_after_peak_hours": 111,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 180
+      },
+      "clean_counts": {
+        "pm25": 3939,
+        "pm10": 3944,
+        "no2": 3993,
+        "co": 3922
+      },
+      "reliability_score": 0.954,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5613,
+      "name": "ITO, New Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 4018,
+        "pm10": 3000,
+        "no2": 4095,
+        "co": 4091
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 143,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 94,
+        "collapse_after_peak_hours": 42,
+        "repeated_high_hours": 9,
+        "total_suspect_hours": 144
+      },
+      "clean_counts": {
+        "pm25": 4018,
+        "pm10": 3000,
+        "no2": 4095,
+        "co": 3948
+      },
+      "reliability_score": 0.964,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5616,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 4100,
+        "pm10": 4106,
+        "no2": 3968,
+        "co": 4084
+      },
+      "flags": {
+        "negative_or_oob": 23,
+        "flatlines": 986,
+        "pm_ratio_violation": 11,
+        "constant_ratio_hours": 41,
+        "collapse_after_peak_hours": 94,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 202
+      },
+      "clean_counts": {
+        "pm25": 4089,
+        "pm10": 4094,
+        "no2": 3950,
+        "co": 3094
+      },
+      "reliability_score": 0.951,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5622,
+      "name": "NSIT Dwarka, Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 1000,
+        "pm10": 3595,
+        "no2": 3638,
+        "co": 3629
+      },
+      "flags": {
+        "negative_or_oob": 1,
+        "flatlines": 441,
+        "pm_ratio_violation": 49,
+        "constant_ratio_hours": 6,
+        "collapse_after_peak_hours": 78,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 244
+      },
+      "clean_counts": {
+        "pm25": 919,
+        "pm10": 3546,
+        "no2": 3638,
+        "co": 3219
+      },
+      "reliability_score": 0.748,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5626,
+      "name": "DTU, New Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 4020,
+        "pm10": 4035,
+        "no2": 4054,
+        "co": 4080
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 710,
+        "pm_ratio_violation": 14,
+        "constant_ratio_hours": 60,
+        "collapse_after_peak_hours": 72,
+        "repeated_high_hours": 74,
+        "total_suspect_hours": 274
+      },
+      "clean_counts": {
+        "pm25": 4006,
+        "pm10": 4021,
+        "no2": 4054,
+        "co": 3370
+      },
+      "reliability_score": 0.932,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5627,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 4099,
+        "pm10": 4063,
+        "no2": 3000,
+        "co": 4117
+      },
+      "flags": {
+        "negative_or_oob": 7,
+        "flatlines": 164,
+        "pm_ratio_violation": 4,
+        "constant_ratio_hours": 51,
+        "collapse_after_peak_hours": 104,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 175
+      },
+      "clean_counts": {
+        "pm25": 4067,
+        "pm10": 4059,
+        "no2": 2994,
+        "co": 3980
+      },
+      "reliability_score": 0.957,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5630,
+      "name": "Shadipur, Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 4019,
+        "pm10": 4028,
+        "no2": 1000,
+        "co": 4108
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 25,
+        "pm_ratio_violation": 65,
+        "constant_ratio_hours": 39,
+        "collapse_after_peak_hours": 57,
+        "repeated_high_hours": 23,
+        "total_suspect_hours": 360
+      },
+      "clean_counts": {
+        "pm25": 3954,
+        "pm10": 3963,
+        "no2": 1000,
+        "co": 4083
+      },
+      "reliability_score": 0.91,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5634,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3965,
+        "pm10": 4083,
+        "no2": 4087,
+        "co": 4092
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 1254,
+        "pm_ratio_violation": 2,
+        "constant_ratio_hours": 32,
+        "collapse_after_peak_hours": 66,
+        "repeated_high_hours": 6,
+        "total_suspect_hours": 118
+      },
+      "clean_counts": {
+        "pm25": 3963,
+        "pm10": 4081,
+        "no2": 4087,
+        "co": 2838
+      },
+      "reliability_score": 0.97,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5650,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3828,
+        "pm10": 3840,
+        "no2": 3836,
+        "co": 3842
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 505,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 27,
+        "collapse_after_peak_hours": 90,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 120
+      },
+      "clean_counts": {
+        "pm25": 3828,
+        "pm10": 3840,
+        "no2": 3836,
+        "co": 3337
+      },
+      "reliability_score": 0.969,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 5665,
+      "name": "Vasundhara, Ghaziabad - UPPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3713,
+        "pm10": 3685,
+        "no2": 3786,
+        "co": 3774
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 244,
+        "pm_ratio_violation": 6,
+        "constant_ratio_hours": 452,
+        "collapse_after_peak_hours": 182,
+        "repeated_high_hours": 9,
+        "total_suspect_hours": 663
+      },
+      "clean_counts": {
+        "pm25": 3707,
+        "pm10": 3679,
+        "no2": 3786,
+        "co": 3530
+      },
+      "reliability_score": 0.821,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6356,
+      "name": "Pusa, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3000,
+        "pm10": 4004,
+        "no2": 4031,
+        "co": 3888
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 89,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 73,
+        "collapse_after_peak_hours": 164,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 238
+      },
+      "clean_counts": {
+        "pm25": 3000,
+        "pm10": 4004,
+        "no2": 4031,
+        "co": 3799
+      },
+      "reliability_score": 0.921,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6358,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3621,
+        "pm10": 3893,
+        "no2": 3812,
+        "co": 2000
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 86,
+        "pm_ratio_violation": 40,
+        "constant_ratio_hours": 59,
+        "collapse_after_peak_hours": 106,
+        "repeated_high_hours": 7,
+        "total_suspect_hours": 300
+      },
+      "clean_counts": {
+        "pm25": 3581,
+        "pm10": 3853,
+        "no2": 3812,
+        "co": 1914
+      },
+      "reliability_score": 0.917,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6359,
+      "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3970,
+        "pm10": 3957,
+        "no2": 3939,
+        "co": 4003
+      },
+      "flags": {
+        "negative_or_oob": 3,
+        "flatlines": 937,
+        "pm_ratio_violation": 60,
+        "constant_ratio_hours": 1277,
+        "collapse_after_peak_hours": 81,
+        "repeated_high_hours": 29,
+        "total_suspect_hours": 1565
+      },
+      "clean_counts": {
+        "pm25": 3907,
+        "pm10": 3897,
+        "no2": 3939,
+        "co": 3066
+      },
+      "reliability_score": 0.605,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6924,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3961,
+        "pm10": 3959,
+        "no2": 3912,
+        "co": 3945
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 909,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 1539,
+        "collapse_after_peak_hours": 119,
+        "repeated_high_hours": 6,
+        "total_suspect_hours": 1651
+      },
+      "clean_counts": {
+        "pm25": 3961,
+        "pm10": 3959,
+        "no2": 3912,
+        "co": 3036
+      },
+      "reliability_score": 0.583,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6929,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3904,
+        "pm10": 1999,
+        "no2": 4061,
+        "co": 3972
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 399,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 31,
+        "collapse_after_peak_hours": 60,
+        "repeated_high_hours": 6,
+        "total_suspect_hours": 97
+      },
+      "clean_counts": {
+        "pm25": 3834,
+        "pm10": 1999,
+        "no2": 4061,
+        "co": 3643
+      },
+      "reliability_score": 0.975,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6931,
+      "name": "Dwarka-Sector 8, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3961,
+        "pm10": 997,
+        "no2": 4019,
+        "co": 4018
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 231,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 28,
+        "collapse_after_peak_hours": 79,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 107
+      },
+      "clean_counts": {
+        "pm25": 3961,
+        "pm10": 997,
+        "no2": 4019,
+        "co": 3787
+      },
+      "reliability_score": 0.973,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6932,
+      "name": "Alipur, Delhi - DPCC",
+      "total_hourly_slots": 4378,
+      "raw_counts": {
+        "pm25": 3611,
+        "pm10": 2997,
+        "no2": 3639,
+        "co": 3597
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 702,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 74,
+        "collapse_after_peak_hours": 148,
+        "repeated_high_hours": 6,
+        "total_suspect_hours": 225
+      },
+      "clean_counts": {
+        "pm25": 3611,
+        "pm10": 2997,
+        "no2": 3639,
+        "co": 2895
+      },
+      "reliability_score": 0.938,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6934,
+      "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3815,
+        "no2": 3947,
+        "co": 3960
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 350,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 0,
+        "collapse_after_peak_hours": 12,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 15
+      },
+      "clean_counts": {
+        "pm25": 3815,
+        "no2": 3947,
+        "co": 3610
+      },
+      "reliability_score": 0.996,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6936,
+      "name": "Arya Nagar, Bahadurgarh - HSPCB",
+      "total_hourly_slots": 4387,
+      "raw_counts": {
+        "pm25": 4015,
+        "pm10": 4015,
+        "no2": 1000,
+        "co": 4024
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 1722,
+        "pm_ratio_violation": 3,
+        "constant_ratio_hours": 1338,
+        "collapse_after_peak_hours": 20,
+        "repeated_high_hours": 9,
+        "total_suspect_hours": 1367
+      },
+      "clean_counts": {
+        "pm25": 4012,
+        "pm10": 4012,
+        "no2": 1000,
+        "co": 2302
+      },
+      "reliability_score": 0.66,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6938,
+      "name": "Vivek Vihar, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3963,
+        "pm10": 1000,
+        "no2": 3983,
+        "co": 3976
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 207,
+        "pm_ratio_violation": 2,
+        "constant_ratio_hours": 18,
+        "collapse_after_peak_hours": 52,
+        "repeated_high_hours": 0,
+        "total_suspect_hours": 77
+      },
+      "clean_counts": {
+        "pm25": 3961,
+        "pm10": 998,
+        "no2": 3983,
+        "co": 3769
+      },
+      "reliability_score": 0.981,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6949,
+      "name": "Municipal Corporation Office, Dharuhera -  HSPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3797,
+        "no2": 3785,
+        "co": 3776
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 649,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 0,
+        "collapse_after_peak_hours": 8,
+        "repeated_high_hours": 20,
+        "total_suspect_hours": 28
+      },
+      "clean_counts": {
+        "pm25": 3797,
+        "no2": 3785,
+        "co": 3127
+      },
+      "reliability_score": 0.993,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6953,
+      "name": "Sector-2 IMT, Manesar - HSPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3801,
+        "pm10": 1000,
+        "no2": 3792,
+        "co": 3798
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 538,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 933,
+        "collapse_after_peak_hours": 67,
+        "repeated_high_hours": 9,
+        "total_suspect_hours": 980
+      },
+      "clean_counts": {
+        "pm25": 3801,
+        "pm10": 1000,
+        "no2": 3792,
+        "co": 3260
+      },
+      "reliability_score": 0.742,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6957,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3923,
+        "pm10": 3899,
+        "no2": 4000,
+        "co": 3921
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 246,
+        "pm_ratio_violation": 5,
+        "constant_ratio_hours": 70,
+        "collapse_after_peak_hours": 90,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 176
+      },
+      "clean_counts": {
+        "pm25": 3918,
+        "pm10": 3894,
+        "no2": 4000,
+        "co": 3675
+      },
+      "reliability_score": 0.955,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6960,
+      "name": "Patparganj, Delhi - DPCC",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3883,
+        "pm10": 3929,
+        "no2": 3953
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 0,
+        "pm_ratio_violation": 1,
+        "constant_ratio_hours": 69,
+        "collapse_after_peak_hours": 114,
+        "repeated_high_hours": 12,
+        "total_suspect_hours": 198
+      },
+      "clean_counts": {
+        "pm25": 3882,
+        "pm10": 3928,
+        "no2": 3953
+      },
+      "reliability_score": 0.949,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6972,
+      "name": "Nathu Colony, Ballabgarh - HSPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3890,
+        "pm10": 3888,
+        "no2": 4046,
+        "co": 4042
+      },
+      "flags": {
+        "negative_or_oob": 1,
+        "flatlines": 490,
+        "pm_ratio_violation": 83,
+        "constant_ratio_hours": 57,
+        "collapse_after_peak_hours": 204,
+        "repeated_high_hours": 12,
+        "total_suspect_hours": 528
+      },
+      "clean_counts": {
+        "pm25": 3807,
+        "pm10": 3761,
+        "no2": 4046,
+        "co": 3595
+      },
+      "reliability_score": 0.864,
+      "excluded_sensors": []
+    },
+    {
+      "station_id": 6978,
+      "name": "Knowledge Park - III, Greater Noida - UPPCB",
+      "total_hourly_slots": 4392,
+      "raw_counts": {
+        "pm25": 3669,
+        "pm10": 3799,
+        "no2": 3876,
+        "co": 3789
+      },
+      "flags": {
+        "negative_or_oob": 0,
+        "flatlines": 844,
+        "pm_ratio_violation": 0,
+        "constant_ratio_hours": 93,
+        "collapse_after_peak_hours": 208,
+        "repeated_high_hours": 3,
+        "total_suspect_hours": 299
+      },
+      "clean_counts": {
+        "pm25": 3669,
+        "pm10": 3799,
+        "no2": 3876,
+        "co": 2945
+      },
+      "reliability_score": 0.919,
+      "excluded_sensors": []
+    }
+  ]
+}

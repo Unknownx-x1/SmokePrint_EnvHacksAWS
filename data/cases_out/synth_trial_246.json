@@ -1,0 +1,593 @@
+{
+  "case_id": "synth_trial_246",
+  "station": "Sector - 125, Noida, UP - UPPCB",
+  "station_id": 5598,
+  "coordinates": {
+    "latitude": 28.5447608,
+    "longitude": 77.3231257
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-10T08:00:00Z",
+    "interval_start_utc": "2025-10-10T07:30:00Z",
+    "interval_end_utc": "2025-10-10T08:30:00Z",
+    "interval_midpoint_ist": "2025-10-10 13:30:00 IST",
+    "interval_start_ist": "2025-10-10 13:00:00 IST",
+    "interval_end_ist": "2025-10-10 14:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 75.0,
+  "local_excess": 118.2,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.895,
+    "top_to_k_spread": 0.895,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "fine-particulate dominant (combustion-compatible ratio 0.68)",
+    "pm25": 193.2,
+    "pm10": 285.6,
+    "ratio_pm25_pm10": 0.68,
+    "no2_ugm3": 47.9,
+    "co_mgm3": 1.22
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "Anand Vihar, New Delhi - DPCC",
+      "distance_km": 11.37,
+      "bearing_deg": 356.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sirifort, Delhi - CPCB",
+      "distance_km": 10.49,
+      "bearing_deg": 273.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "distance_km": 9.49,
+      "bearing_deg": 20.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "distance_km": 4.89,
+      "bearing_deg": 278.4,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 10.72,
+      "bearing_deg": 299.2,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "distance_km": 11.79,
+      "bearing_deg": 16.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "distance_km": 11.15,
+      "bearing_deg": 311.6,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+      "distance_km": 7.67,
+      "bearing_deg": 228.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 9.57,
+      "bearing_deg": 294.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Patparganj, Delhi - DPCC",
+      "distance_km": 9.46,
+      "bearing_deg": 338.2,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-1, Noida - UPPCB",
+      "distance_km": 4.95,
+      "bearing_deg": 358.7,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-116, Noida - UPPCB",
+      "distance_km": 7.42,
+      "bearing_deg": 68.5,
+      "is_downwind": false,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Okhla Phase-2, Delhi - DPCC",
+      "distance_km": 5.3,
+      "bearing_deg": 253.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Nehru Nagar, Delhi - DPCC",
+      "distance_km": 7.54,
+      "bearing_deg": 290.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector 30, Faridabad - HSPCB",
+      "distance_km": 11.46,
+      "bearing_deg": 180.7,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, Delhi - IITM",
+      "distance_km": 11.03,
+      "bearing_deg": 296.1,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "GK1 (Oberoi Terrace)",
+      "distance_km": 7.84,
+      "bearing_deg": 274.3,
+      "is_downwind": false,
+      "expected_lag_hours": 1.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector 1, Noida extension",
+      "distance_km": 11.45,
+      "bearing_deg": 67.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Anand Lok",
+      "distance_km": 10.3,
+      "bearing_deg": 278.7,
+      "is_downwind": false,
+      "expected_lag_hours": 2.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Commonwealth Sports Complex, Delhi - DPCC",
+      "distance_km": 9.35,
+      "bearing_deg": 327.7,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Prashant Garden, Khora - UPPCB",
+      "distance_km": 7.61,
+      "bearing_deg": 14.0,
+      "is_downwind": false,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_node_6475194140",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.243,
+        "signature_likelihood": 1.45,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.2114
+      },
+      "relative_score": 0.285,
+      "interval": [
+        0.208,
+        0.347
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.87 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2430 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "High PM2.5/PM10 ratio (0.68) is physically consistent with fine combustion smoke.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (47.9 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_895444951",
+      "name": "noida habitai center",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.45,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 0.35,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1575
+      },
+      "relative_score": 0.237,
+      "interval": [
+        0.172,
+        0.313
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.48 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.450 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Fine ratio (0.68) contradicts coarse mechanical dust from construction.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.123,
+      "interval": [
+        0.086,
+        0.173
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +118.2 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_node_8108128818",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.0767,
+        "signature_likelihood": 1.45,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0668
+      },
+      "relative_score": 0.086,
+      "interval": [
+        0.054,
+        0.147
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 6.71 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.0767 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "High PM2.5/PM10 ratio (0.68) is physically consistent with fine combustion smoke.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (47.9 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_816968754",
+      "name": "Indian Oil Madanpur Khadar Bottling Plant",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.1279,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0614
+      },
+      "relative_score": 0.083,
+      "interval": [
+        0.065,
+        0.128
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.63 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1279 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.68) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (47.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_608169272",
+      "name": "Okhla Landfill",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.85,
+        "footprint_likelihood": 0.0486,
+        "signature_likelihood": 1.45,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0599
+      },
+      "relative_score": 0.081,
+      "interval": [
+        0.053,
+        0.108
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 5.31 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.0486 (relative to peak corridor density).",
+        "Prior weight: 0.850 (heuristic, uncalibrated).",
+        "High PM2.5/PM10 ratio (0.68) is physically consistent with fine combustion smoke.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (47.9 ug/m3) is not typical for low-temperature landfill processes.",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.081,
+      "interval": [
+        0.045,
+        0.111
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_node_6475194140",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.2114,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_895444951",
+        "name": "noida habitai center",
+        "type": "construction",
+        "score": 0.1575,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_8108128818",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.0668,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_816968754",
+        "name": "Indian Oil Madanpur Khadar Bottling Plant",
+        "type": "industrial",
+        "score": 0.0614,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_608169272",
+        "name": "Okhla Landfill",
+        "type": "landfill",
+        "score": 0.0599,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_node_6475194140",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.3523,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_895444951",
+        "name": "noida habitai center",
+        "type": "construction",
+        "score": 0.35,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_816968754",
+        "name": "Indian Oil Madanpur Khadar Bottling Plant",
+        "type": "industrial",
+        "score": 0.2078,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1424598799",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1704,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1424598806",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1704,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_895444951",
+        "name": "noida habitai center",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_6475194140",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.243,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_816968754",
+        "name": "Indian Oil Madanpur Khadar Bottling Plant",
+        "type": "industrial",
+        "score": 0.1279,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1424598799",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1049,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1424598806",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1049,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

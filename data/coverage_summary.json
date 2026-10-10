@@ -1,0 +1,711 @@
+{
+  "total_evaluated": 35,
+  "expected_hours_6m": 4392,
+  "stations_pm25_ge_80": 28,
+  "stations_pm25_and_pm10_ge_80": 20,
+  "stations_all_4_ge_80": 15,
+  "gate_threshold": 25,
+  "gate_passed": true,
+  "station_details": [
+    {
+      "id": 17,
+      "name": "R K Puram, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.563262,
+        "longitude": 77.186937
+      },
+      "coverage_pct": {
+        "co": 88.89,
+        "no2": 90.1,
+        "pm10": 88.16,
+        "pm25": 88.09
+      },
+      "hourly_counts": {
+        "co": 3904,
+        "no2": 3957,
+        "pm10": 3872,
+        "pm25": 3869
+      }
+    },
+    {
+      "id": 50,
+      "name": "Punjabi Bagh, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.674045,
+        "longitude": 77.131023
+      },
+      "coverage_pct": {
+        "co": 90.51,
+        "no2": 90.53,
+        "pm10": 89.78,
+        "pm25": 88.5
+      },
+      "hourly_counts": {
+        "co": 3975,
+        "no2": 3976,
+        "pm10": 3943,
+        "pm25": 3887
+      }
+    },
+    {
+      "id": 235,
+      "name": "Anand Vihar, New Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.646835,
+        "longitude": 77.316032
+      },
+      "coverage_pct": {
+        "co": 86.98,
+        "no2": 88.5,
+        "pm10": 83.67,
+        "pm25": 87.23
+      },
+      "hourly_counts": {
+        "co": 3820,
+        "no2": 3887,
+        "pm10": 3675,
+        "pm25": 3831
+      }
+    },
+    {
+      "id": 5404,
+      "name": "Pusa, Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.639645,
+        "longitude": 77.146263
+      },
+      "coverage_pct": {
+        "co": 90.64,
+        "no2": 90.32,
+        "pm10": 90.41,
+        "pm25": 45.54
+      },
+      "hourly_counts": {
+        "co": 3981,
+        "no2": 3967,
+        "pm10": 3971,
+        "pm25": 2000
+      }
+    },
+    {
+      "id": 5586,
+      "name": "Sirifort, Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.5504249,
+        "longitude": 77.2159377
+      },
+      "coverage_pct": {
+        "co": 94.22,
+        "no2": 94.17,
+        "pm10": 93.33,
+        "pm25": 68.31
+      },
+      "hourly_counts": {
+        "co": 4138,
+        "no2": 4136,
+        "pm10": 4099,
+        "pm25": 3000
+      }
+    },
+    {
+      "id": 5570,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.474261,
+        "longitude": 77.131606
+      },
+      "coverage_pct": {
+        "co": 88.75,
+        "no2": 87.04,
+        "pm10": 88.43,
+        "pm25": 45.38
+      },
+      "hourly_counts": {
+        "co": 3898,
+        "no2": 3823,
+        "pm10": 3884,
+        "pm25": 1993
+      }
+    },
+    {
+      "id": 301,
+      "name": "Vikas Sadan, Gurugram - HSPCB",
+      "coordinates": {
+        "latitude": 28.4501238,
+        "longitude": 77.0263051
+      },
+      "coverage_pct": {
+        "co": 84.77,
+        "no2": 81.31,
+        "pm10": 80.81,
+        "pm25": 45.47
+      },
+      "hourly_counts": {
+        "co": 3723,
+        "no2": 3571,
+        "pm10": 3549,
+        "pm25": 1997
+      }
+    },
+    {
+      "id": 5541,
+      "name": "Burari Crossing, New Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.7256504,
+        "longitude": 77.2011573
+      },
+      "coverage_pct": {
+        "co": 90.62,
+        "no2": 91.48,
+        "pm10": 90.23,
+        "pm25": 68.31
+      },
+      "hourly_counts": {
+        "co": 3980,
+        "no2": 4018,
+        "pm10": 3963,
+        "pm25": 3000
+      }
+    },
+    {
+      "id": 5622,
+      "name": "NSIT Dwarka, Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.60909,
+        "longitude": 77.0325413
+      },
+      "coverage_pct": {
+        "co": 82.63,
+        "no2": 82.83,
+        "pm10": 81.85,
+        "pm25": 22.77
+      },
+      "hourly_counts": {
+        "co": 3629,
+        "no2": 3638,
+        "pm10": 3595,
+        "pm25": 1000
+      }
+    },
+    {
+      "id": 5598,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "coordinates": {
+        "latitude": 28.5447608,
+        "longitude": 77.3231257
+      },
+      "coverage_pct": {
+        "co": 85.43,
+        "no2": 86.98,
+        "pm10": 86.82,
+        "pm25": 87.14
+      },
+      "hourly_counts": {
+        "co": 3752,
+        "no2": 3820,
+        "pm10": 3813,
+        "pm25": 3827
+      }
+    },
+    {
+      "id": 5613,
+      "name": "ITO, New Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.628624,
+        "longitude": 77.24106
+      },
+      "coverage_pct": {
+        "co": 93.15,
+        "no2": 93.24,
+        "pm10": 68.31,
+        "pm25": 91.48
+      },
+      "hourly_counts": {
+        "co": 4091,
+        "no2": 4095,
+        "pm10": 3000,
+        "pm25": 4018
+      }
+    },
+    {
+      "id": 5610,
+      "name": "North Campus, DU, Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.6573814,
+        "longitude": 77.1585447
+      },
+      "coverage_pct": {
+        "co": 91.92,
+        "no2": 90.98,
+        "pm10": 89.96,
+        "pm25": 89.85
+      },
+      "hourly_counts": {
+        "co": 4037,
+        "no2": 3996,
+        "pm10": 3951,
+        "pm25": 3946
+      }
+    },
+    {
+      "id": 5616,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "coordinates": {
+        "latitude": 28.6245479,
+        "longitude": 77.3577104
+      },
+      "coverage_pct": {
+        "co": 92.99,
+        "no2": 90.35,
+        "pm10": 93.49,
+        "pm25": 93.35
+      },
+      "hourly_counts": {
+        "co": 4084,
+        "no2": 3968,
+        "pm10": 4106,
+        "pm25": 4100
+      }
+    },
+    {
+      "id": 5650,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.5627763,
+        "longitude": 77.1180053
+      },
+      "coverage_pct": {
+        "co": 87.48,
+        "no2": 87.34,
+        "pm10": 87.43,
+        "pm25": 87.16
+      },
+      "hourly_counts": {
+        "co": 3842,
+        "no2": 3836,
+        "pm10": 3840,
+        "pm25": 3828
+      }
+    },
+    {
+      "id": 5626,
+      "name": "DTU, New Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.7500499,
+        "longitude": 77.1112615
+      },
+      "coverage_pct": {
+        "co": 92.9,
+        "no2": 92.3,
+        "pm10": 91.87,
+        "pm25": 91.53
+      },
+      "hourly_counts": {
+        "co": 4080,
+        "no2": 4054,
+        "pm10": 4035,
+        "pm25": 4020
+      }
+    },
+    {
+      "id": 5630,
+      "name": "Shadipur, Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.6514781,
+        "longitude": 77.1473105
+      },
+      "coverage_pct": {
+        "co": 93.53,
+        "no2": 22.77,
+        "pm10": 91.71,
+        "pm25": 91.51
+      },
+      "hourly_counts": {
+        "co": 4108,
+        "no2": 1000,
+        "pm10": 4028,
+        "pm25": 4019
+      }
+    },
+    {
+      "id": 5627,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.5512005,
+        "longitude": 77.2735737
+      },
+      "coverage_pct": {
+        "co": 93.74,
+        "no2": 68.31,
+        "pm10": 92.51,
+        "pm25": 93.33
+      },
+      "hourly_counts": {
+        "co": 4117,
+        "no2": 3000,
+        "pm10": 4063,
+        "pm25": 4099
+      }
+    },
+    {
+      "id": 5634,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "coordinates": {
+        "latitude": 28.5918245,
+        "longitude": 77.2273074
+      },
+      "coverage_pct": {
+        "co": 93.17,
+        "no2": 93.06,
+        "pm10": 92.96,
+        "pm25": 90.28
+      },
+      "hourly_counts": {
+        "co": 4092,
+        "no2": 4087,
+        "pm10": 4083,
+        "pm25": 3965
+      }
+    },
+    {
+      "id": 6358,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.636429,
+        "longitude": 77.201067
+      },
+      "coverage_pct": {
+        "co": 45.54,
+        "no2": 86.79,
+        "pm10": 88.64,
+        "pm25": 82.45
+      },
+      "hourly_counts": {
+        "co": 2000,
+        "no2": 3812,
+        "pm10": 3893,
+        "pm25": 3621
+      }
+    },
+    {
+      "id": 6356,
+      "name": "Pusa, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.639645,
+        "longitude": 77.146262
+      },
+      "coverage_pct": {
+        "co": 88.52,
+        "no2": 91.78,
+        "pm10": 91.17,
+        "pm25": 68.31
+      },
+      "hourly_counts": {
+        "co": 3888,
+        "no2": 4031,
+        "pm10": 4004,
+        "pm25": 3000
+      }
+    },
+    {
+      "id": 5665,
+      "name": "Vasundhara, Ghaziabad - UPPCB",
+      "coordinates": {
+        "latitude": 28.6603346,
+        "longitude": 77.3572563
+      },
+      "coverage_pct": {
+        "co": 85.93,
+        "no2": 86.2,
+        "pm10": 83.9,
+        "pm25": 84.54
+      },
+      "hourly_counts": {
+        "co": 3774,
+        "no2": 3786,
+        "pm10": 3685,
+        "pm25": 3713
+      }
+    },
+    {
+      "id": 6359,
+      "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+      "coordinates": {
+        "latitude": 28.6811736,
+        "longitude": 77.3025234
+      },
+      "coverage_pct": {
+        "co": 91.14,
+        "no2": 89.69,
+        "pm10": 90.1,
+        "pm25": 90.39
+      },
+      "hourly_counts": {
+        "co": 4003,
+        "no2": 3939,
+        "pm10": 3957,
+        "pm25": 3970
+      }
+    },
+    {
+      "id": 6924,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "coordinates": {
+        "latitude": 28.646233,
+        "longitude": 77.358075
+      },
+      "coverage_pct": {
+        "co": 89.82,
+        "no2": 89.07,
+        "pm10": 90.14,
+        "pm25": 90.19
+      },
+      "hourly_counts": {
+        "co": 3945,
+        "no2": 3912,
+        "pm10": 3959,
+        "pm25": 3961
+      }
+    },
+    {
+      "id": 6932,
+      "name": "Alipur, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.815329,
+        "longitude": 77.15301
+      },
+      "coverage_pct": {
+        "co": 81.9,
+        "no2": 82.86,
+        "pm10": 68.24,
+        "pm25": 82.22
+      },
+      "hourly_counts": {
+        "co": 3597,
+        "no2": 3639,
+        "pm10": 2997,
+        "pm25": 3611
+      }
+    },
+    {
+      "id": 6931,
+      "name": "Dwarka-Sector 8, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.5710274,
+        "longitude": 77.0719006
+      },
+      "coverage_pct": {
+        "co": 91.48,
+        "no2": 91.51,
+        "pm10": 22.7,
+        "pm25": 90.19
+      },
+      "hourly_counts": {
+        "co": 4018,
+        "no2": 4019,
+        "pm10": 997,
+        "pm25": 3961
+      }
+    },
+    {
+      "id": 6929,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.611281,
+        "longitude": 77.237738
+      },
+      "coverage_pct": {
+        "co": 90.44,
+        "no2": 92.46,
+        "pm10": 45.51,
+        "pm25": 88.89
+      },
+      "hourly_counts": {
+        "co": 3972,
+        "no2": 4061,
+        "pm10": 1999,
+        "pm25": 3904
+      }
+    },
+    {
+      "id": 6934,
+      "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.498571,
+        "longitude": 77.26484
+      },
+      "coverage_pct": {
+        "co": 90.16,
+        "no2": 89.87,
+        "pm10": 0.0,
+        "pm25": 86.86
+      },
+      "hourly_counts": {
+        "co": 3960,
+        "no2": 3947,
+        "pm10": 0,
+        "pm25": 3815
+      }
+    },
+    {
+      "id": 6936,
+      "name": "Arya Nagar, Bahadurgarh - HSPCB",
+      "coordinates": {
+        "latitude": 28.6701,
+        "longitude": 76.9254
+      },
+      "coverage_pct": {
+        "co": 91.62,
+        "no2": 22.77,
+        "pm10": 91.42,
+        "pm25": 91.42
+      },
+      "hourly_counts": {
+        "co": 4024,
+        "no2": 1000,
+        "pm10": 4015,
+        "pm25": 4015
+      }
+    },
+    {
+      "id": 6938,
+      "name": "Vivek Vihar, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.672342,
+        "longitude": 77.31526
+      },
+      "coverage_pct": {
+        "co": 90.53,
+        "no2": 90.69,
+        "pm10": 22.77,
+        "pm25": 90.23
+      },
+      "hourly_counts": {
+        "co": 3976,
+        "no2": 3983,
+        "pm10": 1000,
+        "pm25": 3963
+      }
+    },
+    {
+      "id": 6953,
+      "name": "Sector-2 IMT, Manesar - HSPCB",
+      "coordinates": {
+        "latitude": 28.360699,
+        "longitude": 76.93609
+      },
+      "coverage_pct": {
+        "co": 86.48,
+        "no2": 86.34,
+        "pm10": 22.77,
+        "pm25": 86.54
+      },
+      "hourly_counts": {
+        "co": 3798,
+        "no2": 3792,
+        "pm10": 1000,
+        "pm25": 3801
+      }
+    },
+    {
+      "id": 6949,
+      "name": "Municipal Corporation Office, Dharuhera -  HSPCB",
+      "coordinates": {
+        "latitude": 28.2068,
+        "longitude": 76.7997
+      },
+      "coverage_pct": {
+        "co": 85.97,
+        "no2": 86.18,
+        "pm10": 0.0,
+        "pm25": 86.45
+      },
+      "hourly_counts": {
+        "co": 3776,
+        "no2": 3785,
+        "pm10": 0,
+        "pm25": 3797
+      }
+    },
+    {
+      "id": 6957,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.58028,
+        "longitude": 77.233829
+      },
+      "coverage_pct": {
+        "co": 89.28,
+        "no2": 91.07,
+        "pm10": 88.78,
+        "pm25": 89.32
+      },
+      "hourly_counts": {
+        "co": 3921,
+        "no2": 4000,
+        "pm10": 3899,
+        "pm25": 3923
+      }
+    },
+    {
+      "id": 6960,
+      "name": "Patparganj, Delhi - DPCC",
+      "coordinates": {
+        "latitude": 28.623748,
+        "longitude": 77.287205
+      },
+      "coverage_pct": {
+        "co": 0.0,
+        "no2": 90.0,
+        "pm10": 89.46,
+        "pm25": 88.41
+      },
+      "hourly_counts": {
+        "co": 0,
+        "no2": 3953,
+        "pm10": 3929,
+        "pm25": 3883
+      }
+    },
+    {
+      "id": 6978,
+      "name": "Knowledge Park - III, Greater Noida - UPPCB",
+      "coordinates": {
+        "latitude": 28.47272,
+        "longitude": 77.482
+      },
+      "coverage_pct": {
+        "co": 86.27,
+        "no2": 88.25,
+        "pm10": 86.5,
+        "pm25": 83.54
+      },
+      "hourly_counts": {
+        "co": 3789,
+        "no2": 3876,
+        "pm10": 3799,
+        "pm25": 3669
+      }
+    },
+    {
+      "id": 6972,
+      "name": "Nathu Colony, Ballabgarh - HSPCB",
+      "coordinates": {
+        "latitude": 28.3419248,
+        "longitude": 77.319699
+      },
+      "coverage_pct": {
+        "co": 92.03,
+        "no2": 92.12,
+        "pm10": 88.52,
+        "pm25": 88.57
+      },
+      "hourly_counts": {
+        "co": 4042,
+        "no2": 4046,
+        "pm10": 3888,
+        "pm25": 3890
+      }
+    }
+  ]
+}

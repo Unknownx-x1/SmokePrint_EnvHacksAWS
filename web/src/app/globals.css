@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+:root {
+  --background: #fbfbfc;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --border: #e4e4e7;
+  --border-muted: #f4f4f5;
+  --risk: #dc2626;
+  --risk-muted: #fee2e2;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Restrained inspection utility typography */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* MapLibre popup style overrides for minimalist inspection aesthetic */
+.maplibregl-popup-content {
+  padding: 10px 14px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e4e4e7 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  background: #ffffff !important;
+  color: #18181b !important;
+}
+
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+  border-bottom-color: #ffffff !important;
+}
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: #ffffff !important;
+}

@@ -1,0 +1,652 @@
+{
+  "case_id": "case_anand_vihar_20251102",
+  "station": "Anand Vihar, New Delhi - DPCC",
+  "station_id": 235,
+  "coordinates": {
+    "latitude": 28.646835,
+    "longitude": 77.316032
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-11-02T21:00:00Z",
+    "interval_start_utc": "2025-11-02T20:30:00Z",
+    "interval_end_utc": "2025-11-02T21:30:00Z",
+    "interval_midpoint_ist": "2025-11-03 02:30:00 IST",
+    "interval_start_ist": "2025-11-03 02:00:00 IST",
+    "interval_end_ist": "2025-11-03 03:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 33,
+  "background_iqr": 54.0,
+  "regional_median": 148.0,
+  "local_excess": 221.0,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.519,
+    "top_to_k_spread": 0.519,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "fine-particulate dominant (combustion-compatible ratio 0.72)",
+    "pm25": 369.0,
+    "pm10": 510.0,
+    "ratio_pm25_pm10": 0.72,
+    "no2_ugm3": 189.88,
+    "co_mgm3": null
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": 5598,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "distance_km": 11.37,
+      "bearing_deg": 176.5,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": 129.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5613,
+      "name": "ITO, New Delhi - CPCB",
+      "distance_km": 7.59,
+      "bearing_deg": 254.5,
+      "is_downwind": false,
+      "expected_lag_hours": 0.8,
+      "neighbour_pm25": 15.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5616,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "distance_km": 4.76,
+      "bearing_deg": 121.3,
+      "is_downwind": true,
+      "expected_lag_hours": 0.5,
+      "neighbour_pm25": 188.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 5627,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "distance_km": 11.41,
+      "bearing_deg": 201.3,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": 145.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5634,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 10.6,
+      "bearing_deg": 234.8,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": 138.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5665,
+      "name": "Vasundhara, Ghaziabad - UPPCB",
+      "distance_km": 4.29,
+      "bearing_deg": 69.5,
+      "is_downwind": true,
+      "expected_lag_hours": 0.5,
+      "neighbour_pm25": 412.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 6358,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "distance_km": 11.28,
+      "bearing_deg": 264.1,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": 150.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6359,
+      "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+      "distance_km": 4.04,
+      "bearing_deg": 341.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.4,
+      "neighbour_pm25": 146.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6924,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "distance_km": 4.1,
+      "bearing_deg": 90.9,
+      "is_downwind": true,
+      "expected_lag_hours": 0.4,
+      "neighbour_pm25": 192.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 6929,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "distance_km": 8.6,
+      "bearing_deg": 242.7,
+      "is_downwind": false,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": 142.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6938,
+      "name": "Vivek Vihar, Delhi - DPCC",
+      "distance_km": 2.84,
+      "bearing_deg": 358.5,
+      "is_downwind": false,
+      "expected_lag_hours": 0.3,
+      "neighbour_pm25": 440.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6957,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 10.92,
+      "bearing_deg": 227.3,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": 143.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6960,
+      "name": "Patparganj, Delhi - DPCC",
+      "distance_km": 3.81,
+      "bearing_deg": 227.6,
+      "is_downwind": false,
+      "expected_lag_hours": 0.4,
+      "neighbour_pm25": 229.0,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_relation_3808258",
+      "name": "Patparganj Industrial Area",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.4802
+      },
+      "relative_score": 0.29,
+      "interval": [
+        0.242,
+        0.32
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.86 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.72) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (189.88 ug/m3) indicates high-temperature thermal NOx co-emission."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_464283162",
+      "name": "Rajghat Bus Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.6827,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.3278
+      },
+      "relative_score": 0.21,
+      "interval": [
+        0.172,
+        0.243
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 6.15 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.6827 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.72) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (189.88 ug/m3) indicates high-temperature thermal NOx co-emission."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_464283160",
+      "name": "Rajghat Thermal Power Station",
+      "type": "industrial",
+      "operating_status": "unverified_operating_status (decommissioned/disused)",
+      "score_decomposition": {
+        "prior_weight": 0.0148,
+        "footprint_likelihood": 0.5962,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0143
+      },
+      "relative_score": 0.179,
+      "interval": [
+        0.158,
+        0.213
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 6.05 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.5962 (relative to peak corridor density).",
+        "Prior weight: 0.015 (heuristic, uncalibrated).",
+        "Fine ratio (0.72) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (189.88 ug/m3) indicates high-temperature thermal NOx co-emission."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Decommissioned/disused status in OSM: disused:power=plant (0.05x penalty applied)."
+      ]
+    },
+    {
+      "id": "osm_way_464283150",
+      "name": "Rajghat Thermal Power Station Flyash Dump",
+      "type": "landfill",
+      "operating_status": "unverified_operating_status (decommissioned/disused)",
+      "score_decomposition": {
+        "prior_weight": 0.025,
+        "footprint_likelihood": 0.6827,
+        "signature_likelihood": 1.45,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0247
+      },
+      "relative_score": 0.173,
+      "interval": [
+        0.142,
+        0.22
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 5.97 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.6827 (relative to peak corridor density).",
+        "Prior weight: 0.025 (heuristic, uncalibrated).",
+        "High PM2.5/PM10 ratio (0.72) is physically consistent with fine combustion smoke."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (189.88 ug/m3) is not typical for low-temperature landfill processes.",
+        "Decommissioned/disused status in OSM: tagged disused:power=plant in OpenStreetMap (0.05x penalty applied)."
+      ]
+    },
+    {
+      "id": "osm_way_1544621569",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.4135,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0794
+      },
+      "relative_score": 0.121,
+      "interval": [
+        0.095,
+        0.141
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 9.07 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4135 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Fine ratio (0.72) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (189.88 ug/m3) indicates high-temperature thermal NOx co-emission."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.015,
+      "interval": [
+        0.013,
+        0.019
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +222.0 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.01,
+      "interval": [
+        0.007,
+        0.012
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Sensor calibration drift."
+      ],
+      "evidence_against": [
+        "Multi-pollutant co-movement and wind-consistent downwind response."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_relation_3808258",
+        "name": "Patparganj Industrial Area",
+        "type": "industrial",
+        "score": 0.4802,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_5232390466",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.3597,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_464283162",
+        "name": "Rajghat Bus Depot",
+        "type": "industrial",
+        "score": 0.3278,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1003041200",
+        "name": "25850",
+        "type": "industrial",
+        "score": 0.1893,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3911489",
+        "name": "Flatted Factories",
+        "type": "industrial",
+        "score": 0.1847,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_relation_3808258",
+        "name": "Patparganj Industrial Area",
+        "type": "industrial",
+        "score": 1.625,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_464283162",
+        "name": "Rajghat Bus Depot",
+        "type": "industrial",
+        "score": 1.1094,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_464283150",
+        "name": "Rajghat Thermal Power Station Flyash Dump",
+        "type": "landfill",
+        "score": 0.9899,
+        "operating_status": "unverified_operating_status (decommissioned/disused)"
+      },
+      {
+        "id": "osm_way_464283160",
+        "name": "Rajghat Thermal Power Station",
+        "type": "industrial",
+        "score": 0.9688,
+        "operating_status": "unverified_operating_status (decommissioned/disused)"
+      },
+      {
+        "id": "osm_way_1544621569",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.6719,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_relation_3808258",
+        "name": "Patparganj Industrial Area",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_464283150",
+        "name": "Rajghat Thermal Power Station Flyash Dump",
+        "type": "landfill",
+        "score": 0.6827,
+        "operating_status": "unverified_operating_status (decommissioned/disused)"
+      },
+      {
+        "id": "osm_way_464283162",
+        "name": "Rajghat Bus Depot",
+        "type": "industrial",
+        "score": 0.6827,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_464283160",
+        "name": "Rajghat Thermal Power Station",
+        "type": "industrial",
+        "score": 0.5962,
+        "operating_status": "unverified_operating_status (decommissioned/disused)"
+      },
+      {
+        "id": "osm_way_1387125258",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.4808,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "missing"
+    },
+    "satellite_evidence_status": "unavailable"
+  },
+  "geometry_facts": {
+    "vivek_vihar": {
+      "station_id": 6938,
+      "distance_km": 2.84,
+      "bearing_deg": 358.5,
+      "pm25": 440.0,
+      "excess": 292.0
+    },
+    "patparganj": {
+      "id": "osm_relation_3808258",
+      "centroid_distance_km": 0.86,
+      "centroid_bearing_deg": 218.9,
+      "nearest_boundary_distance_km": 0.23,
+      "nearest_boundary_bearing_deg": 178.0
+    },
+    "rajghat": {
+      "id": "osm_way_464283160",
+      "distance_km": 6.05,
+      "bearing_deg": 260.2,
+      "operating_status": "disused"
+    },
+    "ghazipur": {
+      "id": "osm_way_76727509",
+      "distance_km": 2.77,
+      "bearing_deg": 156.3
+    }
+  },
+  "wind": {
+    "wind_speed_ms": 2.56,
+    "wind_direction_deg": 263.0,
+    "from_direction_deg": 263.0,
+    "wording": "wind from 263.0 deg",
+    "boundary_layer_height_m": 115.0,
+    "is_low_wind": false,
+    "source": "ERA5 hourly reanalysis (2025-11-02T21:00 UTC)"
+  },
+  "is_low_wind": false,
+  "dispatch_refused": false,
+  "refusal_basis": null,
+  "refusal_reason": null,
+  "shortlist": [
+    {
+      "id": "osm_relation_3808258",
+      "name": "Patparganj Industrial Area",
+      "type": "industrial",
+      "lat": 28.6407938,
+      "lon": 77.3104848,
+      "bearing_deg": 218.9,
+      "distance_km": 0.86,
+      "angular_offset_deg": 44.1,
+      "confidence_tier": "medium",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 0.86 km from station (bearing 218.9\u00b0), somewhat off the wind line (44.1\u00b0 angular offset).",
+        "Somewhat off the wind line (44.1\u00b0 angular offset)."
+      ],
+      "shortlist_score": 0.29
+    },
+    {
+      "id": "osm_way_464283162",
+      "name": "Rajghat Bus Depot",
+      "type": "industrial",
+      "lat": 28.6424527,
+      "lon": 77.2532476,
+      "bearing_deg": 265.5,
+      "distance_km": 6.15,
+      "angular_offset_deg": 2.5,
+      "confidence_tier": "medium",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 6.15 km upwind from station (bearing 265.5\u00b0).",
+        "Directly aligned with prevailing wind axis (2.5\u00b0 offset)."
+      ],
+      "shortlist_score": 0.21
+    },
+    {
+      "id": "osm_way_464283160",
+      "name": "Rajghat Thermal Power Station",
+      "type": "industrial",
+      "lat": 28.6375535,
+      "lon": 77.2549769,
+      "bearing_deg": 260.2,
+      "distance_km": 6.05,
+      "angular_offset_deg": 2.8,
+      "confidence_tier": "low",
+      "operating_status": "unverified_operating_status (decommissioned/disused)",
+      "operating_status_text": "Tagged disused:power=plant in OpenStreetMap",
+      "reasons": [
+        "Located 6.05 km upwind from station (bearing 260.2\u00b0).",
+        "Tagged disused in OpenStreetMap, so inspection is unlikely to be useful."
+      ],
+      "shortlist_score": 0.179
+    },
+    {
+      "id": "osm_way_464283150",
+      "name": "Rajghat Thermal Power Station Flyash Dump",
+      "type": "landfill",
+      "lat": 28.6431418,
+      "lon": 77.2550299,
+      "bearing_deg": 266.1,
+      "distance_km": 5.97,
+      "angular_offset_deg": 3.1,
+      "confidence_tier": "low",
+      "operating_status": "unverified_operating_status (decommissioned/disused)",
+      "operating_status_text": "Decommissioned thermal flyash dump in OpenStreetMap",
+      "reasons": [
+        "Located 5.97 km upwind from station (bearing 266.1\u00b0).",
+        "Tagged disused in OpenStreetMap, so inspection is unlikely to be useful."
+      ],
+      "shortlist_score": 0.173
+    },
+    {
+      "id": "osm_way_1544621569",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "lat": 28.6267163,
+      "lon": 77.2259313,
+      "bearing_deg": 255.7,
+      "distance_km": 9.07,
+      "angular_offset_deg": 7.3,
+      "confidence_tier": "medium",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 9.07 km upwind from station (bearing 255.7\u00b0).",
+        "Directly aligned with prevailing wind axis (7.3\u00b0 offset)."
+      ],
+      "shortlist_score": 0.121
+    }
+  ],
+  "shortlist_count": 5,
+  "other_explanations_considered": [
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "deterministic_reason": "Local excess above regional baseline detected; localized transport corridor evaluated against diffuse background.",
+      "sentence": "Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.",
+      "relative_score": 0.015
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault.",
+      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.",
+      "relative_score": 0.01
+    }
+  ],
+  "station_name": "Anand Vihar, New Delhi - DPCC",
+  "classification": "corroborated",
+  "source": "replayed",
+  "mode": "replayed_from_canonical_output",
+  "replayed_note": "replayed from validated core output"
+}

@@ -1,0 +1,528 @@
+{
+  "case_id": "synth_trial_465",
+  "station": "Indirapuram, Ghaziabad - UPPCB",
+  "station_id": 6924,
+  "coordinates": {
+    "latitude": 28.646233,
+    "longitude": 77.358075
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-18T12:00:00Z",
+    "interval_start_utc": "2025-10-18T11:30:00Z",
+    "interval_end_utc": "2025-10-18T12:30:00Z",
+    "interval_midpoint_ist": "2025-10-18 17:30:00 IST",
+    "interval_start_ist": "2025-10-18 17:00:00 IST",
+    "interval_end_ist": "2025-10-18 18:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 69.0,
+  "local_excess": 67.5,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.176,
+    "top_to_k_spread": 0.176,
+    "k_candidates_evaluated": 5,
+    "is_uniform": true,
+    "state": "multiple_comparable_candidates",
+    "note": "Near-uniform calm stagnation; cannot separate top candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.38)",
+    "pm25": 136.5,
+    "pm10": 360.5,
+    "ratio_pm25_pm10": 0.38,
+    "no2_ugm3": 43.9,
+    "co_mgm3": 1.18
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "Anand Vihar, New Delhi - DPCC",
+      "distance_km": 4.1,
+      "bearing_deg": 270.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "distance_km": 11.79,
+      "bearing_deg": 196.8,
+      "is_downwind": false,
+      "expected_lag_hours": 6.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "ITO, New Delhi - CPCB",
+      "distance_km": 11.59,
+      "bearing_deg": 260.3,
+      "is_downwind": false,
+      "expected_lag_hours": 6.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "distance_km": 2.41,
+      "bearing_deg": 180.8,
+      "is_downwind": false,
+      "expected_lag_hours": 1.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Vasundhara, Ghaziabad - UPPCB",
+      "distance_km": 1.57,
+      "bearing_deg": 357.1,
+      "is_downwind": true,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+      "distance_km": 6.67,
+      "bearing_deg": 305.6,
+      "is_downwind": true,
+      "expected_lag_hours": 3.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": true,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Vivek Vihar, Delhi - DPCC",
+      "distance_km": 5.09,
+      "bearing_deg": 304.8,
+      "is_downwind": true,
+      "expected_lag_hours": 2.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Patparganj, Delhi - DPCC",
+      "distance_km": 7.35,
+      "bearing_deg": 250.1,
+      "is_downwind": false,
+      "expected_lag_hours": 4.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-1, Noida - UPPCB",
+      "distance_km": 7.25,
+      "bearing_deg": 209.1,
+      "is_downwind": false,
+      "expected_lag_hours": 4.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-116, Noida - UPPCB",
+      "distance_km": 9.25,
+      "bearing_deg": 157.8,
+      "is_downwind": false,
+      "expected_lag_hours": 5.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sanjay Nagar, Ghaziabad - UPPCB",
+      "distance_km": 10.31,
+      "bearing_deg": 65.0,
+      "is_downwind": false,
+      "expected_lag_hours": 5.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector 1, Noida extension",
+      "distance_km": 10.02,
+      "bearing_deg": 134.1,
+      "is_downwind": false,
+      "expected_lag_hours": 5.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector - 5, Vasundhara, Ghaziabad, Uttar Pradesh ",
+      "distance_km": 2.37,
+      "bearing_deg": 55.2,
+      "is_downwind": false,
+      "expected_lag_hours": 1.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Commonwealth Sports Complex, Delhi - DPCC",
+      "distance_km": 9.06,
+      "bearing_deg": 248.1,
+      "is_downwind": false,
+      "expected_lag_hours": 5.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Prashant Garden, Khora - UPPCB",
+      "distance_km": 4.2,
+      "bearing_deg": 201.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.543,
+      "interval": [
+        0.433,
+        0.632
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 1.2
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Near-uniform calm stagnation; cannot separate top candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +67.5 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_way_1162538003",
+      "name": "Unnamed Construction Site",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.35,
+        "footprint_likelihood": 0.9245,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.3236
+      },
+      "relative_score": 0.129,
+      "interval": [
+        0.087,
+        0.173
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 3.34 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.9245 (relative to peak corridor density).",
+        "Prior weight: 0.350 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1162538020",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1537
+      },
+      "relative_score": 0.069,
+      "interval": [
+        0.044,
+        0.102
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 2.62 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Elevated NO2 (43.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.069,
+      "interval": [
+        0.037,
+        0.105
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.15
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    },
+    {
+      "id": "osm_way_71649651",
+      "name": "Sector 59",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.4088,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.157
+      },
+      "relative_score": 0.066,
+      "interval": [
+        0.05,
+        0.094
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 4.34 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4088 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (43.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_357481072",
+      "name": "Sector 64",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.4088,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.157
+      },
+      "relative_score": 0.065,
+      "interval": [
+        0.034,
+        0.095
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 4.14 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4088 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (43.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1162538021",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1537
+      },
+      "relative_score": 0.062,
+      "interval": [
+        0.038,
+        0.086
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 2.84 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Elevated NO2 (43.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_1162538003",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.3236,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_71649651",
+        "name": "Sector 59",
+        "type": "industrial",
+        "score": 0.157,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_357481072",
+        "name": "Sector 64",
+        "type": "industrial",
+        "score": 0.157,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538020",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1537,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538021",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1537,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1162538020",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.3,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538021",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.3,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538023",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.3,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538022",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0711,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538003",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.9245,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1162538020",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538021",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538023",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538003",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.9245,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162538022",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.8239,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

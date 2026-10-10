@@ -1,0 +1,408 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  SmokePrint AWS Serverless Backend & Recompute Orchestrator
+  Free-tier compliant: on-demand DynamoDB, zip Lambdas, HTTP API v2, Standard Step Functions.
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Runtime: python3.12
+    Architectures:
+      - x86_64
+    Environment:
+      Variables:
+        DATA_BUCKET: !Ref DataBucket
+        CASES_TABLE: !Ref CasesTable
+        RUNS_TABLE: !Ref RunsTable
+
+Resources:
+  # ---------------------------------------------------------------------------
+  # 1. Storage: S3 Bucket (Per-case bundles, canonical JSON, traces, backtest)
+  # ---------------------------------------------------------------------------
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'smokeprint-data-${AWS::AccountId}-${AWS::Region}'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  # ---------------------------------------------------------------------------
+  # 2. Database: DynamoDB Tables (On-Demand / Pay-Per-Request)
+  # ---------------------------------------------------------------------------
+  CasesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: smokeprint-cases
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: case_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: case_id
+          KeyType: HASH
+
+  RunsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: smokeprint-runs
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: run_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: run_id
+          KeyType: HASH
+
+  # ---------------------------------------------------------------------------
+  # 3. HTTP API (API Gateway v2 with CORS)
+  # ---------------------------------------------------------------------------
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        AllowHeaders:
+          - '*'
+        AllowOrigins:
+          - '*'
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 10
+        ThrottlingRateLimit: 5
+
+  # ---------------------------------------------------------------------------
+  # 4. API Lambda Function
+  # ---------------------------------------------------------------------------
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: api_handler.handler
+      Environment:
+        Variables:
+          STATE_MACHINE_ARN: !Ref RecomputeStateMachine
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Sub 'smokeprint-data-${AWS::AccountId}-${AWS::Region}'
+        - DynamoDBCrudPolicy:
+            TableName: !Ref CasesTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref RunsTable
+        - StepFunctionsExecutionPolicy:
+            StateMachineName: !GetAtt RecomputeStateMachine.Name
+      Events:
+        HealthCheck:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /health
+            Method: GET
+        GetCases:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /cases
+            Method: GET
+        GetCaseDetail:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /cases/{id}
+            Method: GET
+        GetCaseShortlist:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /cases/{id}/shortlist
+            Method: GET
+        GetCaseTrace:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /cases/{id}/trace
+            Method: GET
+        PostCaseRecompute:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /cases/{id}/recompute
+            Method: POST
+        GetRunStatus:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /runs/{id}
+            Method: GET
+        GetBacktest:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /backtest
+            Method: GET
+
+  ApiFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${ApiFunction}'
+      RetentionInDays: 7
+
+  # ---------------------------------------------------------------------------
+  # 5. Step Functions Lambda Steps
+  # ---------------------------------------------------------------------------
+  StepLoadBundleFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: step_load_bundle.handler
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Sub 'smokeprint-data-${AWS::AccountId}-${AWS::Region}'
+
+  StepLoadBundleLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${StepLoadBundleFunction}'
+      RetentionInDays: 7
+
+  StepRunCoreFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: step_run_core.handler
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Sub 'smokeprint-data-${AWS::AccountId}-${AWS::Region}'
+
+  StepRunCoreLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${StepRunCoreFunction}'
+      RetentionInDays: 7
+
+  StepAgentReviewFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: step_agent_review.handler
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Sub 'smokeprint-data-${AWS::AccountId}-${AWS::Region}'
+
+  StepAgentReviewLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${StepAgentReviewFunction}'
+      RetentionInDays: 7
+
+  StepStoreFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: step_store.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref CasesTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref RunsTable
+
+  StepStoreLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${StepStoreFunction}'
+      RetentionInDays: 7
+
+  StepCatchFailureFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambdas/
+      Handler: step_catch_failure.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref RunsTable
+
+  StepCatchFailureLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${StepCatchFailureFunction}'
+      RetentionInDays: 7
+
+  # ---------------------------------------------------------------------------
+  # 6. Step Functions State Machine: Recompute
+  # ---------------------------------------------------------------------------
+  RecomputeStateMachine:
+    Type: AWS::Serverless::StateMachine
+    Properties:
+      Name: smokeprint-recompute-sm
+      Type: STANDARD
+      Definition:
+        Comment: SmokePrint Deterministic Core Recompute & Agent Review Pipeline
+        StartAt: LoadBundle
+        States:
+          LoadBundle:
+            Type: Task
+            Resource: !GetAtt StepLoadBundleFunction.Arn
+            Retry:
+              - ErrorEquals:
+                  - States.TaskFailed
+                IntervalSeconds: 2
+                MaxAttempts: 2
+                BackoffRate: 2.0
+            Catch:
+              - ErrorEquals:
+                  - States.ALL
+                ResultPath: $.error
+                Next: CatchFailure
+            Next: RunCore
+
+          RunCore:
+            Type: Task
+            Resource: !GetAtt StepRunCoreFunction.Arn
+            Retry:
+              - ErrorEquals:
+                  - States.TaskFailed
+                IntervalSeconds: 2
+                MaxAttempts: 2
+                BackoffRate: 2.0
+            Catch:
+              - ErrorEquals:
+                  - States.ALL
+                ResultPath: $.error
+                Next: CatchFailure
+            Next: AgentReview
+
+          AgentReview:
+            Type: Task
+            Resource: !GetAtt StepAgentReviewFunction.Arn
+            Retry:
+              - ErrorEquals:
+                  - States.TaskFailed
+                IntervalSeconds: 2
+                MaxAttempts: 2
+                BackoffRate: 2.0
+            Catch:
+              - ErrorEquals:
+                  - States.ALL
+                ResultPath: $.error
+                Next: CatchFailure
+            Next: Store
+
+          Store:
+            Type: Task
+            Resource: !GetAtt StepStoreFunction.Arn
+            Retry:
+              - ErrorEquals:
+                  - States.TaskFailed
+                IntervalSeconds: 2
+                MaxAttempts: 2
+                BackoffRate: 2.0
+            Catch:
+              - ErrorEquals:
+                  - States.ALL
+                ResultPath: $.error
+                Next: CatchFailure
+            End: true
+
+          CatchFailure:
+            Type: Task
+            Resource: !GetAtt StepCatchFailureFunction.Arn
+            End: true
+
+      Policies:
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StepLoadBundleFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StepRunCoreFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StepAgentReviewFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StepStoreFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref StepCatchFailureFunction
+
+  # ---------------------------------------------------------------------------
+  # 7. CloudWatch Dashboard
+  # ---------------------------------------------------------------------------
+  SmokePrintDashboard:
+    Type: AWS::CloudWatch::Dashboard
+    Properties:
+      DashboardName: SmokePrint-Operations-Dashboard
+      DashboardBody: !Sub >
+        {
+          "widgets": [
+            {
+              "type": "metric",
+              "x": 0,
+              "y": 0,
+              "width": 12,
+              "height": 6,
+              "properties": {
+                "title": "Lambda Errors & Invocations",
+                "metrics": [
+                  [ "AWS/Lambda", "Invocations", "FunctionName", "${ApiFunction}", { "stat": "Sum" } ],
+                  [ "AWS/Lambda", "Errors", "FunctionName", "${ApiFunction}", { "stat": "Sum" } ],
+                  [ "AWS/Lambda", "Invocations", "FunctionName", "${StepRunCoreFunction}", { "stat": "Sum" } ],
+                  [ "AWS/Lambda", "Errors", "FunctionName", "${StepRunCoreFunction}", { "stat": "Sum" } ]
+                ],
+                "period": 300,
+                "region": "${AWS::Region}"
+              }
+            },
+            {
+              "type": "metric",
+              "x": 12,
+              "y": 0,
+              "width": 12,
+              "height": 6,
+              "properties": {
+                "title": "Step Functions Executions",
+                "metrics": [
+                  [ "AWS/States", "ExecutionsStarted", "StateMachineArn", "${RecomputeStateMachine}", { "stat": "Sum" } ],
+                  [ "AWS/States", "ExecutionsSucceeded", "StateMachineArn", "${RecomputeStateMachine}", { "stat": "Sum" } ],
+                  [ "AWS/States", "ExecutionsFailed", "StateMachineArn", "${RecomputeStateMachine}", { "stat": "Sum" } ]
+                ],
+                "period": 300,
+                "region": "${AWS::Region}"
+              }
+            },
+            {
+              "type": "metric",
+              "x": 0,
+              "y": 6,
+              "width": 24,
+              "height": 6,
+              "properties": {
+                "title": "API Gateway Latency & 5XX Errors",
+                "metrics": [
+                  [ "AWS/ApiGateway", "Latency", "ApiId", "${HttpApi}", { "stat": "Average" } ],
+                  [ "AWS/ApiGateway", "5XX", "ApiId", "${HttpApi}", { "stat": "Sum" } ]
+                ],
+                "period": 300,
+                "region": "${AWS::Region}"
+              }
+            }
+          ]
+        }
+
+Outputs:
+  HttpApiUrl:
+    Description: HTTP API Gateway Base URL
+    Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com'
+  DataBucketName:
+    Description: Data S3 Bucket
+    Value: !Ref DataBucket
+  CasesTableName:
+    Description: DynamoDB Cases Table
+    Value: !Ref CasesTable
+  RunsTableName:
+    Description: DynamoDB Runs Table
+    Value: !Ref RunsTable
+  RecomputeStateMachineArn:
+    Description: Step Functions State Machine ARN
+    Value: !Ref RecomputeStateMachine

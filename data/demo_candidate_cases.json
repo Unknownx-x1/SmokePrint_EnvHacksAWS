@@ -1,0 +1,176 @@
+{
+  "dust": {
+    "sid": 5627,
+    "name": "CRRI Mathura Road, New Delhi - IMD",
+    "run_start": "2026-05-15 21:00:00+00:00",
+    "run_end": "2026-05-16 01:00:00+00:00",
+    "duration_h": 5,
+    "peak_ts": "2026-05-15 23:00:00+00:00",
+    "p25": 175.0,
+    "p10": 1410.0,
+    "ratio": 0.12,
+    "excess10": 1224.5,
+    "excess25": 75.4,
+    "regional_med10": 185.5,
+    "neighbours": [
+      {
+        "id": 5598,
+        "name": "Sector - 125, Noida, UP - UPPCB",
+        "dist_km": 4.9,
+        "pm25": 77.0,
+        "excess25": -22.7
+      },
+      {
+        "id": 6957,
+        "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+        "dist_km": 5.0,
+        "pm25": 80.0,
+        "excess25": -19.7
+      },
+      {
+        "id": 5586,
+        "name": "Sirifort, Delhi - CPCB",
+        "dist_km": 5.6,
+        "pm25": 89.4,
+        "excess25": -10.2
+      },
+      {
+        "id": 6934,
+        "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+        "dist_km": 5.9,
+        "pm25": 97.3,
+        "excess25": -2.4
+      },
+      {
+        "id": 5634,
+        "name": "Lodhi Road, New Delhi - IMD",
+        "dist_km": 6.4,
+        "pm25": 79.6,
+        "excess25": -20.1
+      },
+      {
+        "id": 6929,
+        "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+        "dist_km": 7.5,
+        "pm25": 81.3,
+        "excess25": -18.4
+      }
+    ]
+  },
+  "combustion_1": {
+    "sid": 301,
+    "name": "Vikas Sadan, Gurugram - HSPCB",
+    "run_start": "2026-06-30 01:00:00+00:00",
+    "run_end": "2026-06-30 11:00:00+00:00",
+    "duration_h": 11,
+    "peak_ts": "2026-06-30 06:00:00+00:00",
+    "p25": 314.0,
+    "p10": 523.0,
+    "no2": 19.9,
+    "ratio": 0.6,
+    "excess25": 267.0,
+    "regional_med25": 47.0,
+    "neighbours": [
+      {
+        "id": 5570,
+        "name": "Aya Nagar, New Delhi - IMD",
+        "dist_km": 10.6,
+        "pm25": 36.8,
+        "excess25": -10.2
+      },
+      {
+        "id": 6953,
+        "name": "Sector-2 IMT, Manesar - HSPCB",
+        "dist_km": 13.3,
+        "pm25": 44.7,
+        "excess25": -2.3
+      },
+      {
+        "id": 6931,
+        "name": "Dwarka-Sector 8, Delhi - DPCC",
+        "dist_km": 14.1,
+        "pm25": 36.0,
+        "excess25": -11.0
+      },
+      {
+        "id": 5650,
+        "name": "IGI Airport (T3), Delhi - IMD",
+        "dist_km": 15.4,
+        "pm25": 52.8,
+        "excess25": 5.8
+      },
+      {
+        "id": 17,
+        "name": "R K Puram, Delhi - DPCC",
+        "dist_km": 20.1,
+        "pm25": 47.0,
+        "excess25": 0.0
+      },
+      {
+        "id": 5586,
+        "name": "Sirifort, Delhi - CPCB",
+        "dist_km": 21.6,
+        "pm25": 63.1,
+        "excess25": 16.1
+      }
+    ]
+  },
+  "combustion_2": {
+    "sid": 301,
+    "name": "Vikas Sadan, Gurugram - HSPCB",
+    "run_start": "2026-04-06 02:00:00+00:00",
+    "run_end": "2026-04-06 04:00:00+00:00",
+    "duration_h": 3,
+    "peak_ts": "2026-04-06 03:00:00+00:00",
+    "p25": 337.0,
+    "p10": 519.0,
+    "no2": 52.6,
+    "ratio": 0.65,
+    "excess25": 252.0,
+    "regional_med25": 85.1,
+    "neighbours": [
+      {
+        "id": 6953,
+        "name": "Sector-2 IMT, Manesar - HSPCB",
+        "dist_km": 13.3,
+        "pm25": 92.1,
+        "excess25": 7.0
+      },
+      {
+        "id": 6931,
+        "name": "Dwarka-Sector 8, Delhi - DPCC",
+        "dist_km": 14.1,
+        "pm25": 226.0,
+        "excess25": 141.0
+      },
+      {
+        "id": 17,
+        "name": "R K Puram, Delhi - DPCC",
+        "dist_km": 20.1,
+        "pm25": 103.0,
+        "excess25": 17.9
+      },
+      {
+        "id": 5586,
+        "name": "Sirifort, Delhi - CPCB",
+        "dist_km": 21.6,
+        "pm25": 89.3,
+        "excess25": 4.2
+      },
+      {
+        "id": 6934,
+        "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+        "dist_km": 23.9,
+        "pm25": 74.8,
+        "excess25": -10.3
+      },
+      {
+        "id": 5404,
+        "name": "Pusa, Delhi - IMD",
+        "dist_km": 24.1,
+        "pm25": 64.9,
+        "excess25": -20.2
+      }
+    ]
+  }
+}

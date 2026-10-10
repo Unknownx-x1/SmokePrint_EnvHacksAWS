@@ -1,0 +1,363 @@
+{
+  "case_id": "test_missing_params",
+  "station": "Test Station",
+  "station_id": 235,
+  "coordinates": {
+    "latitude": 28.647,
+    "longitude": 77.316
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2026-04-05T22:00:00Z",
+    "interval_start_utc": "2026-04-05T21:30:00Z",
+    "interval_end_utc": "2026-04-05T22:30:00Z",
+    "interval_midpoint_ist": "2026-04-06 03:30:00 IST",
+    "interval_start_ist": "2026-04-06 03:00:00 IST",
+    "interval_end_ist": "2026-04-06 04:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 20,
+  "background_iqr": 20.0,
+  "regional_median": 50.0,
+  "local_excess": 100.0,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.623,
+    "top_to_k_spread": 0.623,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified",
+    "pm25": 150.0,
+    "pm10": null,
+    "ratio_pm25_pm10": null,
+    "no2_ugm3": null,
+    "co_mgm3": null
+  },
+  "downwind_neighbour_corroboration": [],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.35,
+      "interval": [
+        0.221,
+        0.437
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.45
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    },
+    {
+      "id": "osm_node_11982201446",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.3962,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.2377
+      },
+      "relative_score": 0.154,
+      "interval": [
+        0.107,
+        0.197
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.24 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3962 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_node_11982171910",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.3208,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1925
+      },
+      "relative_score": 0.138,
+      "interval": [
+        0.106,
+        0.208
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.65 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3208 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_node_11982171916",
+      "name": "Unnamed Landfill Site",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.6,
+        "footprint_likelihood": 0.3208,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1925
+      },
+      "relative_score": 0.12,
+      "interval": [
+        0.076,
+        0.195
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.76 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3208 (relative to peak corridor density).",
+        "Prior weight: 0.600 (heuristic, uncalibrated).",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1498754706",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1182
+      },
+      "relative_score": 0.083,
+      "interval": [
+        0.063,
+        0.121
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.69 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_153965502",
+      "name": "Seemapuri Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3774,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1115
+      },
+      "relative_score": 0.074,
+      "interval": [
+        0.049,
+        0.101
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 4.4 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3774 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.063,
+      "interval": [
+        0.035,
+        0.08
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +100.0 ug/m3 detected above regional median."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_node_11982201446",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.2377,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_11982171910",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.1925,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_11982171916",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.1925,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1182,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_153965502",
+        "name": "Seemapuri Depot",
+        "type": "industrial",
+        "score": 0.1115,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_76700057",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4906,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_11982201446",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.3962,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_153965502",
+        "name": "Seemapuri Depot",
+        "type": "industrial",
+        "score": 0.3774,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3870005",
+        "name": "Factory Area",
+        "type": "industrial",
+        "score": 0.3774,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_76700057",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4906,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_node_11982201446",
+        "name": "Unnamed Landfill Site",
+        "type": "landfill",
+        "score": 0.3962,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_153965502",
+        "name": "Seemapuri Depot",
+        "type": "industrial",
+        "score": 0.3774,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3870005",
+        "name": "Factory Area",
+        "type": "industrial",
+        "score": 0.3774,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "missing",
+      "co": "missing"
+    },
+    "satellite_evidence_status": "unavailable"
+  }
+}

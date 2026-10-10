@@ -1,0 +1,429 @@
+{
+  "case_id": "synth_trial_495",
+  "station": "Alipur, Delhi - DPCC",
+  "station_id": 6932,
+  "coordinates": {
+    "latitude": 28.815329,
+    "longitude": 77.15301
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-19T16:00:00Z",
+    "interval_start_utc": "2025-10-19T15:30:00Z",
+    "interval_end_utc": "2025-10-19T16:30:00Z",
+    "interval_midpoint_ist": "2025-10-19 21:30:00 IST",
+    "interval_start_ist": "2025-10-19 21:00:00 IST",
+    "interval_end_ist": "2025-10-19 22:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 74.0,
+  "local_excess": 57.5,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.6,
+    "top_to_k_spread": 0.6,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.32)",
+    "pm25": 131.5,
+    "pm10": 417.2,
+    "ratio_pm25_pm10": 0.32,
+    "no2_ugm3": 38.5,
+    "co_mgm3": 1.21
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "Burari Crossing, New Delhi - IMD",
+      "distance_km": 11.02,
+      "bearing_deg": 154.8,
+      "is_downwind": true,
+      "expected_lag_hours": 4.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "DTU, New Delhi - CPCB",
+      "distance_km": 8.32,
+      "bearing_deg": 209.3,
+      "is_downwind": false,
+      "expected_lag_hours": 3.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Alipur, Delhi - DPCC",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jahangirpuri, Delhi - DPCC",
+      "distance_km": 9.33,
+      "bearing_deg": 169.4,
+      "is_downwind": true,
+      "expected_lag_hours": 3.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Bawana, Delhi - DPCC",
+      "distance_km": 10.84,
+      "bearing_deg": 246.4,
+      "is_downwind": false,
+      "expected_lag_hours": 4.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Narela, Delhi - DPCC",
+      "distance_km": 5.04,
+      "bearing_deg": 279.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Rohini, Delhi - DPCC",
+      "distance_km": 9.76,
+      "bearing_deg": 199.3,
+      "is_downwind": true,
+      "expected_lag_hours": 4.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_way_1162639293",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1182
+      },
+      "relative_score": 0.206,
+      "interval": [
+        0.151,
+        0.28
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.55 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated)."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_189598819",
+      "name": "All India Radio SW",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.4,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1182
+      },
+      "relative_score": 0.191,
+      "interval": [
+        0.13,
+        0.228
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.74 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4000 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated)."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.143,
+      "interval": [
+        0.101,
+        0.196
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +57.5 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_way_770265124",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.6222,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0735
+      },
+      "relative_score": 0.12,
+      "interval": [
+        0.091,
+        0.176
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.21 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.6222 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated)."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1149207609",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.6593,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0779
+      },
+      "relative_score": 0.118,
+      "interval": [
+        0.075,
+        0.191
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.13 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.6593 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated)."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_relation_3865998",
+      "name": "Narela Industrial Complex",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.2222,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0657
+      },
+      "relative_score": 0.101,
+      "interval": [
+        0.068,
+        0.136
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 5.13 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2222 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated)."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.095,
+      "interval": [
+        0.053,
+        0.128
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_189598819",
+        "name": "All India Radio SW",
+        "type": "industrial",
+        "score": 0.1182,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1162639293",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1182,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1149207609",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.0779,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_770265124",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.0735,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3865998",
+        "name": "Narela Industrial Complex",
+        "type": "industrial",
+        "score": 0.0657,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1162639293",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1149207609",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.6593,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_770265124",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.6222,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_742055079",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4815,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_189598819",
+        "name": "All India Radio SW",
+        "type": "industrial",
+        "score": 0.4,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1162639293",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1149207609",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.6593,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_770265124",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.6222,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_742055079",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4815,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_189598819",
+        "name": "All India Radio SW",
+        "type": "industrial",
+        "score": 0.4,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

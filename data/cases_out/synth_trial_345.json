@@ -1,0 +1,594 @@
+{
+  "case_id": "synth_trial_345",
+  "station": "IGI Airport (T3), Delhi - IMD",
+  "station_id": 5650,
+  "coordinates": {
+    "latitude": 28.5627763,
+    "longitude": 77.1180053
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-13T20:00:00Z",
+    "interval_start_utc": "2025-10-13T19:30:00Z",
+    "interval_end_utc": "2025-10-13T20:30:00Z",
+    "interval_midpoint_ist": "2025-10-14 01:30:00 IST",
+    "interval_start_ist": "2025-10-14 01:00:00 IST",
+    "interval_end_ist": "2025-10-14 02:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 74.0,
+  "local_excess": 71.4,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.814,
+    "top_to_k_spread": 0.814,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.34)",
+    "pm25": 145.4,
+    "pm10": 426.4,
+    "ratio_pm25_pm10": 0.34,
+    "no2_ugm3": 34.1,
+    "co_mgm3": 1.19
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "R K Puram, Delhi - DPCC",
+      "distance_km": 6.73,
+      "bearing_deg": 89.5,
+      "is_downwind": true,
+      "expected_lag_hours": 3.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Pusa, Delhi - IMD",
+      "distance_km": 8.98,
+      "bearing_deg": 17.9,
+      "is_downwind": false,
+      "expected_lag_hours": 5.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "distance_km": 9.93,
+      "bearing_deg": 172.3,
+      "is_downwind": false,
+      "expected_lag_hours": 5.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sirifort, Delhi - CPCB",
+      "distance_km": 9.66,
+      "bearing_deg": 98.1,
+      "is_downwind": true,
+      "expected_lag_hours": 5.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "North Campus, DU, Delhi - IMD",
+      "distance_km": 11.24,
+      "bearing_deg": 20.6,
+      "is_downwind": false,
+      "expected_lag_hours": 6.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "NSIT Dwarka, Delhi - CPCB",
+      "distance_km": 9.81,
+      "bearing_deg": 301.7,
+      "is_downwind": false,
+      "expected_lag_hours": 5.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Shadipur, Delhi - CPCB",
+      "distance_km": 10.27,
+      "bearing_deg": 16.2,
+      "is_downwind": false,
+      "expected_lag_hours": 5.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 11.15,
+      "bearing_deg": 73.1,
+      "is_downwind": true,
+      "expected_lag_hours": 6.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Pusa, Delhi - DPCC",
+      "distance_km": 8.98,
+      "bearing_deg": 17.9,
+      "is_downwind": false,
+      "expected_lag_hours": 5.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "distance_km": 11.53,
+      "bearing_deg": 44.7,
+      "is_downwind": false,
+      "expected_lag_hours": 6.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Dwarka-Sector 8, Delhi - DPCC",
+      "distance_km": 4.6,
+      "bearing_deg": 281.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 11.48,
+      "bearing_deg": 80.2,
+      "is_downwind": true,
+      "expected_lag_hours": 6.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sri Aurobindo Marg, Delhi - DPCC",
+      "distance_km": 7.87,
+      "bearing_deg": 116.4,
+      "is_downwind": true,
+      "expected_lag_hours": 4.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, Delhi - IITM",
+      "distance_km": 10.51,
+      "bearing_deg": 74.3,
+      "is_downwind": true,
+      "expected_lag_hours": 5.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "New Moti Bagh, Delhi - MHUA",
+      "distance_km": 6.67,
+      "bearing_deg": 75.0,
+      "is_downwind": true,
+      "expected_lag_hours": 3.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Santushti Apartments, Vasant Kunj",
+      "distance_km": 5.05,
+      "bearing_deg": 142.8,
+      "is_downwind": true,
+      "expected_lag_hours": 2.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Anand Lok",
+      "distance_km": 9.86,
+      "bearing_deg": 92.6,
+      "is_downwind": true,
+      "expected_lag_hours": 5.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IIT Delhi, Delhi - IITM",
+      "distance_km": 7.54,
+      "bearing_deg": 107.4,
+      "is_downwind": true,
+      "expected_lag_hours": 4.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Talkatora Garden, Delhi - DPCC",
+      "distance_km": 9.94,
+      "bearing_deg": 48.7,
+      "is_downwind": false,
+      "expected_lag_hours": 5.5,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "JNU, Delhi - DPCC",
+      "distance_km": 5.51,
+      "bearing_deg": 116.4,
+      "is_downwind": true,
+      "expected_lag_hours": 3.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGNOU_Maidan Garhi, Delhi - DPCC",
+      "distance_km": 11.19,
+      "bearing_deg": 133.4,
+      "is_downwind": true,
+      "expected_lag_hours": 6.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Cantonment Area, Delhi - DPCC",
+      "distance_km": 3.56,
+      "bearing_deg": 11.2,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_way_1551918316",
+      "name": "Unnamed Construction Site",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.0875,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0875
+      },
+      "relative_score": 0.184,
+      "interval": [
+        0.14,
+        0.253
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.35 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.087 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1360907369",
+      "name": "Delhi Airport Bus Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3024,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0894
+      },
+      "relative_score": 0.177,
+      "interval": [
+        0.12,
+        0.208
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 2.87 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3024 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.174,
+      "interval": [
+        0.122,
+        0.236
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +71.4 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_way_1360907371",
+      "name": "Delhi Airport Bus Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.2412,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0713
+      },
+      "relative_score": 0.13,
+      "interval": [
+        0.084,
+        0.212
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.09 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2412 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1360907370",
+      "name": "Delhi Airport Bus Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.1967,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0581
+      },
+      "relative_score": 0.118,
+      "interval": [
+        0.086,
+        0.169
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 3.2 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1967 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.116,
+      "interval": [
+        0.064,
+        0.155
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    },
+    {
+      "id": "osm_way_1007606947",
+      "name": "TajSATS Catering",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.1373,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0406
+      },
+      "relative_score": 0.075,
+      "interval": [
+        0.051,
+        0.102
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.91 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1373 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_1360907369",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.0894,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1551918316",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.0875,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907371",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.0713,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907370",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.0581,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1007606947",
+        "name": "TajSATS Catering",
+        "type": "industrial",
+        "score": 0.0406,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1551918316",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907369",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.3024,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907371",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.2412,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907370",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.1967,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1182398042",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.1855,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1551918316",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907369",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.3024,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907371",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.2412,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1360907370",
+        "name": "Delhi Airport Bus Depot",
+        "type": "industrial",
+        "score": 0.1967,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1182398042",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.1855,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

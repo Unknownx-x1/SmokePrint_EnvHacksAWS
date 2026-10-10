@@ -1,0 +1,92 @@
+{
+  "base_nearest_upwind": {
+    "label": "1. Nearest-Upwind (Base Pool)",
+    "p1": [
+      0.344,
+      0.304,
+      0.388
+    ],
+    "p3": [
+      0.6,
+      0.556,
+      0.644
+    ],
+    "cluster_p3": [
+      0.71,
+      0.666,
+      0.748
+    ]
+  },
+  "base_forward_plume_only": {
+    "label": "2. Forward-Plume Likelihood Only",
+    "p1": [
+      0.544,
+      0.498,
+      0.588
+    ],
+    "p3": [
+      0.728,
+      0.688,
+      0.764
+    ],
+    "cluster_p3": [
+      0.794,
+      0.758,
+      0.828
+    ]
+  },
+  "base_shortlist_score": {
+    "label": "3. Phase 2.7 Shortlist Score (Plume x Sig x Status)",
+    "p1": [
+      0.544,
+      0.5,
+      0.586
+    ],
+    "p3": [
+      0.722,
+      0.682,
+      0.76
+    ],
+    "cluster_p3": [
+      0.784,
+      0.746,
+      0.818
+    ]
+  },
+  "full_nearest_upwind": {
+    "label": "4. Full 1,212 Catalog: Nearest-Upwind",
+    "p1": [
+      0.034,
+      0.02,
+      0.05
+    ],
+    "p3": [
+      0.142,
+      0.112,
+      0.172
+    ],
+    "cluster_p3": [
+      0.23,
+      0.194,
+      0.266
+    ]
+  },
+  "full_shortlist_score": {
+    "label": "5. Full 1,212 Catalog: Phase 2.7 Shortlist Score",
+    "p1": [
+      0.388,
+      0.346,
+      0.43
+    ],
+    "p3": [
+      0.664,
+      0.622,
+      0.706
+    ],
+    "cluster_p3": [
+      0.738,
+      0.698,
+      0.778
+    ]
+  }
+}

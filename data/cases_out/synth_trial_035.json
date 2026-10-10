@@ -1,0 +1,669 @@
+{
+  "case_id": "synth_trial_035",
+  "station": "Pusa, Delhi - IMD",
+  "station_id": 5404,
+  "coordinates": {
+    "latitude": 28.639645,
+    "longitude": 77.146263
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-02T04:00:00Z",
+    "interval_start_utc": "2025-10-02T03:30:00Z",
+    "interval_end_utc": "2025-10-02T04:30:00Z",
+    "interval_midpoint_ist": "2025-10-02 09:30:00 IST",
+    "interval_start_ist": "2025-10-02 09:00:00 IST",
+    "interval_end_ist": "2025-10-02 10:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 64.0,
+  "local_excess": 109.9,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.736,
+    "top_to_k_spread": 0.736,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "unspecified (mixed particulate ratio 0.55)",
+    "pm25": 173.9,
+    "pm10": 315.8,
+    "ratio_pm25_pm10": 0.55,
+    "no2_ugm3": 87.4,
+    "co_mgm3": 1.74
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "R K Puram, Delhi - DPCC",
+      "distance_km": 9.38,
+      "bearing_deg": 154.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Punjabi Bagh, Delhi - DPCC",
+      "distance_km": 4.1,
+      "bearing_deg": 338.8,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Pusa, Delhi - IMD",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Burari Crossing, New Delhi - IMD",
+      "distance_km": 10.96,
+      "bearing_deg": 29.2,
+      "is_downwind": false,
+      "expected_lag_hours": 2.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "North Campus, DU, Delhi - IMD",
+      "distance_km": 2.31,
+      "bearing_deg": 31.3,
+      "is_downwind": false,
+      "expected_lag_hours": 0.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "ITO, New Delhi - CPCB",
+      "distance_km": 9.33,
+      "bearing_deg": 97.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "NSIT Dwarka, Delhi - CPCB",
+      "distance_km": 11.61,
+      "bearing_deg": 253.0,
+      "is_downwind": true,
+      "expected_lag_hours": 2.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Shadipur, Delhi - CPCB",
+      "distance_km": 1.32,
+      "bearing_deg": 4.4,
+      "is_downwind": false,
+      "expected_lag_hours": 0.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 9.53,
+      "bearing_deg": 123.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "distance_km": 8.98,
+      "bearing_deg": 197.9,
+      "is_downwind": true,
+      "expected_lag_hours": 2.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Pusa, Delhi - DPCC",
+      "distance_km": 0.0,
+      "bearing_deg": 270.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "distance_km": 5.36,
+      "bearing_deg": 93.8,
+      "is_downwind": false,
+      "expected_lag_hours": 1.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "distance_km": 9.47,
+      "bearing_deg": 109.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Dwarka-Sector 8, Delhi - DPCC",
+      "distance_km": 10.53,
+      "bearing_deg": 223.6,
+      "is_downwind": true,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 10.8,
+      "bearing_deg": 127.7,
+      "is_downwind": false,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "New Delhi",
+      "distance_km": 7.64,
+      "bearing_deg": 93.2,
+      "is_downwind": false,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Jahangirpuri, Delhi - DPCC",
+      "distance_km": 10.63,
+      "bearing_deg": 12.9,
+      "is_downwind": false,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Wazirpur, Delhi - DPCC",
+      "distance_km": 6.95,
+      "bearing_deg": 15.6,
+      "is_downwind": false,
+      "expected_lag_hours": 1.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Ashok Vihar, Delhi - DPCC",
+      "distance_km": 7.1,
+      "bearing_deg": 29.1,
+      "is_downwind": false,
+      "expected_lag_hours": 1.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Mundka, Delhi - DPCC",
+      "distance_km": 8.44,
+      "bearing_deg": 306.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Rohini, Delhi - DPCC",
+      "distance_km": 10.64,
+      "bearing_deg": 346.0,
+      "is_downwind": false,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Chandni Chowk, Delhi - IITM",
+      "distance_km": 8.13,
+      "bearing_deg": 76.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Lodhi Road, Delhi - IITM",
+      "distance_km": 9.31,
+      "bearing_deg": 127.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "New Moti Bagh, Delhi - MHUA",
+      "distance_km": 7.75,
+      "bearing_deg": 151.6,
+      "is_downwind": false,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Air Check",
+      "distance_km": 8.78,
+      "bearing_deg": 102.1,
+      "is_downwind": false,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Anand Lok",
+      "distance_km": 11.46,
+      "bearing_deg": 141.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IIT Delhi, Delhi - IITM",
+      "distance_km": 11.68,
+      "bearing_deg": 157.7,
+      "is_downwind": false,
+      "expected_lag_hours": 2.8,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Talkatora Garden, Delhi - DPCC",
+      "distance_km": 5.11,
+      "bearing_deg": 112.8,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "JNU, Delhi - DPCC",
+      "distance_km": 11.21,
+      "bearing_deg": 168.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Cantonment Area, Delhi - DPCC",
+      "distance_km": 5.46,
+      "bearing_deg": 202.2,
+      "is_downwind": true,
+      "expected_lag_hours": 1.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_relation_3691012",
+      "name": "Naraina Indl Area - II",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.3841
+      },
+      "relative_score": 0.335,
+      "interval": [
+        0.244,
+        0.4
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.53 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (87.4 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_relation_3691015",
+      "name": "Naraina Loha Mandi",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.5556,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.2134
+      },
+      "relative_score": 0.206,
+      "interval": [
+        0.146,
+        0.273
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.46 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.5556 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (87.4 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_relation_3682213",
+      "name": "Kirti Nagar Indl Area",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3294,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1265
+      },
+      "relative_score": 0.113,
+      "interval": [
+        0.089,
+        0.168
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.19 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3294 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (87.4 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_relation_3682215",
+      "name": "Ware Housing Scheme Furniture Block",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.3313,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1273
+      },
+      "relative_score": 0.106,
+      "interval": [
+        0.068,
+        0.18
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 0.79 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.3313 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (87.4 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_291719142",
+      "name": "Shadipur DTC Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.2639,
+        "signature_likelihood": 1.3,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1014
+      },
+      "relative_score": 0.088,
+      "interval": [
+        0.056,
+        0.123
+      ],
+      "confidence_tier": "medium",
+      "evidence_for": [
+        "Located 1.85 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.2639 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Elevated NO2 (87.4 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.077,
+      "interval": [
+        0.055,
+        0.117
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +109.9 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.052,
+      "interval": [
+        0.028,
+        0.073
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_relation_3691012",
+        "name": "Naraina Indl Area - II",
+        "type": "industrial",
+        "score": 0.3841,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3691015",
+        "name": "Naraina Loha Mandi",
+        "type": "industrial",
+        "score": 0.2134,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682215",
+        "name": "Ware Housing Scheme Furniture Block",
+        "type": "industrial",
+        "score": 0.1273,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682213",
+        "name": "Kirti Nagar Indl Area",
+        "type": "industrial",
+        "score": 0.1265,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_291719142",
+        "name": "Shadipur DTC Depot",
+        "type": "industrial",
+        "score": 0.1014,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_relation_3691012",
+        "name": "Naraina Indl Area - II",
+        "type": "industrial",
+        "score": 1.3,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3691015",
+        "name": "Naraina Loha Mandi",
+        "type": "industrial",
+        "score": 0.7222,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682215",
+        "name": "Ware Housing Scheme Furniture Block",
+        "type": "industrial",
+        "score": 0.4308,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682213",
+        "name": "Kirti Nagar Indl Area",
+        "type": "industrial",
+        "score": 0.4282,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_291719142",
+        "name": "Shadipur DTC Depot",
+        "type": "industrial",
+        "score": 0.3431,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_relation_3691012",
+        "name": "Naraina Indl Area - II",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3691015",
+        "name": "Naraina Loha Mandi",
+        "type": "industrial",
+        "score": 0.5556,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682215",
+        "name": "Ware Housing Scheme Furniture Block",
+        "type": "industrial",
+        "score": 0.3313,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_relation_3682213",
+        "name": "Kirti Nagar Indl Area",
+        "type": "industrial",
+        "score": 0.3294,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_291719142",
+        "name": "Shadipur DTC Depot",
+        "type": "industrial",
+        "score": 0.2639,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

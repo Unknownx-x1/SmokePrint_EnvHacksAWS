@@ -1,0 +1,11 @@
+{
+  "station_id": 50,
+  "station_name": "Punjabi Bagh, Delhi - DPCC",
+  "peak_time_utc": "2026-04-28T05:00:00+00:00",
+  "station_pm25": 628.0,
+  "station_pm10": 374.0,
+  "pm25_to_pm10_ratio": 1.68,
+  "regional_median_pm25": 63.45,
+  "local_excess_pm25": 564.55,
+  "plot_path": "docs/real_spike_feasibility_plot.png"
+}

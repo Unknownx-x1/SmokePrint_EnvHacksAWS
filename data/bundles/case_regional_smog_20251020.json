@@ -1,0 +1,340 @@
+{
+  "case_id": "case_regional_smog_20251020",
+  "station_name": "Airshed Regional Baseline",
+  "timestamp_utc": "2025-10-20T17:00:00Z",
+  "target_station": {
+    "station_id": null,
+    "name": "Airshed Regional Baseline",
+    "latitude": 28.6468,
+    "longitude": 77.316,
+    "pm25": null,
+    "pm10": null,
+    "no2_ugm3": null
+  },
+  "regional_median": 678.0,
+  "local_excess": 221.0,
+  "classification": "regional",
+  "fault_flags": [],
+  "wind": {
+    "wind_speed_ms": 0.89,
+    "wind_direction_deg": 71,
+    "wording": "wind from 71\u00b0"
+  },
+  "candidates": [
+    {
+      "id": "osm_node_5232390466",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6224076,
+      "lon": 77.2354656,
+      "distance_km": 8.31,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_5964272315",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5732704,
+      "lon": 77.24587,
+      "distance_km": 10.66,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_5964272415",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5751025,
+      "lon": 77.2432684,
+      "distance_km": 10.68,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_6112995940",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5646415,
+      "lon": 77.2503369,
+      "distance_km": 11.16,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_6227942119",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5680641,
+      "lon": 77.249967,
+      "distance_km": 10.87,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_6475031493",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5655709,
+      "lon": 77.2703483,
+      "distance_km": 10.07,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_6475194140",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5485568,
+      "lon": 77.3044893,
+      "distance_km": 10.98,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_8108128818",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.599326,
+      "lon": 77.2938046,
+      "distance_km": 5.71,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_9785748182",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6202135,
+      "lon": 77.3066215,
+      "distance_km": 3.09,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_9785748190",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6078529,
+      "lon": 77.3363699,
+      "distance_km": 4.77,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_10778053839",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.5991747,
+      "lon": 77.2261563,
+      "distance_km": 10.24,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_11982171910",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6696109,
+      "lon": 77.3073786,
+      "distance_km": 2.67,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_11982171916",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6695396,
+      "lon": 77.3040884,
+      "distance_km": 2.78,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_11982201446",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6669002,
+      "lon": 77.3124105,
+      "distance_km": 2.26,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_12950988317",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.6007872,
+      "lon": 77.2240598,
+      "distance_km": 10.33,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_12951006713",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.600517,
+      "lon": 77.2237672,
+      "distance_km": 10.37,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_node_13594525500",
+      "name": "Unnamed Site",
+      "type": "landfill",
+      "lat": 28.694682,
+      "lon": 77.2145628,
+      "distance_km": 11.24,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_28208819",
+      "name": "Sector 5",
+      "type": "industrial",
+      "lat": 28.588873,
+      "lon": 77.3216761,
+      "distance_km": 6.46,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_28240487",
+      "name": "Sector 4",
+      "type": "industrial",
+      "lat": 28.5835275,
+      "lon": 77.3230302,
+      "distance_km": 7.07,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_70534891",
+      "name": "AMPM Fashions Private Limited",
+      "type": "industrial",
+      "lat": 28.5903783,
+      "lon": 77.3322077,
+      "distance_km": 6.47,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_70534913",
+      "name": "Ansumiti Technosoft Pvt Ltd",
+      "type": "industrial",
+      "lat": 28.5807818,
+      "lon": 77.318855,
+      "distance_km": 7.35,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_70534966",
+      "name": "Sector 9",
+      "type": "industrial",
+      "lat": 28.5868583,
+      "lon": 77.3273927,
+      "distance_km": 6.76,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71221209",
+      "name": "Sector 11",
+      "type": "industrial",
+      "lat": 28.5987051,
+      "lon": 77.3346276,
+      "distance_km": 5.65,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71295897",
+      "name": "Sector 8",
+      "type": "industrial",
+      "lat": 28.5944591,
+      "lon": 77.3265003,
+      "distance_km": 5.91,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71297383",
+      "name": "Sector 7",
+      "type": "industrial",
+      "lat": 28.5950136,
+      "lon": 77.3165751,
+      "distance_km": 5.76,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71435176",
+      "name": "Sector 2",
+      "type": "industrial",
+      "lat": 28.5849574,
+      "lon": 77.315235,
+      "distance_km": 6.88,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71444961",
+      "name": "Sector 1",
+      "type": "industrial",
+      "lat": 28.5903643,
+      "lon": 77.3123914,
+      "distance_km": 6.29,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71621507",
+      "name": "Sector 57",
+      "type": "industrial",
+      "lat": 28.6049742,
+      "lon": 77.353527,
+      "distance_km": 5.92,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71644071",
+      "name": "Sector 60",
+      "type": "industrial",
+      "lat": 28.6023902,
+      "lon": 77.3670379,
+      "distance_km": 7.01,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71649651",
+      "name": "Sector 59",
+      "type": "industrial",
+      "lat": 28.6080843,
+      "lon": 77.3676234,
+      "distance_km": 6.63,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71651922",
+      "name": "Sector 58",
+      "type": "industrial",
+      "lat": 28.6059961,
+      "lon": 77.3579644,
+      "distance_km": 6.11,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71686902",
+      "name": "Sector 65",
+      "type": "industrial",
+      "lat": 28.6118101,
+      "lon": 77.3853307,
+      "distance_km": 7.81,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71834192",
+      "name": "Sector 67",
+      "type": "industrial",
+      "lat": 28.6050721,
+      "lon": 77.3848883,
+      "distance_km": 8.17,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_71834194",
+      "name": "Unnamed Site",
+      "type": "industrial",
+      "lat": 28.6227336,
+      "lon": 77.3867554,
+      "distance_km": 7.41,
+      "operating_status": "active_presumed"
+    },
+    {
+      "id": "osm_way_72004862",
+      "name": "Unnamed Site",
+      "type": "industrial",
+      "lat": 28.6511075,
+      "lon": 77.3299054,
+      "distance_km": 1.44,
+      "operating_status": "active_presumed"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  SmokePrint S3 Static Website Hosting Stack
+  Free-tier compliant: S3 static website hosting (5 GB free storage, 20,000 GETs).
+
+Resources:
+  WebBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'smokeprint-web-${AWS::AccountId}-${AWS::Region}'
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: 404.html
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+
+  WebBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: PublicReadGetObject
+            Effect: Allow
+            Principal: '*'
+            Action: s3:GetObject
+            Resource: !Sub 'arn:aws:s3:::${WebBucket}/*'
+
+Outputs:
+  WebBucketName:
+    Description: S3 Static Website Bucket Name
+    Value: !Ref WebBucket
+
+  WebsiteUrl:
+    Description: S3 Static Website Endpoint URL
+    Value: !GetAtt WebBucket.WebsiteURL

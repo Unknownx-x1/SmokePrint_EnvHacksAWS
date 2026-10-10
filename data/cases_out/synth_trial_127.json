@@ -1,0 +1,507 @@
+{
+  "case_id": "synth_trial_127",
+  "station": "Aya Nagar, New Delhi - IMD",
+  "station_id": 5570,
+  "coordinates": {
+    "latitude": 28.474261,
+    "longitude": 77.131606
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2025-10-05T16:00:00Z",
+    "interval_start_utc": "2025-10-05T15:30:00Z",
+    "interval_end_utc": "2025-10-05T16:30:00Z",
+    "interval_midpoint_ist": "2025-10-05 21:30:00 IST",
+    "interval_start_ist": "2025-10-05 21:00:00 IST",
+    "interval_end_ist": "2025-10-05 22:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 24,
+  "background_iqr": 28.0,
+  "regional_median": 56.0,
+  "local_excess": 91.9,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.161,
+    "top_to_k_spread": 0.161,
+    "k_candidates_evaluated": 5,
+    "is_uniform": true,
+    "state": "multiple_comparable_candidates",
+    "note": "Near-uniform calm stagnation; cannot separate top candidates"
+  },
+  "signature": {
+    "source_type_label": "coarse-particulate dominant (mechanical dust ratio 0.29)",
+    "pm25": 147.9,
+    "pm10": 505.5,
+    "ratio_pm25_pm10": 0.29,
+    "no2_ugm3": 31.1,
+    "co_mgm3": 0.9
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": null,
+      "name": "R K Puram, Delhi - DPCC",
+      "distance_km": 11.28,
+      "bearing_deg": 28.6,
+      "is_downwind": true,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Vikas Sadan, Gurugram - HSPCB",
+      "distance_km": 10.64,
+      "bearing_deg": 255.4,
+      "is_downwind": false,
+      "expected_lag_hours": 2.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Aya Nagar, New Delhi - IMD",
+      "distance_km": 0.0,
+      "bearing_deg": 0.0,
+      "is_downwind": true,
+      "expected_lag_hours": 0.0,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sirifort, Delhi - CPCB",
+      "distance_km": 11.82,
+      "bearing_deg": 44.2,
+      "is_downwind": true,
+      "expected_lag_hours": 2.7,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGI Airport (T3), Delhi - IMD",
+      "distance_km": 9.93,
+      "bearing_deg": 352.3,
+      "is_downwind": false,
+      "expected_lag_hours": 2.3,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sri Aurobindo Marg, Delhi - DPCC",
+      "distance_km": 8.55,
+      "bearing_deg": 42.0,
+      "is_downwind": true,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Sector-51, Gurugram - HSPCB",
+      "distance_km": 8.55,
+      "bearing_deg": 227.9,
+      "is_downwind": false,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Teri Gram, Gurugram - HSPCB",
+      "distance_km": 5.4,
+      "bearing_deg": 164.4,
+      "is_downwind": false,
+      "expected_lag_hours": 1.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "NISE Gwal Pahari, Gurugram - IMD",
+      "distance_km": 5.98,
+      "bearing_deg": 163.5,
+      "is_downwind": false,
+      "expected_lag_hours": 1.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Santushti Apartments, Vasant Kunj",
+      "distance_km": 6.07,
+      "bearing_deg": 16.5,
+      "is_downwind": true,
+      "expected_lag_hours": 1.4,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "Uptitude Cloud Pvt Ltd - Sector 62, GGN",
+      "distance_km": 9.21,
+      "bearing_deg": 209.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.1,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IIT Delhi, Delhi - IITM",
+      "distance_km": 9.59,
+      "bearing_deg": 37.7,
+      "is_downwind": true,
+      "expected_lag_hours": 2.2,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "JNU, Delhi - DPCC",
+      "distance_km": 8.22,
+      "bearing_deg": 26.0,
+      "is_downwind": true,
+      "expected_lag_hours": 1.9,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    },
+    {
+      "station_id": null,
+      "name": "IGNOU_Maidan Garhi, Delhi - DPCC",
+      "distance_km": 7.13,
+      "bearing_deg": 72.4,
+      "is_downwind": true,
+      "expected_lag_hours": 1.6,
+      "neighbour_pm25": null,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.6,
+      "interval": [
+        0.476,
+        0.672
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 1.2
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Near-uniform calm stagnation; cannot separate top candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +91.9 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_way_1223763808",
+      "name": "Summit Plaza",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1125,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.18
+      },
+      "relative_score": 0.079,
+      "interval": [
+        0.052,
+        0.108
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 4.02 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.113 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.29) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.077,
+      "interval": [
+        0.041,
+        0.118
+      ],
+      "confidence_tier": "medium",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.15
+      },
+      "evidence_for": [
+        "Single-station isolated surge."
+      ],
+      "evidence_against": [
+        "No direct telemetry crash."
+      ]
+    },
+    {
+      "id": "osm_way_1379318629",
+      "name": "Unnamed Construction Site",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.0875,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.14
+      },
+      "relative_score": 0.064,
+      "interval": [
+        0.05,
+        0.092
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 3.68 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.087 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.29) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_419164558",
+      "name": "Sector 54 Gurgaon Metro Rail Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.4464,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1319
+      },
+      "relative_score": 0.064,
+      "interval": [
+        0.041,
+        0.096
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 5.45 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4464 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_1441600442",
+      "name": "Godrej Samaris",
+      "type": "construction",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1125,
+        "footprint_likelihood": 0.75,
+        "signature_likelihood": 1.6,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.135
+      },
+      "relative_score": 0.061,
+      "interval": [
+        0.032,
+        0.088
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 5.34 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.7500 (relative to peak corridor density).",
+        "Prior weight: 0.113 (heuristic, uncalibrated).",
+        "Low PM2.5/PM10 ratio (0.29) is characteristic of coarse mechanical fugitive dust.",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: construction (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    },
+    {
+      "id": "osm_way_859811753",
+      "name": "indus",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.4464,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1319
+      },
+      "relative_score": 0.058,
+      "interval": [
+        0.036,
+        0.081
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 6.09 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4464 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Satellite FIRMS data unavailable for this date."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit).",
+        "Downwind CAAQMS stations showed zero concurrent response."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_1223763808",
+        "name": "Summit Plaza",
+        "type": "construction",
+        "score": 0.18,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318629",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.14,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1441600442",
+        "name": "Godrej Samaris",
+        "type": "construction",
+        "score": 0.135,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_419164558",
+        "name": "Sector 54 Gurgaon Metro Rail Depot",
+        "type": "industrial",
+        "score": 0.1319,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_859811753",
+        "name": "indus",
+        "type": "industrial",
+        "score": 0.1319,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1223763808",
+        "name": "Summit Plaza",
+        "type": "construction",
+        "score": 1.6,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318629",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.6,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531420296",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.4571,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531444846",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.3714,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531420295",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.3429,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1223763808",
+        "name": "Summit Plaza",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1379318629",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531420296",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.9107,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531444846",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.8571,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_1531420295",
+        "name": "Unnamed Construction Site",
+        "type": "construction",
+        "score": 0.8393,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "ppb -> mg/m3 (converted 0.001145x per OpenAQ metadata)"
+    },
+    "satellite_evidence_status": "available_no_thermal_anomaly"
+  }
+}

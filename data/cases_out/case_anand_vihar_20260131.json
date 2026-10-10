@@ -1,0 +1,629 @@
+{
+  "case_id": "case_anand_vihar_20260131",
+  "station": "Anand Vihar, New Delhi - DPCC",
+  "station_id": 235,
+  "coordinates": {
+    "latitude": 28.646835,
+    "longitude": 77.316032
+  },
+  "time_window": {
+    "interval_midpoint_utc": "2026-01-31T05:00:00Z",
+    "interval_start_utc": "2026-01-31T04:30:00Z",
+    "interval_end_utc": "2026-01-31T05:30:00Z",
+    "interval_midpoint_ist": "2026-01-31 10:30:00 IST",
+    "interval_start_ist": "2026-01-31 10:00:00 IST",
+    "interval_end_ist": "2026-01-31 11:00:00 IST",
+    "timezone_storage": "UTC",
+    "timezone_display": "Asia/Kolkata (IST, UTC+05:30)",
+    "convention_note": "Hourly observations indexed by interval midpoint; wind aligned to same midpoint."
+  },
+  "label": "local",
+  "n_stations_background": 30,
+  "background_iqr": 88.75,
+  "regional_median": 202.0,
+  "local_excess": 143.0,
+  "footprint_discriminability": {
+    "discriminability_metric": 0.687,
+    "top_to_k_spread": 0.687,
+    "k_candidates_evaluated": 5,
+    "is_uniform": false,
+    "state": "discriminable_corridor",
+    "note": "Directional advection separates candidates"
+  },
+  "signature": {
+    "source_type_label": "fine-particulate dominant (combustion-compatible ratio 0.7)",
+    "pm25": 345.0,
+    "pm10": 491.0,
+    "ratio_pm25_pm10": 0.7,
+    "no2_ugm3": 54.9,
+    "co_mgm3": null
+  },
+  "downwind_neighbour_corroboration": [
+    {
+      "station_id": 5598,
+      "name": "Sector - 125, Noida, UP - UPPCB",
+      "distance_km": 11.37,
+      "bearing_deg": 176.5,
+      "is_downwind": false,
+      "expected_lag_hours": 2.7,
+      "neighbour_pm25": 253.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5613,
+      "name": "ITO, New Delhi - CPCB",
+      "distance_km": 7.59,
+      "bearing_deg": 254.5,
+      "is_downwind": true,
+      "expected_lag_hours": 1.8,
+      "neighbour_pm25": 219.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 5616,
+      "name": "Sector - 62, Noida, UP - IMD",
+      "distance_km": 4.76,
+      "bearing_deg": 121.3,
+      "is_downwind": false,
+      "expected_lag_hours": 1.1,
+      "neighbour_pm25": 198.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5627,
+      "name": "CRRI Mathura Road, New Delhi - IMD",
+      "distance_km": 11.41,
+      "bearing_deg": 201.3,
+      "is_downwind": false,
+      "expected_lag_hours": 2.7,
+      "neighbour_pm25": 158.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5634,
+      "name": "Lodhi Road, New Delhi - IMD",
+      "distance_km": 10.6,
+      "bearing_deg": 234.8,
+      "is_downwind": false,
+      "expected_lag_hours": 2.5,
+      "neighbour_pm25": 180.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 5665,
+      "name": "Vasundhara, Ghaziabad - UPPCB",
+      "distance_km": 4.29,
+      "bearing_deg": 69.5,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": 332.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6358,
+      "name": "Mandir Marg, New Delhi - DPCC",
+      "distance_km": 11.28,
+      "bearing_deg": 264.1,
+      "is_downwind": true,
+      "expected_lag_hours": 2.6,
+      "neighbour_pm25": 228.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 6359,
+      "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+      "distance_km": 4.04,
+      "bearing_deg": 341.0,
+      "is_downwind": false,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": 154.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6924,
+      "name": "Indirapuram, Ghaziabad - UPPCB",
+      "distance_km": 4.1,
+      "bearing_deg": 90.9,
+      "is_downwind": false,
+      "expected_lag_hours": 1.0,
+      "neighbour_pm25": 336.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6929,
+      "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+      "distance_km": 8.6,
+      "bearing_deg": 242.7,
+      "is_downwind": true,
+      "expected_lag_hours": 2.0,
+      "neighbour_pm25": 221.0,
+      "wind_consistent": true
+    },
+    {
+      "station_id": 6938,
+      "name": "Vivek Vihar, Delhi - DPCC",
+      "distance_km": 2.84,
+      "bearing_deg": 358.5,
+      "is_downwind": false,
+      "expected_lag_hours": 0.7,
+      "neighbour_pm25": 377.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6957,
+      "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+      "distance_km": 10.92,
+      "bearing_deg": 227.3,
+      "is_downwind": false,
+      "expected_lag_hours": 2.5,
+      "neighbour_pm25": 254.0,
+      "wind_consistent": false
+    },
+    {
+      "station_id": 6960,
+      "name": "Patparganj, Delhi - DPCC",
+      "distance_km": 3.81,
+      "bearing_deg": 227.6,
+      "is_downwind": false,
+      "expected_lag_hours": 0.9,
+      "neighbour_pm25": 248.0,
+      "wind_consistent": false
+    }
+  ],
+  "satellite_firms_hits": [],
+  "hypotheses": [
+    {
+      "id": "osm_way_1498754706",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 1.0,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1921
+      },
+      "relative_score": 0.253,
+      "interval": [
+        0.175,
+        0.301
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 0.69 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 1.0000 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_76727509",
+      "name": "Ghazipur Landfill",
+      "type": "landfill",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.85,
+        "footprint_likelihood": 0.1102,
+        "signature_likelihood": 1.45,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.1359
+      },
+      "relative_score": 0.196,
+      "interval": [
+        0.139,
+        0.263
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 2.77 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1102 (relative to peak corridor density).",
+        "Prior weight: 0.850 (heuristic, uncalibrated).",
+        "High PM2.5/PM10 ratio (0.7) is physically consistent with fine combustion smoke.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: landfill (not a point culprit).",
+        "Thermal NOx (54.9 ug/m3) is not typical for low-temperature landfill processes."
+      ]
+    },
+    {
+      "id": "osm_way_287054788",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.4681,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0899
+      },
+      "relative_score": 0.118,
+      "interval": [
+        0.091,
+        0.176
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 0.71 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4681 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "relative_score": 0.117,
+      "interval": [
+        0.082,
+        0.166
+      ],
+      "confidence_tier": "low",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.08
+      },
+      "evidence_for": [
+        "Diffuse urban area emissions indistinguishable from point candidates.",
+        "Directional advection separates candidates"
+      ],
+      "evidence_against": [
+        "Local excess of +143.0 ug/m3 detected above regional median."
+      ]
+    },
+    {
+      "id": "osm_way_287054784",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.1182,
+        "footprint_likelihood": 0.4681,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0899
+      },
+      "relative_score": 0.111,
+      "interval": [
+        0.071,
+        0.184
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 0.74 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.4681 (relative to peak corridor density).",
+        "Prior weight: 0.118 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "osm_way_287054776",
+      "name": "Inland Container Depot",
+      "type": "industrial",
+      "operating_status": "active_presumed",
+      "score_decomposition": {
+        "prior_weight": 0.2955,
+        "footprint_likelihood": 0.1741,
+        "signature_likelihood": 1.625,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.0836
+      },
+      "relative_score": 0.106,
+      "interval": [
+        0.07,
+        0.145
+      ],
+      "confidence_tier": "low",
+      "evidence_for": [
+        "Located 1.15 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.1741 (relative to peak corridor density).",
+        "Prior weight: 0.295 (heuristic, uncalibrated).",
+        "Fine ratio (0.7) supports industrial combustion / furnace emissions.",
+        "Elevated NO2 (54.9 ug/m3) indicates high-temperature thermal NOx co-emission.",
+        "Satellite FIRMS detections unavailable for this window."
+      ],
+      "evidence_against": [
+        "Candidate geometry: industrial (not a point culprit)."
+      ]
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "relative_score": 0.077,
+      "interval": [
+        0.042,
+        0.106
+      ],
+      "confidence_tier": "low",
+      "score_decomposition": {
+        "prior_weight": 1.0,
+        "footprint_likelihood": 0.0,
+        "signature_likelihood": 1.0,
+        "satellite_factor": 1.0,
+        "raw_compound_score": 0.05
+      },
+      "evidence_for": [
+        "Sensor calibration drift."
+      ],
+      "evidence_against": [
+        "Multi-pollutant co-movement and wind-consistent downwind response."
+      ]
+    }
+  ],
+  "three_way_rankings": {
+    "ranked_by_heuristic_priors": [
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.1921,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_76727509",
+        "name": "Ghazipur Landfill",
+        "type": "landfill",
+        "score": 0.1359,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054784",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.0899,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054788",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.0899,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054776",
+        "name": "Inland Container Depot",
+        "type": "industrial",
+        "score": 0.0836,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_flat_priors": [
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.625,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054784",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.7606,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054788",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.7606,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_802304540",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.5996,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_661784209",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.5088,
+        "operating_status": "active_presumed"
+      }
+    ],
+    "ranked_by_footprint_only": [
+      {
+        "id": "osm_way_1498754706",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 1.0,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054784",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4681,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_287054788",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.4681,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_802304540",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.369,
+        "operating_status": "active_presumed"
+      },
+      {
+        "id": "osm_way_661784209",
+        "name": "Unnamed Industrial Site",
+        "type": "industrial",
+        "score": 0.3131,
+        "operating_status": "active_presumed"
+      }
+    ]
+  },
+  "data_quality": {
+    "station_reliability": 0.95,
+    "suspect_hours": 0,
+    "units_verified": {
+      "pm25": "ug/m3 (verified from OpenAQ metadata)",
+      "pm10": "ug/m3 (verified from OpenAQ metadata)",
+      "no2": "ppb -> ug/m3 (converted 1.88x per OpenAQ metadata)",
+      "co": "missing"
+    },
+    "satellite_evidence_status": "unavailable"
+  },
+  "wind": {
+    "wind_speed_ms": 1.19,
+    "wind_direction_deg": 105.0,
+    "from_direction_deg": 105.0,
+    "wording": "wind from 105.0 deg",
+    "boundary_layer_height_m": 150.0,
+    "is_low_wind": true,
+    "source": "ERA5 hourly reanalysis (2026-01-31T05:00 UTC)"
+  },
+  "is_low_wind": true,
+  "dispatch_refused": false,
+  "refusal_basis": null,
+  "refusal_reason": null,
+  "low_wind_label": "Low wind: direction unreliable",
+  "shortlist": [
+    {
+      "id": "osm_way_1498754706",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "lat": 28.6463588,
+      "lon": 77.3230478,
+      "bearing_deg": 94.4,
+      "distance_km": 0.69,
+      "angular_offset_deg": 10.6,
+      "confidence_tier": "low",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 0.69 km upwind from station (bearing 94.4\u00b0).",
+        "Directly aligned with prevailing wind axis (10.6\u00b0 offset)."
+      ],
+      "shortlist_score": 0.253
+    },
+    {
+      "id": "osm_way_76727509",
+      "name": "Ghazipur Landfill",
+      "type": "landfill",
+      "lat": 28.6240472,
+      "lon": 77.3274258,
+      "bearing_deg": 156.3,
+      "distance_km": 2.77,
+      "angular_offset_deg": 51.3,
+      "confidence_tier": "low",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active landfill in OpenStreetMap",
+      "reasons": [
+        "Located 2.77 km from station (bearing 156.3\u00b0), off the main wind line (51.3\u00b0 angular offset).",
+        "Off the main wind line (51.3\u00b0 angular offset)."
+      ],
+      "shortlist_score": 0.196
+    },
+    {
+      "id": "osm_way_287054788",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "lat": 28.640478,
+      "lon": 77.3160381,
+      "bearing_deg": 180.0,
+      "distance_km": 0.71,
+      "angular_offset_deg": 75.0,
+      "confidence_tier": "low",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 0.71 km from station (bearing 180.0\u00b0), off the main wind line (75.0\u00b0 angular offset).",
+        "Off the main wind line (75.0\u00b0 angular offset)."
+      ],
+      "shortlist_score": 0.118
+    },
+    {
+      "id": "osm_way_287054784",
+      "name": "Unnamed Industrial Site",
+      "type": "industrial",
+      "lat": 28.6401521,
+      "lon": 77.3163257,
+      "bearing_deg": 177.8,
+      "distance_km": 0.74,
+      "angular_offset_deg": 72.8,
+      "confidence_tier": "low",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 0.74 km from station (bearing 177.8\u00b0), off the main wind line (72.8\u00b0 angular offset).",
+        "Off the main wind line (72.8\u00b0 angular offset)."
+      ],
+      "shortlist_score": 0.111
+    },
+    {
+      "id": "osm_way_287054776",
+      "name": "Inland Container Depot",
+      "type": "industrial",
+      "lat": 28.6364928,
+      "lon": 77.3168548,
+      "bearing_deg": 176.0,
+      "distance_km": 1.15,
+      "angular_offset_deg": 71.0,
+      "confidence_tier": "low",
+      "operating_status": "active_presumed",
+      "operating_status_text": "Active industrial in OpenStreetMap",
+      "reasons": [
+        "Located 1.15 km from station (bearing 176.0\u00b0), off the main wind line (71.0\u00b0 angular offset).",
+        "Off the main wind line (71.0\u00b0 angular offset)."
+      ],
+      "shortlist_score": 0.106
+    }
+  ],
+  "shortlist_count": 5,
+  "other_explanations_considered": [
+    {
+      "id": "outcome_insufficient_evidence",
+      "name": "Insufficient Evidence (Diffuse Background / Low Discriminability)",
+      "type": "insufficient_evidence",
+      "deterministic_reason": "Local excess above regional baseline detected; localized transport corridor evaluated against diffuse background.",
+      "sentence": "Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.",
+      "relative_score": 0.117
+    },
+    {
+      "id": "outcome_possible_fault",
+      "name": "Instrument / Sensor Bias Artifact",
+      "type": "possible_fault",
+      "deterministic_reason": "Multi-pollutant co-movement (NO2 co-peak) and physical downwind corroboration rule out sensor fault.",
+      "sentence": "Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.",
+      "relative_score": 0.077
+    }
+  ],
+  "station_name": "Anand Vihar, New Delhi - DPCC",
+  "classification": "corroborated",
+  "source": "replayed",
+  "mode": "replayed_from_canonical_output",
+  "replayed_note": "replayed from validated core output"
+}
