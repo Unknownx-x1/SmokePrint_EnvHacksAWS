@@ -4,7 +4,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Smokeprint | Delhi-NCR Air Inspection Decision System',
-  description: 'Deterministic atmospheric plume attribution and inspection dispatch for Delhi-NCR regulatory officers and field inspectors.',
+  description: 'Deterministic atmospheric plume attribution and inspection dispatch prototype for Delhi-NCR inspection officers and field teams.',
 };
 
 export default function RootLayout({
@@ -69,7 +69,7 @@ export default function RootLayout({
             <div className="hidden sm:flex items-center gap-3">
               <div className="flex items-center gap-1.5 text-[11px] font-mono text-stone-600 bg-stone-50 border border-stone-200 px-2 py-0.5 rounded">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                <span>REGULATORY AUDIT ACTIVE</span>
+                <span>Demo build</span>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function RootLayout({
         <footer className="border-t border-stone-200 bg-white py-4 text-xs text-stone-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
             <div>
-              Smokeprint · Built for regulatory inspection officers and field teams. OpenFreeMap / OSM tiles.
+              Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
             </div>
             <div className="font-mono text-[11px] text-stone-400">
               Replayed from validated core output · Never claims a single culprit

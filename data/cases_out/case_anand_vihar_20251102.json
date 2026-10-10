@@ -244,20 +244,19 @@
       },
       "relative_score": 0.179,
       "interval": [
-        0.158,
-        0.213
+        0.148,
+        0.211
       ],
       "confidence_tier": "low",
       "evidence_for": [
         "Located 6.05 km upwind from station along plume advection corridor.",
         "Plume footprint likelihood: 0.5962 (relative to peak corridor density).",
-        "Prior weight: 0.015 (heuristic, uncalibrated).",
         "Fine ratio (0.72) supports industrial combustion / furnace emissions.",
         "Elevated NO2 (189.88 ug/m3) indicates high-temperature thermal NOx co-emission."
       ],
       "evidence_against": [
-        "Candidate geometry: industrial (not a point culprit).",
-        "Decommissioned/disused status in OSM: disused:power=plant (0.05x penalty applied)."
+        "Decommissioned/disused status in OSM: Tagged disused:power=plant in OpenStreetMap (0.05x penalty applied).",
+        "Candidate geometry: industrial (not a point culprit)."
       ]
     },
     {
@@ -266,28 +265,26 @@
       "type": "landfill",
       "operating_status": "unverified_operating_status (decommissioned/disused)",
       "score_decomposition": {
-        "prior_weight": 0.025,
-        "footprint_likelihood": 0.6827,
-        "signature_likelihood": 1.45,
+        "prior_weight": 0.03,
+        "footprint_likelihood": 0.6124,
+        "signature_likelihood": 1.25,
         "satellite_factor": 1.0,
-        "raw_compound_score": 0.0247
+        "raw_compound_score": 0.023
       },
-      "relative_score": 0.173,
+      "relative_score": 0.155,
       "interval": [
-        0.142,
-        0.22
+        0.125,
+        0.183
       ],
       "confidence_tier": "low",
       "evidence_for": [
-        "Located 5.97 km upwind from station along plume advection corridor.",
-        "Plume footprint likelihood: 0.6827 (relative to peak corridor density).",
-        "Prior weight: 0.025 (heuristic, uncalibrated).",
-        "High PM2.5/PM10 ratio (0.72) is physically consistent with fine combustion smoke."
+        "Located 6.04 km upwind from station along plume advection corridor.",
+        "Plume footprint likelihood: 0.6124 (relative to peak corridor density).",
+        "Candidate matches broad particulate emission profile."
       ],
       "evidence_against": [
-        "Candidate geometry: landfill (not a point culprit).",
-        "Thermal NOx (189.88 ug/m3) is not typical for low-temperature landfill processes.",
-        "Decommissioned/disused status in OSM: tagged disused:power=plant in OpenStreetMap (0.05x penalty applied)."
+        "Decommissioned/disused status in OSM: Decommissioned thermal flyash dump in OpenStreetMap (0.05x penalty applied).",
+        "Candidate geometry: landfill (not a point culprit)."
       ]
     },
     {
@@ -604,7 +601,7 @@
         "Located 5.97 km upwind from station (bearing 266.1\u00b0).",
         "Tagged disused in OpenStreetMap, so inspection is unlikely to be useful."
       ],
-      "shortlist_score": 0.173
+      "shortlist_score": 0.155
     },
     {
       "id": "osm_way_1544621569",

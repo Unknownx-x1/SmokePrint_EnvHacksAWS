@@ -24,50 +24,50 @@
     "case_id": "case_anand_vihar_20260405",
     "station_id": 235,
     "station_name": "Anand Vihar, New Delhi - DPCC",
-    "timestamp_utc": "2026-04-05T22:00:00Z",
-    "timestamp_ist": "2026-04-06 03:30:00 IST",
-    "station_pm25": 230.0,
-    "station_pm10": 341.0,
-    "ratio_pm25_pm10": 0.67,
-    "no2_ugm3": 36.5,
-    "regional_median_pm25": 53.65,
-    "local_excess_pm25": 176.35,
+    "timestamp_utc": "2026-04-06T00:00:00Z",
+    "timestamp_ist": "2026-04-06 05:30:00 IST",
+    "station_pm25": 263.0,
+    "station_pm10": 493.0,
+    "ratio_pm25_pm10": 0.53,
+    "no2_ugm3": 14.7,
+    "regional_median_pm25": 70.3,
+    "local_excess_pm25": 192.7,
     "duration_hours": 4,
     "corroboration": {
       "status": "corroborated",
-      "co_pollutant": "Coherent PM2.5/PM10 co-movement with NO2 = 36.5 ug/m3",
+      "co_pollutant": "Coherent PM2.5/PM10 co-movement with NO2 = 14.7 ug/m3",
       "downwind_neighbour": {
         "station": "Vivek Vihar, Delhi - DPCC",
         "distance_km": 1.8,
-        "pm25": 130.0,
-        "excess": 76.4,
+        "pm25": 142.0,
+        "excess": 71.7,
         "lag": "Concurrent response along Ghazipur/Anand Vihar transport corridor"
       },
       "unresponsive_neighbours": [
-        {"station": "Patparganj", "distance_km": 3.2, "pm25": 51.0, "excess": -2.6},
-        {"station": "IHBAS Dilshad Garden", "distance_km": 3.8, "pm25": 57.5, "excess": 3.8},
-        {"station": "Sector 62 Noida", "distance_km": 4.5, "pm25": 65.0, "excess": 11.4}
+        {"station": "Patparganj", "distance_km": 3.2, "pm25": 88.0, "excess": 17.7},
+        {"station": "IHBAS Dilshad Garden", "distance_km": 3.8, "pm25": 56.9, "excess": -13.4},
+        {"station": "Sector 62 Noida", "distance_km": 4.5, "pm25": 84.1, "excess": 13.8}
       ]
     },
     "classification": "corroborated",
-    "source_type_label": "unspecified (fine-particulate dominant, combustion-compatible ratio 0.67)"
+    "source_type_label": "unspecified (fine-particulate dominant, combustion-compatible ratio 0.53)"
   },
   "case_3_gurugram_fault": {
     "case_id": "case_gurugram_20260630",
     "station_id": 301,
     "station_name": "Vikas Sadan, Gurugram - HSPCB",
-    "timestamp_utc": "2026-06-30T06:00:00Z",
-    "timestamp_ist": "2026-06-30 11:30:00 IST",
-    "station_pm25": 314.0,
+    "timestamp_utc": "2026-06-30T07:00:00Z",
+    "timestamp_ist": "2026-06-30 12:30:00 IST",
+    "station_pm25": 316.0,
     "station_pm10": 523.0,
     "ratio_pm25_pm10": 0.60,
-    "no2_ugm3": 19.9,
+    "no2_ugm3": 10.9,
     "regional_median_pm25": 47.0,
-    "local_excess_pm25": 267.0,
+    "local_excess_pm25": 269.0,
     "duration_hours": 11,
     "corroboration": {
       "status": "uncorroborated",
-      "reason": "Instrument fault: PM2.5 and PM10 locked onto an artificial constant ratio of exactly 0.6000 for 4 consecutive hours (306/510, 305/508, 305/509, 307/512) while NO2 froze at 20.49 ug/m3. Both channels abruptly died to NaN at 12:00Z. Zero neighbouring stations responded. Rejected as instrument logger fault."
+      "reason": "Instrument fault: PM2.5 and PM10 locked onto an artificial constant ratio of ~0.6000 for 4 consecutive hours from 08:30Z to 11:30Z (306/510, 305/508, 305/509, 307/512) while NO2 froze at 10.9 ug/m3. Both channels abruptly died to NaN at 12:30Z. Zero neighbouring stations responded. Rejected as instrument logger fault."
     },
     "classification": "uncorroborated",
     "source_type_label": "unspecified (instrument fault)"
@@ -80,7 +80,10 @@
     "timestamp_ist": "2025-10-20 22:30:00 IST",
     "regional_median_pm25": 678.0,
     "reporting_stations": 22,
+    "stations_over_200": 21,
     "elevated_stations_pct": 95.5,
+    "max_station_name": "CRRI Mathura Road, New Delhi - IMD",
+    "max_station_pm25": 959.0,
     "corroboration": {
       "status": "regional",
       "reason": "Airshed-wide coherent spike across 95.5% of reporting stations in Delhi, Noida, Ghaziabad, and Gurugram simultaneously. Median PM2.5 jumped to 678 ug/m3. No localized point excess."

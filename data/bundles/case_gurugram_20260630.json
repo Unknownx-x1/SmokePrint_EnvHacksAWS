@@ -1,26 +1,26 @@
 {
   "case_id": "case_gurugram_20260630",
   "station_name": "Vikas Sadan, Gurugram - HSPCB",
-  "timestamp_utc": "2026-06-30T06:00:00Z",
+  "timestamp_utc": "2026-06-30T07:00:00Z",
   "target_station": {
     "station_id": 301,
     "name": "Vikas Sadan, Gurugram - HSPCB",
     "latitude": 28.6468,
     "longitude": 77.316,
-    "pm25": 314.0,
+    "pm25": 316.0,
     "pm10": 523.0,
-    "no2_ugm3": 19.9
+    "no2_ugm3": 10.9
   },
   "regional_median": 47.0,
-  "local_excess": 267.0,
+  "local_excess": 269.0,
   "classification": "uncorroborated",
   "fault_flags": [
     "single_station_uncorroborated_artifact"
   ],
   "wind": {
-    "wind_speed_ms": 3.92,
-    "wind_direction_deg": 289,
-    "wording": "wind from 289\u00b0"
+    "wind_speed_ms": 3.22,
+    "wind_direction_deg": 307,
+    "wording": "wind from 307\u00b0"
   },
   "candidates": [
     {

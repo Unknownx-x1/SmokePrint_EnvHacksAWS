@@ -9,20 +9,25 @@ interface TimeSeriesChartProps {
 }
 
 export default function TimeSeriesChart({ caseData }: TimeSeriesChartProps) {
-  const regionalBaseline = caseData.regional_median ?? 148;
-  const pm25Peak = caseData.signature?.pm25 ?? 369;
-  const localExcess = caseData.local_excess ?? (pm25Peak - regionalBaseline);
   const hourly = caseData.hourly_series;
+  const smogSummary = caseData.regional_smog_summary;
 
-  // If hourly_series is missing or null, render plain "peak vs regional baseline" comparison
+  // If hourly_series is missing or null, render regional network airshed comparison
   if (!hourly || !hourly.readings || hourly.readings.length === 0) {
+    const networkMedian = smogSummary?.network_median_pm25 ?? caseData.regional_median ?? 678;
+    const reportingStations = smogSummary?.reporting_stations ?? caseData.n_stations_background ?? 22;
+    const stationsOver200 = smogSummary?.stations_over_200 ?? 21;
+    const elevatedPct = smogSummary?.elevated_pct ?? 95.5;
+    const maxStationName = smogSummary?.max_station_name ?? "CRRI Mathura Road, New Delhi - IMD";
+    const maxStationPm25 = smogSummary?.max_station_pm25 ?? 959.0;
+
     return (
       <div className="bg-white rounded border border-stone-200 p-4 shadow-sm space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-2.5">
           <div className="flex items-center gap-2">
             <Activity className="w-4 h-4 text-stone-700" />
             <h3 className="text-xs font-bold text-stone-900 uppercase tracking-wide">
-              Peak vs Regional Baseline Comparison
+              Airshed Regional Baseline & Network Distribution
             </h3>
           </div>
           <div className="flex items-center gap-1.5 text-[11px] font-mono text-stone-600 bg-stone-100 px-2 py-0.5 rounded border border-stone-200">
@@ -34,57 +39,69 @@ export default function TimeSeriesChart({ caseData }: TimeSeriesChartProps) {
         <div className="bg-stone-50 border border-stone-200 rounded p-3 text-xs text-stone-600 flex items-start gap-2">
           <AlertCircle className="w-4 h-4 text-stone-500 shrink-0 mt-0.5" />
           <div>
-            <strong>Regional Airshed Event:</strong> Single-station time series omitted. Telemetry represents basin-wide stagnation across {caseData.n_stations_background ?? 33} network monitors.
+            <strong>Regional Airshed Event:</strong> Single-station time series omitted. Telemetry represents basin-wide stagnation across {reportingStations} continuous network monitors in Delhi-NCR ({stationsOver200}/{reportingStations} stations &gt; 200 µg/m³).
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div className="border border-stone-200 rounded p-3 bg-stone-50">
-            <div className="text-[10px] font-mono text-stone-500 uppercase">Regional Baseline</div>
-            <div className="text-xl font-bold font-mono text-stone-800 tabular-nums mt-1">
-              {regionalBaseline} <span className="text-xs font-normal text-stone-500">µg/m³</span>
-            </div>
-            <div className="text-[10px] text-stone-500 mt-1">33-Station Median</div>
-          </div>
-
-          <div className="border border-stone-200 rounded p-3 bg-stone-50">
-            <div className="text-[10px] font-mono text-stone-500 uppercase">Episode Peak PM2.5</div>
+            <div className="text-[10px] font-mono text-stone-500 uppercase">Network Median PM2.5</div>
             <div className="text-xl font-bold font-mono text-stone-900 tabular-nums mt-1">
-              {pm25Peak} <span className="text-xs font-normal text-stone-500">µg/m³</span>
+              {networkMedian} <span className="text-xs font-normal text-stone-500">µg/m³</span>
             </div>
-            <div className="text-[10px] text-stone-500 mt-1">Station Interval Peak</div>
+            <div className="text-[10px] text-stone-500 mt-1">{reportingStations}-Station Airshed Median</div>
           </div>
 
-          <div className="border border-stone-200 rounded p-3 bg-stone-50 col-span-2 sm:col-span-1">
-            <div className="text-[10px] font-mono text-stone-500 uppercase">Local Excess</div>
-            <div className="text-xl font-bold font-mono text-stone-700 tabular-nums mt-1">
-              {localExcess > 0 ? `+${localExcess}` : localExcess} <span className="text-xs font-normal text-stone-500">µg/m³</span>
+          <div className="border border-stone-200 rounded p-3 bg-stone-50">
+            <div className="text-[10px] font-mono text-stone-500 uppercase">Reporting Monitors</div>
+            <div className="text-xl font-bold font-mono text-stone-900 tabular-nums mt-1">
+              {reportingStations} <span className="text-xs font-normal text-stone-500">stations</span>
             </div>
-            <div className="text-[10px] text-stone-500 mt-1">Above regional median</div>
+            <div className="text-[10px] text-stone-500 mt-1">Active CAAQMS in Delhi-NCR</div>
+          </div>
+
+          <div className="border border-stone-200 rounded p-3 bg-stone-50">
+            <div className="text-[10px] font-mono text-stone-500 uppercase">Elevated (&gt; 200 µg/m³)</div>
+            <div className="text-xl font-bold font-mono text-stone-900 tabular-nums mt-1">
+              {stationsOver200} <span className="text-xs font-normal text-stone-500">/ {reportingStations}</span>
+            </div>
+            <div className="text-[10px] text-stone-500 mt-1">{elevatedPct}% Network Elevation</div>
+          </div>
+
+          <div className="border border-stone-200 rounded p-3 bg-stone-50">
+            <div className="text-[10px] font-mono text-stone-500 uppercase">Network Peak Station</div>
+            <div className="text-xl font-bold font-mono text-stone-900 tabular-nums mt-1">
+              {maxStationPm25} <span className="text-xs font-normal text-stone-500">µg/m³</span>
+            </div>
+            <div className="text-[10px] text-stone-500 mt-1 truncate" title={maxStationName}>
+              {maxStationName}
+            </div>
           </div>
         </div>
 
-        {/* Visual comparison bar */}
+        {/* Visual comparison bar: Network Elevation */}
         <div className="space-y-1.5 pt-1">
           <div className="flex justify-between text-[11px] font-mono text-stone-500">
-            <span>Baseline: {regionalBaseline} µg/m³</span>
-            <span>Peak: {pm25Peak} µg/m³</span>
+            <span>Network Elevation: {stationsOver200} of {reportingStations} stations &gt; 200 µg/m³ ({elevatedPct}%)</span>
+            <span>Peak: {maxStationPm25} µg/m³</span>
           </div>
           <div className="w-full bg-stone-100 h-3 rounded overflow-hidden flex border border-stone-200">
             <div
-              className="bg-stone-400 h-full"
-              style={{ width: `${Math.min(100, (regionalBaseline / Math.max(pm25Peak, 1)) * 100)}%` }}
-              title={`Baseline: ${regionalBaseline} µg/m³`}
+              className="bg-amber-500 h-full"
+              style={{ width: `${elevatedPct}%` }}
+              title={`Elevated Stations: ${elevatedPct}%`}
             />
             <div
-              className="bg-red-400 h-full flex-1"
-              title={`Excess: +${localExcess} µg/m³`}
+              className="bg-stone-300 h-full flex-1"
+              title={`Remaining: ${(100 - elevatedPct).toFixed(1)}%`}
             />
           </div>
         </div>
       </div>
     );
   }
+
+  const regionalBaseline = caseData.regional_median ?? 148;
 
   // Real hourly readings from OpenAQ stored rows
   const readings = hourly.readings;

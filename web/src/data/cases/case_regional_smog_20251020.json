@@ -395,5 +395,13 @@
   "source": "replayed",
   "mode": "replayed_from_canonical_output",
   "replayed_note": "replayed from validated core output",
-  "hourly_series": null
+  "hourly_series": null,
+  "regional_smog_summary": {
+    "network_median_pm25": 678.0,
+    "reporting_stations": 22,
+    "stations_over_200": 21,
+    "elevated_pct": 95.5,
+    "max_station_name": "CRRI Mathura Road, New Delhi - IMD",
+    "max_station_pm25": 959.0
+  }
 }

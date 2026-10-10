@@ -100,7 +100,7 @@ def test_low_wind_cases_force_all_candidates_to_low():
     """
     low_wind_cases = [
         ("case_anand_vihar_20260131", 1.19),
-        ("case_anand_vihar_20260405", 0.97)
+        ("case_anand_vihar_20260405", 0.19)
     ]
     for cid, expected_speed in low_wind_cases:
         cpath = f"data/cases_out/{cid}.json"

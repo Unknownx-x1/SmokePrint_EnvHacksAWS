@@ -46,14 +46,14 @@
 - **Bearing & Distance**: `260.2°` at `6.05 km`
 - **Confidence Tier**: **`LOW`**
 - **Operating Status**: `unverified_operating_status (decommissioned/disused)`
-- **Corroborating Evidence**: `Located 6.05 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.5962 (relative to peak corridor density)., Prior weight: 0.015 (heuristic, uncalibrated).`
+- **Corroborating Evidence**: `Located 6.05 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.5962 (relative to peak corridor density)., Fine ratio (0.72) supports industrial combustion / furnace emissions.`
 
 ### Rank #4: Rajghat Thermal Power Station Flyash Dump (`osm_way_464283150`)
 - **Category**: `landfill`
 - **Bearing & Distance**: `266.1°` at `5.97 km`
 - **Confidence Tier**: **`LOW`**
 - **Operating Status**: `unverified_operating_status (decommissioned/disused)`
-- **Corroborating Evidence**: `Located 5.97 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.6827 (relative to peak corridor density)., Prior weight: 0.025 (heuristic, uncalibrated).`
+- **Corroborating Evidence**: `Located 6.04 km upwind from station along plume advection corridor., Plume footprint likelihood: 0.6124 (relative to peak corridor density)., Candidate matches broad particulate emission profile.`
 
 ### Rank #5: Unnamed Industrial Site (`osm_way_1544621569`)
 - **Category**: `industrial`

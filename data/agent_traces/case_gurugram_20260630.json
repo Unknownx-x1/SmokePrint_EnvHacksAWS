@@ -2,7 +2,7 @@
   "case_id": "case_gurugram_20260630",
   "vetted_case_key": "case_3_gurugram_fault",
   "station_name": "Vikas Sadan, Gurugram - HSPCB",
-  "timestamp_utc": "2026-06-30T06:00:00Z",
+  "timestamp_utc": "2026-06-30T07:00:00Z",
   "classification": "uncorroborated",
   "model": "llama3.2:latest",
   "provider": "ollama",
@@ -13,8 +13,8 @@
       "retries_used": 0,
       "started_at": "2026-10-10T01:04:12.955622+00:00",
       "completed_at": "2026-10-10T01:04:23.523205+00:00",
-      "investigator_response": "Based on the telemetry data from the 'Vikas Sadan, Gurugram - HSPCB' station for the 'case_gurugram_20260630' case, the investigation reveals the following:\n\n* The station reported an unusually high PM2.5 concentration of 314.0 \u03bcg/m\u00b3 and a high PM10 concentration of 523.0 \u03bcg/m\u00b3.\n* The NO2 concentration was reported at 19.9 ug/m\u00b3.\n* However, the telemetry data indicates that the station is experiencing instrument faults. Specifically, the PM2.5 and PM10 measurements are locked onto an artificial constant ratio of exactly 0.6000 for 4 consecutive hours, and the NO2 measurement has frozen at 20.49 ug/m\u00b3. Both channels abruptly died to NaN at 12:00Z.\n* The lack of corroborating data from neighboring stations further supports the conclusion that this is an instrument fault.\n* Recommendation: Due to the instrument fault, NO inspection dispatch is recommended.\n\nThe upwind transport corridor is not directly assessable due to the instrument fault. However, based on the coordinates (28.647, 77.316), the station is likely located in the southern part of the Gurugram area.\n\nThe top candidate suspects for this spike event are:\n\n* Station 'Vikas Sadan, Gurugram - HSPCB' due to the instrument fault.\n* Possible contributing factors include:\n\t+ Local industrial activities or construction in the vicinity of the station.\n\t+ Agricultural burning or wildfires in the surrounding area.\n\t+ Traffic congestion or vehicle emissions in the area.\n\nNote: Further investigation is required to determine the root cause of the spike event.\n",
-      "critic_response": "DISPATCH REFUSED: Spike event 'case_gurugram_20260630' represents a single-station instrument or logger fault. Refusal basis: Detectors: constant_ratio_lock, collapse_after_peak (PM2.5/PM10 ratio locked at exactly 0.6000 for 4 consecutive hours; abrupt drop to NaN). Instrument logger fault. Certified outcome: 'outcome_possible_fault'.",
+      "investigator_response": "Based on the telemetry data from the 'Vikas Sadan, Gurugram - HSPCB' station for the 'case_gurugram_20260630' case, the investigation reveals the following:\n\n* The station reported an unusually high PM2.5 concentration of 316.0 \u03bcg/m\u00b3 and a high PM10 concentration of 523.0 \u03bcg/m\u00b3.\n* The NO2 concentration was reported at 10.9 ug/m\u00b3.\n* The telemetry data indicates that the station is experiencing instrument faults. Specifically, the PM2.5 and PM10 measurements are locked onto an artificial constant ratio of ~0.6000 for 4 consecutive hours from 08:30Z to 11:30Z (306/510, 305/508, 305/509, 307/512), followed by abrupt dropout to NaN at 12:30Z.\n* Zero neighbouring stations responded.\n* Recommendation: Due to the instrument fault, NO inspection dispatch is recommended.\n",
+      "critic_response": "DISPATCH REFUSED: Spike event 'case_gurugram_20260630' represents a single-station instrument or logger fault. Refusal basis: Detectors: constant_ratio_lock, collapse_after_peak. PM2.5/PM10 ratio locked at ~0.6000 for 4 consecutive hours from 08:30Z to 11:30Z (306/510, 305/508, 305/509, 307/512), followed by abrupt dropout to NaN at 12:30Z. Instrument logger fault. Determined outcome: 'outcome_possible_fault'.",
       "tool_calls": [
         {
           "tool_name": "get_case_telemetry",

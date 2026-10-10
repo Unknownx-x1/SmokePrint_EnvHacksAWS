@@ -242,7 +242,7 @@ def test_field_page_all_7_cases(browser_instance):
         }""")
         for h in tap_heights:
             if h > 5:
-                assert h >= 44, f"Touch target too small on {cid}: {h}px"
+                assert h >= 48, f"Touch target too small on {cid}: {h}px"
 
         if cid == "case_anand_vihar_20251102":
             expect(page.locator("body")).to_contain_text("Patparganj Industrial Area")

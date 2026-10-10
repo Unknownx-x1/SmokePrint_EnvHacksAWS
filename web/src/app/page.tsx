@@ -92,13 +92,13 @@ export default function LandingPage() {
       <div className="text-center max-w-3xl mb-10">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-stone-100 text-stone-700 border border-stone-200 mb-6">
           <ShieldAlert className="w-3.5 h-3.5 text-risk-600" />
-          <span>REGULATORY DECISION SUPPORT · DELHI-NCR</span>
+          <span>DECISION SUPPORT PROTOTYPE · DELHI-NCR</span>
         </div>
         <h1 className="text-2xl sm:text-4xl font-semibold tracking-tight text-stone-900 leading-snug">
           A spike at a monitor is not a culprit. Smokeprint tells you whether to send an inspector, and where first.
         </h1>
         <p className="mt-4 text-sm text-stone-600 max-w-2xl mx-auto">
-          Built for regulatory inspection officers and field inspectors. Replaces raw monitor panic with physics-gated candidate shortlists, instrument fault rejection, and downwind corroboration.
+          Built for air quality inspection officers and field teams. Replaces raw monitor panic with physics-gated candidate shortlists, instrument fault rejection, and downwind corroboration.
         </p>
       </div>
 

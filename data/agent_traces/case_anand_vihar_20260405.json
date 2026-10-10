@@ -2,7 +2,7 @@
   "case_id": "case_anand_vihar_20260405",
   "vetted_case_key": "case_2_anand_vihar_spring",
   "station_name": "Anand Vihar, New Delhi - DPCC",
-  "timestamp_utc": "2026-04-05T22:00:00Z",
+  "timestamp_utc": "2026-04-06T00:00:00Z",
   "classification": "corroborated",
   "model": "llama3.2:latest",
   "provider": "ollama",
@@ -13,8 +13,8 @@
       "retries_used": 0,
       "started_at": "2026-10-10T01:03:58.853993+00:00",
       "completed_at": "2026-10-10T01:04:12.808358+00:00",
-      "investigator_response": "Based on the provided data, the landfill site with the highest score is:\n\n*   **Unnamed Landfill Site (id: osm_node_11982171910)**\n    *   Score: 0.2137\n    *   Operating Status: Active Presumed\n    *   Location: 28.6696109, 77.3073786\n    *   Bearing: 341.6\u00b0\n    *   Distance: 2.67 km\n    *   Angular Offset: 33.4\u00b0\n",
-      "critic_response": "Audited suspect facilities under low wind condition (Low wind: direction unreliable; presented as areas to check without strict ranking):\n\n- **Chemical Signature**: Observed PM2.5/PM10 ratio is 0.674 (fine-particulate dominant).\n- **Unnamed Landfill Site (osm_node_11982201446)**: Located 2.26 km upwind. Operating status is 'active_presumed (no disused/abandoned tag found in OpenStreetMap)'.\n- **Unnamed Landfill Site (osm_node_11982171910)**: Located 2.67 km from station, somewhat off the wind line (33.4\u00b0 offset). Operating status is 'active_presumed (no disused/abandoned tag found in OpenStreetMap)'.\n\nConclusion: Evaluated candidate facilities under low wind condition; inspection targets presented as areas to check.",
+      "investigator_response": "Based on the provided data, the landfill site with the highest score is:\n\n*   **Unnamed Landfill Site (id: osm_node_11982201446)**\n    *   Score: 0.237\n    *   Operating Status: Active Presumed\n    *   Location: 28.6669002, 77.3124105\n    *   Bearing: 351.0\u00b0\n    *   Distance: 2.26 km\n    *   Angular Offset: 5.0\u00b0\n",
+      "critic_response": "Audited suspect facilities under low wind condition (Low wind: direction unreliable; presented as areas to check without strict ranking):\n\n- **Chemical Signature**: Fine-particulate dominant (ratio 0.533).\n- **Unnamed Landfill Site (osm_node_11982201446)**: Located 2.26 km upwind (bearing 351.0\u00b0, offset 5.0\u00b0). Operating status is 'active_presumed'.\n- **Unnamed Landfill Site (osm_node_11982171910)**: Located 2.67 km upwind (bearing 341.6\u00b0, offset 4.4\u00b0). Operating status is 'active_presumed'.\n- **Unnamed Landfill Site (osm_node_11982171916)**: Located 2.78 km upwind (bearing 335.2\u00b0, offset 10.8\u00b0). Operating status is 'active_presumed'.\n\nConclusion: Evaluated candidate facilities under low wind condition; inspection targets presented as areas to check.",
       "tool_calls": [
         {
           "tool_name": "get_case_telemetry",

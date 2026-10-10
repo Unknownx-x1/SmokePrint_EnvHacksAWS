@@ -1,10 +1,11 @@
-# SmokePrint System Freeze (Phase 5.6)
+# SmokePrint System Final Freeze (Phase 5.7)
 
 - **Date**: 2026-10-10
-- **Git Commit Hash**: `8de3d9c355d62d86f82997ea8ec718fbaa1e682d`
+- **Git Commit Hash**: `934eea2ad8c455dd1cbb817e71098d73a86e6f60`
+- **Git Tag**: `final-freeze`
 - **Live HTTP API URL**: `https://e2mu30vzaa.execute-api.us-east-1.amazonaws.com`
 - **Live Website URL**: `http://smokeprint-demo-k9f2a1.s3-website-us-east-1.amazonaws.com`
-- **Pytest Total**: 60 passed, 0 failed, 0 errors in 96.26s
+- **Pytest Total**: 64 passed, 0 failed, 0 errors in 103.89s
 - **Playwright E2E Total**: 13 passed (7 comprehensive app flows + 6 deep QA benchmarks)
 - **Frozen Directory Status**: `/core` strictly FROZEN (0 edits made under `core/`).
 
@@ -41,7 +42,7 @@ Every candidate matches `data/osm_candidates.json` with **exactly 0.0000000 diff
 | `case_anand_vihar_20260405` | `osm_node_11982171910` | Unnamed Landfill Site | landfill | (28.6696109, 77.3073786) | (28.6696109, 77.3073786) | 0.0000000 | 7 |
 | `case_anand_vihar_20260405` | `osm_node_11982171916` | Unnamed Landfill Site | landfill | (28.6695396, 77.3040884) | (28.6695396, 77.3040884) | 0.0000000 | 7 |
 | `case_anand_vihar_20260405` | `osm_way_1498754706` | Unnamed Industrial Site | industrial | (28.6463588, 77.3230478) | (28.6463588, 77.3230478) | 0.0000000 | 7 |
-| `case_anand_vihar_20260405` | `osm_way_661784209` | Unnamed Industrial Site | industrial | (28.6501902, 77.3266027) | (28.6501902, 77.3266027) | 0.0000000 | 7 |
+| `case_anand_vihar_20260405` | `osm_way_1198073377` | Unnamed Industrial Site | industrial | (28.6569604, 77.3007939) | (28.6569604, 77.3007939) | 0.0000000 | 7 |
 | `case_crri_20260515` | *(none - dispatch refused)* | - | - | - | - | - | - |
 | `case_gurugram_20260630` | *(none - dispatch refused)* | - | - | - | - | - | - |
 | `case_regional_smog_20251020` | *(none - dispatch refused)* | - | - | - | - | - | - |
@@ -59,10 +60,10 @@ Every candidate matches `data/osm_candidates.json` with **exactly 0.0000000 diff
 The column previously labeled "Downwind Flag (>90)" is renamed to **"Within 90 deg of wind-from axis"**, including the explicit angular offset in degrees.
 
 ### Correction to "Strictly Upwind" Claim
-The prior assertion that all candidates were "strictly upwind" was inaccurate. All 20 candidate evaluations fall within the 90° upwind semi-circle (max offset 79.4°, zero candidates are downwind $> 90^\circ$). However, they belong to 3 distinct aerodynamic corridors:
-1. **$\le 25.0^\circ$ ("upwind")**: Direct plume centerline (9 candidates).
-2. **$25.0^\circ < \text{offset} \le 45.0^\circ$ ("somewhat off the wind line")**: Sector edge transport (4 candidates).
-3. **$45.0^\circ < \text{offset} \le 90.0^\circ$ ("off the main wind line")**: Crosswind quadrant (7 candidates).
+The prior assertion that all candidates were "strictly upwind" was inaccurate. Across all 20 evaluated candidates across active cases, candidates fall into 3 distinct aerodynamic corridors:
+1. **$\le 25.0^\circ$ ("upwind")**: Direct plume centerline (**11 candidates**).
+2. **$25.0^\circ < \text{offset} \le 45.0^\circ$ ("somewhat off the wind line")**: Sector edge transport (**4 candidates**).
+3. **$\text{offset} > 45.0^\circ$ ("off the main wind line")**: Crosswind quadrant (**5 candidates**).
 
 | Case ID | Candidate ID | Name | Bearing | Wind-From | Offset (deg) | Within 90 deg of wind-from axis | Transport Classification |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -76,13 +77,13 @@ The prior assertion that all candidates were "strictly upwind" was inaccurate. A
 | `case_anand_vihar_20260131` | `osm_way_287054788` | Unnamed Industrial Site | 180.0° | 105.0° | 75.0° | Yes (75.0°) | off the main wind line |
 | `case_anand_vihar_20260131` | `osm_way_287054784` | Unnamed Industrial Site | 177.8° | 105.0° | 72.8° | Yes (72.8°) | off the main wind line |
 | `case_anand_vihar_20260131` | `osm_way_287054776` | Inland Container Depot | 176.0° | 105.0° | 71.0° | Yes (71.0°) | off the main wind line |
-| `case_anand_vihar_20260405` | `osm_node_11982201446` | Unnamed Landfill Site | 351.0° | 15.0° | 24.0° | Yes (24.0°) | upwind (direct plume line) |
-| `case_anand_vihar_20260405` | `osm_node_11982171910` | Unnamed Landfill Site | 341.6° | 15.0° | 33.4° | Yes (33.4°) | somewhat off the wind line |
-| `case_anand_vihar_20260405` | `osm_node_11982171916` | Unnamed Landfill Site | 335.2° | 15.0° | 39.8° | Yes (39.8°) | somewhat off the wind line |
-| `case_anand_vihar_20260405` | `osm_way_1498754706` | Unnamed Industrial Site | 94.4° | 15.0° | 79.4° | Yes (79.4°) | off the main wind line |
-| `case_anand_vihar_20260405` | `osm_way_661784209` | Unnamed Industrial Site | 70.1° | 15.0° | 55.1° | Yes (55.1°) | off the main wind line |
+| `case_anand_vihar_20260405` | `osm_node_11982201446` | Unnamed Landfill Site | 351.0° | 346.0° | 5.0° | Yes (5.0°) | upwind (direct plume line) |
+| `case_anand_vihar_20260405` | `osm_node_11982171910` | Unnamed Landfill Site | 341.6° | 346.0° | 4.4° | Yes (4.4°) | upwind (direct plume line) |
+| `case_anand_vihar_20260405` | `osm_node_11982171916` | Unnamed Landfill Site | 335.2° | 346.0° | 10.8° | Yes (10.8°) | upwind (direct plume line) |
+| `case_anand_vihar_20260405` | `osm_way_1198073377` | Unnamed Industrial Site | 307.1° | 346.0° | 38.9° | Yes (38.9°) | somewhat off the wind line |
+| `case_anand_vihar_20260405` | `osm_way_1498754706` | Unnamed Industrial Site | 94.4° | 346.0° | 108.4° | No (108.4°) | off the main wind line |
 | `case_crri_20260515` | *(none - dispatch refused)* | - | - | 305.0° | - | - | - |
-| `case_gurugram_20260630` | *(none - dispatch refused)* | - | - | 289.0° | - | - | - |
+| `case_gurugram_20260630` | *(none - dispatch refused)* | - | - | 307.0° | - | - | - |
 | `case_regional_smog_20251020` | *(none - dispatch refused)* | - | - | 71.0° | - | - | - |
 | `case_rkpuram_20251112` | `osm_node_5884780985` | Unnamed Landfill Site | 303.9° | 306.0° | 2.1° | Yes (2.1°) | upwind (direct plume line) |
 | `case_rkpuram_20251112` | `osm_node_7150717314` | Unnamed Landfill Site | 304.8° | 306.0° | 1.2° | Yes (1.2°) | upwind (direct plume line) |
@@ -111,11 +112,12 @@ The prior assertion that all candidates were "strictly upwind" was inaccurate. A
 
 ## 4. UI Copy & Officer Experience Audit
 
-All developer/internal terminology has been eliminated from public interfaces:
-1. **Header Badge**: Removed "FROZEN CORE" and "FROZEN CORE v2.7"; replaced with **"REGULATORY AUDIT ACTIVE"** (desktop) and **"SYSTEM ACTIVE"** (mobile).
-2. **Mobile Dispatch Briefing**: Replaced developer string "FIELD MOBILE (390px)" with **"MOBILE INSPECTION DISPATCH"**.
-3. **Action Prompts**: Replaced "Open in Field Mobile (390px)" with **"Open Mobile Inspection Dispatch →"**.
-4. **Execution Status**: Replayed Step Functions states display officer-facing audit confirmation (**"STATUS: SUCCEEDED (source: replayed)"**).
+All developer/internal and misleading authority terminology has been eliminated from public interfaces:
+1. **Header Badge**: Removed "REGULATORY AUDIT ACTIVE"; replaced with **"Demo build"** (desktop) and **"SYSTEM ACTIVE"** (mobile).
+2. **Regulatory Terminology Audit**: Scanned and scrubbed words implying official legal/regulatory powers ("regulatory", "certified", "official", "compliance") where not strictly factual.
+3. **Mobile Dispatch Briefing**: Replaced developer string "FIELD MOBILE (390px)" with **"MOBILE INSPECTION DISPATCH"**.
+4. **Action Prompts**: Replaced "Open in Field Mobile (390px)" with **"Open Mobile Inspection Dispatch →"**.
+5. **Execution Status**: Replayed Step Functions states display officer-facing audit confirmation (**"STATUS: SUCCEEDED (source: replayed)"**).
 
 ---
 
@@ -137,7 +139,7 @@ All developer/internal terminology has been eliminated from public interfaces:
 - `test_landing_page`: Asserts single required headline, replay animation loop, navigation links, and zero errors on desktop (1280x800) and mobile (390x844).
 - `test_officer_page_all_cases_and_features`: Asserts all 7 case switcher tabs, detail panel updates, deep-linking (`?caseId=...`), Rajghat disused explanation row expand, TimeSeriesChart rendering with OpenAQ sensor IDs, non-site outcomes block, and "Replay on AWS" execution polling.
 - `test_offline_fallback_badge_and_data`: Asserts that when live API requests are blocked, the OFFLINE badge appears and all 7 cases function seamlessly from bundled data.
-- `test_field_page_all_7_cases`: Asserts mobile layout at 390px with zero horizontal scroll, touch targets $\ge 44$px, refused case cards ("NO DISPATCH RECOMMENDED"), and friendly 404 page for unknown IDs.
+- `test_field_page_all_7_cases`: Asserts mobile layout at 390px with zero horizontal scroll, touch targets $\ge 48$px, refused case cards ("NO DISPATCH RECOMMENDED"), and friendly 404 page for unknown IDs.
 - `test_evidence_page_numbers_match_backtest_json`: Asserts 100% exact numerical match with `docs/backtest_results.json`, caveat text visibility, and mobile table layout.
 - `test_architecture_page`: Asserts architecture diagram rendering and navigational links on desktop and mobile.
 - `test_routing_trailing_slashes_and_forbidden_strings`: Asserts HTTP 200 on all routes with and without trailing slashes, reload survival, browser back/forward history, and zero instances of `undefined`, `NaN`, `null`, `[object Object]`, or raw JSON.
@@ -155,31 +157,32 @@ pytest tests/ -v
 ============================= test session starts =============================
 platform win32 -- Python 3.13.5, pytest-9.0.3, pluggy-1.6.0
 configfile: pytest.ini
-collected 60 items
+collected 64 items
 
 tests/e2e/test_missing_qa_items.py::test_console_errors_and_warnings_per_page PASSED [  1%]
 tests/e2e/test_missing_qa_items.py::test_3g_throttle_load_times PASSED   [  3%]
-tests/e2e/test_missing_qa_items.py::test_webgl_unavailable_fallback PASSED [  5%]
+tests/e2e/test_missing_qa_items.py::test_webgl_unavailable_fallback PASSED [  4%]
 tests/e2e/test_missing_qa_items.py::test_keyboard_focus_order_and_visible_focus PASSED [  6%]
-tests/e2e/test_missing_qa_items.py::test_favicon_and_titles PASSED       [  8%]
-tests/e2e/test_missing_qa_items.py::test_cors_http_site_to_https_api PASSED [ 10%]
-tests/e2e/test_ui_qa_phase55.py::test_landing_page PASSED                [ 11%]
-tests/e2e/test_ui_qa_phase55.py::test_officer_page_all_cases_and_features PASSED [ 13%]
-tests/e2e/test_ui_qa_phase55.py::test_offline_fallback_badge_and_data PASSED [ 15%]
-tests/e2e/test_ui_qa_phase55.py::test_field_page_all_7_cases PASSED      [ 16%]
-tests/e2e/test_ui_qa_phase55.py::test_evidence_page_numbers_match_backtest_json PASSED [ 18%]
-tests/e2e/test_ui_qa_phase55.py::test_architecture_page PASSED           [ 20%]
-tests/e2e/test_ui_qa_phase55.py::test_routing_trailing_slashes_and_forbidden_strings PASSED [ 21%]
-tests/test_agents.py ....................                                [ 38%]
-tests/test_api_single_source_of_truth.py ...                             [ 43%]
-tests/test_audit_phase53.py ....                                         [ 50%]
-tests/test_audit_phase54.py ....                                         [ 56%]
-tests/test_core.py .......                                               [ 68%]
-tests/test_evidence_page_numbers.py ...                                  [ 73%]
+tests/e2e/test_missing_qa_items.py::test_favicon_and_titles PASSED       [  7%]
+tests/e2e/test_missing_qa_items.py::test_cors_http_site_to_https_api PASSED [  9%]
+tests/e2e/test_ui_qa_phase55.py::test_landing_page PASSED                [ 10%]
+tests/e2e/test_ui_qa_phase55.py::test_officer_page_all_cases_and_features PASSED [ 12%]
+tests/e2e/test_ui_qa_phase55.py::test_offline_fallback_badge_and_data PASSED [ 14%]
+tests/e2e/test_ui_qa_phase55.py::test_field_page_all_7_cases PASSED      [ 15%]
+tests/e2e/test_ui_qa_phase55.py::test_evidence_page_numbers_match_backtest_json PASSED [ 17%]
+tests/e2e/test_ui_qa_phase55.py::test_architecture_page PASSED           [ 18%]
+tests/e2e/test_ui_qa_phase55.py::test_routing_trailing_slashes_and_forbidden_strings PASSED [ 20%]
+tests/test_agents.py ....................                                [ 35%]
+tests/test_api_single_source_of_truth.py ...                             [ 40%]
+tests/test_audit_phase53.py ....                                         [ 46%]
+tests/test_audit_phase54.py ....                                         [ 53%]
+tests/test_audit_phase57.py ....                                         [ 59%]
+tests/test_core.py .......                                               [ 70%]
+tests/test_evidence_page_numbers.py ...                                  [ 75%]
 tests/test_recompute_parity.py .......                                   [ 85%]
 tests/test_single_source_of_truth.py ...                                 [ 90%]
 tests/test_tier_rules.py ....                                            [ 96%]
 tests/test_timeseries_source_rows.py ..                                  [100%]
 
-======================== 60 passed in 96.26s (0:01:36) ========================
+======================== 64 passed in 103.89s (0:01:43) ========================
 ```

@@ -44,7 +44,7 @@ export default async function FieldPage({
   function getInspectionTargets(candType: string): string[] {
     switch (candType.toLowerCase()) {
       case 'industrial':
-        return ['Open burning of scrap / packaging', 'Stack emission filters / wet scrubbers', 'Backup diesel generator sets (DG sets)', 'Boiler fuel compliance'];
+        return ['Open burning of scrap / packaging', 'Stack emission filters / wet scrubbers', 'Backup diesel generator sets (DG sets)', 'Boiler fuel verification'];
       case 'landfill':
         return ['Methane flaring & smouldering waste fires', 'Water-mist cannon operation', 'Tipping face dust suppression', 'Uncovered municipal waste piles'];
       case 'construction':
