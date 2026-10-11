@@ -48,3 +48,12 @@ body {
 .maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
   border-top-color: #ffffff !important;
 }
+
+/* Hide scrollbar for clean mobile horizontal scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

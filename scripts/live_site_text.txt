@@ -1,0 +1,855 @@
+--- INSPECTING /officer/ ---
+Officer Page Text:
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+Loading atmospheric transport map...
+CASE SELECTION (6 VETTED EPISODES)
+Open Mobile Inspection Dispatch →
+CRRI Mathura Rd (May 15)
+REFUSED: instrument fault
+Gurugram Sec-51 (Jun 30)
+REFUSED: instrument fault
+Delhi Smog (Oct 20)
+REFUSED: regional
+RK Puram (Nov 12)
+DISPATCH RECOMMENDED
+Anand Vihar (Nov 02)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Jan 31)
+DISPATCH RECOMMENDED
+case_anand_vihar_20251102
+Anand Vihar, New Delhi - DPCC
+Midpoint: 2025-11-03 03:30:00 IST
+·
+2025-11-02T22:00:00Z
+INSPECTION SHORTLIST (comparable candidates)
+Replay on AWS
+1-hour interval midpoint convention
+STATION PM2.5
+400 µg/m³
+OpenAQ Continuous
+LOCAL EXCESS
++252 µg/m³
+vs Regional Baseline (148 µg/m³)
+SIGNATURE RATIO
+0.746
+PM2.5/PM10 (fine combustion)
+THERMAL NO2
+208.68 µg/m³
+Converted standard
+Loading atmospheric transport map...
+OPENAQ HOURLY SERIES (SENSOR #12235610)
+hourly value (as reported), shown in IST
+0
+100
+200
+300
+400
+Regional Baseline (148 µg/m³)
+296
+01:30 IST
+-2h
+296
+02:30 IST
+-1h
+400
+03:30 IST
+T0 (Midpoint)
+277
+04:30 IST
++1h
+195
+05:30 IST
++2h
+Concentration (µg/m³)
+Time Window (hourly value (as reported), shown in IST)
+Station PM2.5 (Sensor #12235610)
+Regional Median (148 µg/m³)
+Source: OpenAQ QC'd hourly readings
+Physics-Gated Candidate Shortlist
+
+Scored by forward-plume likelihood × signature gating × operating-status filter.
+
+#	Candidate Facility	Type	Distance & Bearing	Wind Offset	Operating Status	Tier
+#1	
+Patparganj Industrial Area
+osm_relation_3808258
+	Industrial	0.86 km · 218.9°	49.1°	Active industrial in OpenStreetMap	medium
+#2	
+Rajghat Bus Depot
+osm_way_464283162
+	Industrial	6.15 km · 265.5°	2.5°	Active industrial in OpenStreetMap	medium
+#3	
+Rajghat Thermal Power Station
+osm_way_464283160
+	Industrial	6.05 km · 260.2°	7.8°	Tagged disused:power=plant in OpenStreetMap	low
+#4	
+Rajghat Thermal Power Station Flyash Dump
+osm_way_464283150
+	Landfill	5.97 km · 266.1°	1.9°	Decommissioned thermal flyash dump in OpenStreetMap	low
+#5	
+Unnamed Industrial Site
+osm_way_1544621569
+	Industrial	9.07 km · 255.7°	12.3°	Active industrial in OpenStreetMap	medium
+Other Explanations Considered (Non-Site Outcomes)
+Insufficient Evidence (Diffuse Background / Low Discriminability)
+outcome_insufficient_evidence
+Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.
+Instrument / Sensor Bias Artifact
+outcome_possible_fault
+Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.
+Evidence Drawer & QA/QC Telemetry Audit
+How This Was Checked
+Validator Checked
+Agent review mode: precomputed, local model, validator-checked.
+Validator verification: Zero hallucinated IDs or numbers. Every referenced quantity is strictly grounded in deterministic tool output.
+Operating status policy: Hard-coded closure narratives removed. Operating status reflects solely verified OpenStreetMap tags (e.g. tagged disused:power=plant in OpenStreetMap).
+Core provenance: replayed from validated core output.
+Step Functions Recompute Replay
+POSTs /cases/case_anand_vihar_20251102/recompute to replay canonical validated core output.
+Replay on AWS
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+...
+
+=======================================================
+--- INSPECTING /officer/?case=case_anand_vihar_20251102 ---
+Officer view (case_anand_vihar_20251102):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+Loading atmospheric transport map...
+CASE SELECTION (6 VETTED EPISODES)
+Open Mobile Inspection Dispatch →
+CRRI Mathura Rd (May 15)
+REFUSED: instrument fault
+Gurugram Sec-51 (Jun 30)
+REFUSED: instrument fault
+Delhi Smog (Oct 20)
+REFUSED: regional
+RK Puram (Nov 12)
+DISPATCH RECOMMENDED
+Anand Vihar (Nov 02)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Jan 31)
+DISPATCH RECOMMENDED
+case_anand_vihar_20251102
+Anand Vihar, New Delhi - DPCC
+Midpoint: 2025-11-03 03:30:00 IST
+·
+2025-11-02T22:00:00Z
+INSPECTION SHORTLIST (comparable candidates)
+Replay on AWS
+1-hour interval midpoint convention
+STATION PM2.5
+400 µg/m³
+OpenAQ Continuous
+LOCAL EXCESS
++252 µg/m³
+vs Regional Baseline (148 µg/m³)
+SIGNATURE RATIO
+0.746
+PM2.5/PM10 (fine combustion)
+THERMAL NO2
+208.68 µg/m³
+Converted standard
+Loading atmospheric transport map...
+OPENAQ HOURLY SERIES (SENSOR #12235610)
+hourly value (as reported), shown in IST
+0
+100
+200
+300
+400
+Regional Baseline (148 µg/m³)
+296
+01:30 IST
+-2h
+296
+02:30 IST
+-1h
+400
+03:30 IST
+T0 (Midpoint)
+277
+04:30 IST
++1h
+195
+05:30 IST
++2h
+Concentration (µg/m³)
+Time Window (hourly value (as reported), shown in IST)
+Station PM2.5 (Sensor #12235610)
+Regional Median (148 µg/m³)
+Source: OpenAQ QC'd hourly readings
+Physics-Gated Candidate Shortlist
+
+Scored by forward-plume likelihood × signature gating × operating-status filter.
+
+#	Candidate Facility	Type	Distance & Bearing	Wind Offset	Operating Status	Tier
+#1	
+Patparganj Industrial Area
+osm_relation_3808258
+	Industrial	0.86 km · 218.9°	49.1°	Active industrial in OpenStreetMap	medium
+#2	
+Rajghat Bus Depot
+osm_way_464283162
+	Industrial	6.15 km · 265.5°	2.5°	Active industrial in OpenStreetMap	medium
+#3	
+Rajghat Thermal Power Station
+osm_way_464283160
+	Industrial	6.05 km · 260.2°	7.8°	Tagged disused:power=plant in OpenStreetMap	low
+#4	
+Rajghat Thermal Power Station Flyash Dump
+osm_way_464283150
+	Landfill	5.97 km · 266.1°	1.9°	Decommissioned thermal flyash dump in OpenStreetMap	low
+#5	
+Unnamed Industrial Site
+osm_way_1544621569
+	Industrial	9.07 km · 255.7°	12.3°	Active industrial in OpenStreetMap	medium
+Other Explanations Considered (Non-Site Outcomes)
+Insufficient Evidence (Diffuse Background / Low Discriminability)
+outcome_insufficient_evidence
+Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.
+Instrument / Sensor Bias Artifact
+outcome_possible_fault
+Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.
+Evidence Drawer & QA/QC Telemetry Audit
+How This Was Checked
+Validator Checked
+Agent review mode: precomputed, local model, validator-checked.
+Validator verification: Zero hallucinated IDs or numbers. Every referenced quantity is strictly grounded in deterministic tool output.
+Operating status policy: Hard-coded closure narratives removed. Operating status reflects solely verified OpenStreetMap tags (e.g. tagged disused:power=plant in OpenStreetMap).
+Core provenance: replayed from validated core output.
+Step Functions Recompute Replay
+POSTs /cases/case_anand_vihar_20251102/recompute to replay canonical validated core output.
+Replay on AWS
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+--- INSPECTING /field/case_anand_vihar_20251102/ ---
+Field view (case_anand_vihar_20251102):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+Officer Desk
+MOBILE INSPECTION DISPATCH
+Field Inspection Dispatch
+Anand Vihar, New Delhi - DPCC
+Event: 2025-11-03 03:30:00 IST
+SELECTED EPISODE
+crri0515
+gurugram0630
+regional_smog1020
+rkpuram1112
+anand_vihar1102
+anand_vihar0131
+Prevailing wind: from 268° (west)
+2.4 m/s
+INSPECTION SHORTLIST (COMPARABLE CANDIDATES)
+
+Candidates are comparable; this is a triage list, not an attribution.
+
+PRIORITIZED INSPECTION ROUTE (5 SITES)
+1
+Patparganj Industrial Area
+industrial · ID: osm_relation_3808258
+MEDIUM
+Confidence: medium. Industrial area, 0.86 km off the main wind line (south-west). Wind was from the west (268°), so this site is off the main wind line.
+OSM Status:
+Active industrial in OpenStreetMap
+INSPECT UPON ARRIVAL:
+Open burning of scrap / packaging
+Stack emission filters / wet scrubbers
+Backup diesel generator sets (DG sets)
+Boiler fuel verification
+Directions
+Mark Checked
+2
+Rajghat Bus Depot
+industrial · ID: osm_way_464283162
+MEDIUM
+Confidence: medium. Industrial area, 6.15 km upwind (west). Wind was from the west (268°), so this site is upwind.
+OSM Status:
+Active industrial in OpenStreetMap
+INSPECT UPON ARRIVAL:
+Open burning of scrap / packaging
+Stack emission filters / wet scrubbers
+Backup diesel generator sets (DG sets)
+Boiler fuel verification
+Directions
+Mark Checked
+3
+Rajghat Thermal Power Station
+industrial · ID: osm_way_464283160
+LOW
+Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.
+OSM Status:
+Tagged disused:power=plant in OpenStreetMap
+INSPECT UPON ARRIVAL:
+Open burning of scrap / packaging
+Stack emission filters / wet scrubbers
+Backup diesel generator sets (DG sets)
+Boiler fuel verification
+Directions
+Mark Checked
+4
+Rajghat Thermal Power Station Flyash Dump
+landfill · ID: osm_way_464283150
+LOW
+Aligned with the wind, but tagged disused in OpenStreetMap, so inspection is unlikely to be useful.
+OSM Status:
+Decommissioned thermal flyash dump in OpenStreetMap
+INSPECT UPON ARRIVAL:
+Methane flaring & smouldering waste fires
+Water-mist cannon operation
+Tipping face dust suppression
+Uncovered municipal waste piles
+Directions
+Mark Checked
+5
+Unnamed Industrial Site
+industrial · ID: osm_way_1544621569
+MEDIUM
+Confidence: medium. Industrial area, 9.07 km upwind (west). Wind was from the west (268°), so this site is upwind.
+OSM Status:
+Active industrial in OpenStreetMap
+INSPECT UPON ARRIVAL:
+Open burning of scrap / packaging
+Stack emission filters / wet scrubbers
+Backup diesel generator sets (DG sets)
+Boiler fuel verification
+Directions
+Mark Checked
+OTHER EXPLANATIONS CONSIDERED:
+Insufficient Evidence (Diffuse Background / Low Discriminability)
+Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.
+Instrument / Sensor Bias Artifact
+Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.
+Smokeprint Field Mode · Offline Cached
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+=======================================================
+--- INSPECTING /officer/?case=case_gurugram_20260630 ---
+Officer view (case_gurugram_20260630):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+TRANSPORT MAP
+EPSG:4326
+Prevailing wind: from 268.0° (2.44 m/s)
+ST: Monitor
+Candidate
+DW: Downwind
+WIND-FROM
+N
+268°
+CASE SELECTION (6 VETTED EPISODES)
+Open Mobile Inspection Dispatch →
+CRRI Mathura Rd (May 15)
+REFUSED: instrument fault
+Gurugram Sec-51 (Jun 30)
+REFUSED: instrument fault
+Delhi Smog (Oct 20)
+REFUSED: regional
+RK Puram (Nov 12)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Nov 02)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Jan 31)
+INSPECTION SHORTLIST (comparable candidates)
+case_anand_vihar_20251102
+Anand Vihar, New Delhi - DPCC
+Midpoint: 2025-11-03 03:30:00 IST
+·
+2025-11-02T22:00:00Z
+INSPECTION SHORTLIST (comparable candidates)
+Replay on AWS
+1-hour interval midpoint convention
+STATION PM2.5
+400 µg/m³
+OpenAQ Continuous
+LOCAL EXCESS
++252 µg/m³
+vs Regional Baseline (148 µg/m³)
+SIGNATURE RATIO
+0.746
+PM2.5/PM10 (fine combustion)
+THERMAL NO2
+208.68 µg/m³
+Converted standard
+TRANSPORT MAP
+EPSG:4326
+Prevailing wind: from 268.0° (2.44 m/s)
+ST: Monitor
+Candidate
+DW: Downwind
+WIND-FROM
+N
+268°
+OPENAQ HOURLY SERIES (SENSOR #12235610)
+hourly value (as reported), shown in IST
+0
+100
+200
+300
+400
+Regional Baseline (148 µg/m³)
+296
+01:30 IST
+-2h
+296
+02:30 IST
+-1h
+400
+03:30 IST
+T0 (Midpoint)
+277
+04:30 IST
++1h
+195
+05:30 IST
++2h
+Concentration (µg/m³)
+Time Window (hourly value (as reported), shown in IST)
+Station PM2.5 (Sensor #12235610)
+Regional Median (148 µg/m³)
+Source: OpenAQ QC'd hourly readings
+Physics-Gated Candidate Shortlist
+
+Scored by forward-plume likelihood × signature gating × operating-status filter.
+
+GROUP: Comparable Candidates
+Candidates are comparable; this is a triage list, not an attribution. Overlapping forward-plume corridors and nocturnal atmospheric inversion cannot discriminate a single factory gate without on-site sensor verification.
+#	Candidate Facility	Type	Distance & Bearing	Wind Offset	Operating Status	Tier
+#1	
+Patparganj Industrial Area
+osm_relation_3808258
+	Industrial	0.86 km · 218.9°	49.1°	Active industrial in OpenStreetMap	medium
+#2	
+Rajghat Bus Depot
+osm_way_464283162
+	Industrial	6.15 km · 265.5°	2.5°	Active industrial in OpenStreetMap	medium
+#3	
+Rajghat Thermal Power Station
+osm_way_464283160
+	Industrial	6.05 km · 260.2°	7.8°	Tagged disused:power=plant in OpenStreetMap	low
+#4	
+Rajghat Thermal Power Station Flyash Dump
+osm_way_464283150
+	Landfill	5.97 km · 266.1°	1.9°	Decommissioned thermal flyash dump in OpenStreetMap	low
+#5	
+Unnamed Industrial Site
+osm_way_1544621569
+	Industrial	9.07 km · 255.7°	12.3°	Active industrial in OpenStreetMap	medium
+Other Explanations Considered (Non-Site Outcomes)
+Insufficient Evidence (Diffuse Background / Low Discriminability)
+outcome_insufficient_evidence
+Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.
+Instrument / Sensor Bias Artifact
+outcome_possible_fault
+Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.
+Evidence Drawer & QA/QC Telemetry Audit
+How This Was Checked
+Validator Checked
+Agent review mode: precomputed, local model, validator-checked.
+Validator verification: Zero hallucinated IDs or numbers. Every referenced quantity is strictly grounded in deterministic tool output.
+Operating status policy: Hard-coded closure narratives removed. Operating status reflects solely verified OpenStreetMap tags (e.g. tagged disused:power=plant in OpenStreetMap).
+Core provenance: replayed from validated core output.
+Step Functions Recompute Replay
+POSTs /cases/case_anand_vihar_20251102/recompute to replay canonical validated core output.
+Replay on AWS
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+--- INSPECTING /field/case_gurugram_20260630/ ---
+Field view (case_gurugram_20260630):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+Officer Desk
+MOBILE INSPECTION DISPATCH
+Field Inspection Dispatch
+Vikas Sadan, Gurugram - HSPCB
+Event: 2026-06-30 12:30:00 IST
+SELECTED EPISODE
+crri0515
+gurugram0630
+regional_smog1020
+rkpuram1112
+anand_vihar1102
+anand_vihar0131
+Prevailing wind: from 307° (north-west)
+3.2 m/s
+NO DISPATCH RECOMMENDED
+
+Detectors: constant_ratio_lock, collapse_after_peak. PM2.5/PM10 ratio locked at ~0.6000 across multiple hours from 02:00Z to 12:00Z (including 08:30Z to 11:30Z; 332.0/553.4 at peak), followed by abrupt logger dropout/collapse at 12:30Z-13:00Z. Instrument logger fault.
+
+Refusal basis: Detectors: constant_ratio_lock, collapse_after_peak. PM2.5/PM10 ratio locked at ~0.6000 across multiple hours from 02:00Z to 12:00Z (including 08:30Z to 11:30Z; 332.0/553.4 at peak), followed by abrupt logger dropout/collapse at 12:30Z-13:00Z. Instrument logger fault.
+Action: Stand down field team. Sensor audit logged for maintenance team.
+Smokeprint Field Mode · Offline Cached
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+=======================================================
+--- INSPECTING /officer/?case=case_regional_smog_20251020 ---
+Officer view (case_regional_smog_20251020):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+TRANSPORT MAP
+EPSG:4326
+Prevailing wind: from 268.0° (2.44 m/s)
+ST: Monitor
+Candidate
+DW: Downwind
+WIND-FROM
+N
+268°
+CASE SELECTION (6 VETTED EPISODES)
+Open Mobile Inspection Dispatch →
+CRRI Mathura Rd (May 15)
+REFUSED: instrument fault
+Gurugram Sec-51 (Jun 30)
+REFUSED: instrument fault
+Delhi Smog (Oct 20)
+REFUSED: regional
+RK Puram (Nov 12)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Nov 02)
+INSPECTION SHORTLIST (comparable candidates)
+Anand Vihar (Jan 31)
+INSPECTION SHORTLIST (comparable candidates)
+case_anand_vihar_20251102
+Anand Vihar, New Delhi - DPCC
+Midpoint: 2025-11-03 03:30:00 IST
+·
+2025-11-02T22:00:00Z
+INSPECTION SHORTLIST (comparable candidates)
+Replay on AWS
+1-hour interval midpoint convention
+STATION PM2.5
+400 µg/m³
+OpenAQ Continuous
+LOCAL EXCESS
++252 µg/m³
+vs Regional Baseline (148 µg/m³)
+SIGNATURE RATIO
+0.746
+PM2.5/PM10 (fine combustion)
+THERMAL NO2
+208.68 µg/m³
+Converted standard
+TRANSPORT MAP
+EPSG:4326
+Prevailing wind: from 268.0° (2.44 m/s)
+ST: Monitor
+Candidate
+DW: Downwind
+WIND-FROM
+N
+268°
+OPENAQ HOURLY SERIES (SENSOR #12235610)
+hourly value (as reported), shown in IST
+0
+100
+200
+300
+400
+Regional Baseline (148 µg/m³)
+296
+01:30 IST
+-2h
+296
+02:30 IST
+-1h
+400
+03:30 IST
+T0 (Midpoint)
+277
+04:30 IST
++1h
+195
+05:30 IST
++2h
+Concentration (µg/m³)
+Time Window (hourly value (as reported), shown in IST)
+Station PM2.5 (Sensor #12235610)
+Regional Median (148 µg/m³)
+Source: OpenAQ QC'd hourly readings
+Physics-Gated Candidate Shortlist
+
+Scored by forward-plume likelihood × signature gating × operating-status filter.
+
+GROUP: Comparable Candidates
+Candidates are comparable; this is a triage list, not an attribution. Overlapping forward-plume corridors and nocturnal atmospheric inversion cannot discriminate a single factory gate without on-site sensor verification.
+#	Candidate Facility	Type	Distance & Bearing	Wind Offset	Operating Status	Tier
+#1	
+Patparganj Industrial Area
+osm_relation_3808258
+	Industrial	0.86 km · 218.9°	49.1°	Active industrial in OpenStreetMap	medium
+#2	
+Rajghat Bus Depot
+osm_way_464283162
+	Industrial	6.15 km · 265.5°	2.5°	Active industrial in OpenStreetMap	medium
+#3	
+Rajghat Thermal Power Station
+osm_way_464283160
+	Industrial	6.05 km · 260.2°	7.8°	Tagged disused:power=plant in OpenStreetMap	low
+#4	
+Rajghat Thermal Power Station Flyash Dump
+osm_way_464283150
+	Landfill	5.97 km · 266.1°	1.9°	Decommissioned thermal flyash dump in OpenStreetMap	low
+#5	
+Unnamed Industrial Site
+osm_way_1544621569
+	Industrial	9.07 km · 255.7°	12.3°	Active industrial in OpenStreetMap	medium
+Other Explanations Considered (Non-Site Outcomes)
+Insufficient Evidence (Diffuse Background / Low Discriminability)
+outcome_insufficient_evidence
+Diffuse background: local excess was detected above regional baseline, so diffuse urban background alone is insufficient to account for the localized spike.
+Instrument / Sensor Bias Artifact
+outcome_possible_fault
+Instrument sensor fault: ruled out due to multi-pollutant co-movement (NO2 co-peak) and wind-consistent downwind response at neighbouring stations.
+Evidence Drawer & QA/QC Telemetry Audit
+How This Was Checked
+Validator Checked
+Agent review mode: precomputed, local model, validator-checked.
+Validator verification: Zero hallucinated IDs or numbers. Every referenced quantity is strictly grounded in deterministic tool output.
+Operating status policy: Hard-coded closure narratives removed. Operating status reflects solely verified OpenStreetMap tags (e.g. tagged disused:power=plant in OpenStreetMap).
+Core provenance: replayed from validated core output.
+Step Functions Recompute Replay
+POSTs /cases/case_anand_vihar_20251102/recompute to replay canonical validated core output.
+Replay on AWS
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+--- INSPECTING /field/case_regional_smog_20251020/ ---
+Field view (case_regional_smog_20251020):
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+Officer Desk
+MOBILE INSPECTION DISPATCH
+Field Inspection Dispatch
+Airshed Regional Baseline
+Event: 2025-10-20 22:30:00 IST
+SELECTED EPISODE
+crri0515
+gurugram0630
+regional_smog1020
+rkpuram1112
+anand_vihar1102
+anand_vihar0131
+Prevailing wind: from 71° (east)
+Low wind: direction unreliable
+0.9 m/s
+NO DISPATCH RECOMMENDED
+
+Network-wide regional smog elevation: 31/34 reporting stations (91.2%) simultaneously elevated across airshed (regional median 590.1 ug/m3). Airshed-wide regional smog event.
+
+Refusal basis: Network-wide regional smog elevation: 31/34 reporting stations (91.2%) simultaneously elevated across airshed (regional median 590.1 ug/m3). Airshed-wide regional smog event.
+Action: Stand down field team. Sensor audit logged for maintenance team.
+Smokeprint Field Mode · Offline Cached
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+=======================================================
+--- INSPECTING /evidence/ ---
+Evidence page text:
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+STATISTICAL AUDIT & REPRODUCIBILITY
+Evidence, Backtest CIs & Caveats
+
+Empirical verification metrics evaluated across 500 semi-synthetic plume injection trials in real Delhi-NCR meteorological background, held-out fault detector validations, and provenance transparency.
+
+Mandatory Scientific Caveat
+
+Simulated plume injections, so this shows consistency not real-world accuracy. Synthetic evaluations prove mathematical convergence, footprint gating, and stability against atmospheric dispersion perturbations; they do not replace physical field inspections or ground-truth facility stack monitors.
+
+500-Trial Dispersion Mismatch Ablation (95% Bootstrap CIs)
+simulated plume injections; consistency not real-world accuracy
+
+Evaluated with forward plume kernel against independent simulation with perturbed stability classes, plume rise, and wind noise. Data loaded directly from canonical backtest JSON.
+
+Ablation Variant	Precision @ 1 (95% CI)	Precision @ 3 (95% CI)	Cluster P @ 3 (95% CI)	Assessment
+1. Nearest-Upwind Heuristic	34.4% [30.4%, 38.8%]	60.0% [55.6%, 64.4%]	71.0% [66.6%, 74.8%]	Strong baseline heuristic
+2. Forward-Plume Likelihood Only	54.4% [49.8%, 58.8%]	72.8% [68.8%, 76.4%]	79.4% [75.8%, 82.8%]	Gaussian forward advection
+3. Smokeprint Shortlist Score (Plume x Sig x Status)	54.4% [50.0%, 58.6%]	72.2% [68.2%, 76.0%]	78.4% [74.6%, 81.8%]	Production triage shortlist
+Instrument Fault Detector Validation
+
+Labelled: injected-fault recall, real-world false-positive rate unknown
+
+INJECTED FAULT RECALL
+100.0%
+30 / 30 synthetic injection scenarios detected
+injected-fault recall; real-world false-positive rate unknown
+UNTOUCHED CLEAN WINDOW FPR
+0.0%
+0 / 10 clean reference monitoring station days falsely flagged
+untouched-window FPR measured on 10 pre-screened windows
+TARGET FAILURE MODES
+Ratio Lock, Collapse, Frozen Float
+30 / 30 synthetic faults caught across 10 untuned stations
+Testing limitation note: While synthetic fault injections (flatline zeros, PM2.5/PM10 ratio locks, and step collapse) yield 30/30 (100.0%) recall in hold-out simulation, the actual real-world false-positive rate across all 33 Delhi-NCR monitors across all seasons is strictly unknown without continuous independent sensor recalibration audits.
+AWS Step Functions Replay Provenance & Labelling
+
+Strict transparency standard: API responses never imply unexecuted cloud recomputation.
+
+// Sample API /runs/:id and Step Functions execution output payload:
+{
+"status": "SUCCEEDED",
+"source": "replayed",
+"mode": "replayed_from_canonical_output",
+"replayed_note": "replayed from validated core output",
+"case_id": "case_anand_vihar_20251102",
+"group": "comparable candidates",
+"classification": "Multiple Comparable Candidates"
+}
+Source honesty: Outputs always state source: "replayed" and mode: "replayed_from_canonical_output".
+No misleading version strings: Any code_version suggesting live core execution in Lambda has been removed.
+Zero hallucinated AI claims: The web interface never claims live Bedrock invocation or live real-time core solving.
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+=======================================================
+--- INSPECTING / ---
+Home page text:
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+DECISION SUPPORT PROTOTYPE · DELHI-NCR
+A spike at a monitor is not a culprit. Smokeprint tells you whether to send an inspector, and where first.
+
+Built for air quality inspection officers and field teams. Replaces raw monitor panic with physics-gated candidate shortlists, instrument fault rejection, and downwind corroboration.
+
+LOOPING REPLAY: Anand Vihar Spike Event
+·
+Station 235 (DPCC)
+Pause
+Peak
+ATMOSPHERIC TRANSPORT GEOMETRY
+N (0°)
+E (90°)
+S (180°)
+W (270°)
+from 265°
+Prevailing Wind: from 265.0° at 2.40 m/s
+Upwind advection corridor: 263° (West) · Transport lag: 18 min
+OBSERVATION TIME
+Plume advection downstream
+22:00 UTC
+(03:30 IST IST)
+Hourly interval midpoint convention · Asia/Kolkata (UTC+05:30)
+STATION PM2.5
+290 µg/m³
+Continuous TEOM / Beta
+LOCAL EXCESS
++142 µg/m³
+Above regional median (148 µg/m³)
+Chemical signature:
+Fine soot dominant (PM2.5/PM10 = 0.72)
+Thermal NOx co-emission:
+189.88 µg/m³ (high-temp combustion)
+Top shortlisted area:
+Patparganj Industrial Area (0.86 km upwind)
+Open Officer Inspection Desk
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit
+=======================================================
+--- INSPECTING /architecture/ ---
+Architecture page text:
+SMOKEPRINT
+Air Inspection Decision System
+Landing
+Officer Desk
+Field Mobile
+Evidence
+Architecture
+Demo build
+SYSTEM ARCHITECTURE & INFRASTRUCTURE TOPOLOGY
+System Architecture: What Runs Where
+
+Clean separation of concerns: frozen deterministic physics running locally and in replayed artifacts, lightweight serverless orchestration on AWS Free Tier, and local Strands agents with strict validation barriers.
+
+Component Topology Diagram
+1. CLIENT & EDGE
+CloudFront CDN
+Global edge caching · HTTPS · 1 TB/month transfer (AWS Free Tier)
+Next.js Static Export
+Hosted on S3 Static Website · Pre-rendered HTML/JS · Zero server compute
+OpenFreeMap / OSM
+Keyless light vector & raster tiles · No API key, no tracking, free tier
+2. AWS BACKEND
+API Gateway (HTTP API v2)
+Sub-millisecond routing · CORS enabled · Public endpoints
+AWS Lambda Functions
+ApiFunction (routes) + 5 Step Functions task lambdas (Python 3.12)
+Step Functions
+Standard state machine (LoadBundle → RunCore → AgentReview → Store)
+DynamoDB & S3
+smokeprint-cases, smokeprint-runs + S3 data bucket
+3. LOCAL AGENTS & CORE
+Frozen Core v2.7
+Deterministic forward-plume Gaussian dispersion kernel + signature gating
+Strands Agents SDK
+Investigator + Adversarial Critic running locally against Ollama (llama3.2:latest)
+Strict Validator Barrier
+Zero hallucination: rejects ungrounded candidate IDs, numbers, and closure years
+AWS Free Tier Budget & Resource Limits
+S3 & CLOUDFRONT
+CloudFront: 1 TB data transfer out/month + 10,000,000 requests permanently free.
+S3 Storage: 5 GB standard storage free (Smokeprint total bundle is < 5 MB).
+S3 Requests: 20,000 GET requests free per month.
+LAMBDA & STEP FUNCTIONS
+AWS Lambda: 1,000,000 invocations and 3,200,000 seconds of compute per month free.
+Step Functions: 4,000 free state transitions per month for Standard workflows.
+DynamoDB: 25 GB of storage free forever with on-demand capacity.
+Public Interface Transparency & Security Standard
+No AWS Account IDs or ARNs: Sanitization middleware intercepts every API response and strips raw IAM roles, account IDs, and ARNs before transmission.
+Honest Provenance: Step Functions and API replay endpoints always declare source: "replayed" and mode: "replayed_from_canonical_output".
+No Live Bedrock Billing: Strands agents execute locally on the developer machine; no Bedrock API calls are initiated from cloud Lambdas.
+Smokeprint · Built for air quality inspection officers and field teams. OpenFreeMap / OSM tiles.
+Replayed from validated core output · Never claims a single culprit

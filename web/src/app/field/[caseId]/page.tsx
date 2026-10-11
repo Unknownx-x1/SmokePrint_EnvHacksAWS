@@ -54,6 +54,15 @@ export default async function FieldPage({
     }
   }
 
+  const CASE_LABELS: Record<string, { name: string; date: string }> = {
+    case_crri_20260515: { name: 'CRRI', date: 'May 15' },
+    case_gurugram_20260630: { name: 'Gurugram', date: 'Jun 30' },
+    case_regional_smog_20251020: { name: 'Delhi Smog', date: 'Oct 20' },
+    case_rkpuram_20251112: { name: 'RK Puram', date: 'Nov 12' },
+    case_anand_vihar_20251102: { name: 'Anand Vihar', date: 'Nov 02' },
+    case_anand_vihar_20260131: { name: 'Anand Vihar', date: 'Jan 31' },
+  };
+
   return (
     <div className="flex-1 bg-stone-100 py-2 sm:py-8 px-0 sm:px-4 flex justify-center w-full min-w-0 overflow-x-hidden">
       {/* 390px mobile viewport frame */}
@@ -84,23 +93,35 @@ export default async function FieldPage({
 
         {/* Case Switcher for Field Inspector */}
         <div className="p-3 bg-stone-50 border-b border-stone-200">
-          <label className="block text-[10px] font-mono uppercase text-stone-500 mb-1">
-            Selected Episode
-          </label>
-          <div className="flex gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none items-center">
-            {ALL_CASE_IDS.map((cId) => (
-              <Link
-                key={cId}
-                href={`/field/${cId}`}
-                className={`px-3 py-2 rounded whitespace-nowrap text-xs font-mono transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center ${
-                  cId === caseId
-                    ? 'bg-stone-900 text-white font-bold'
-                    : 'bg-white border border-stone-300 text-stone-700 hover:bg-stone-100'
-                }`}
-              >
-                {cId.replace('case_', '').replace('_2025', '').replace('_2026', '')}
-              </Link>
-            ))}
+          <div className="flex items-center justify-between mb-1.5">
+            <label className="text-[10px] font-mono uppercase tracking-wider text-stone-500 font-semibold">
+              Selected Episode
+            </label>
+            <span className="text-[10px] text-stone-400 font-mono">
+              6 Vetted Cases
+            </span>
+          </div>
+          <div className="flex gap-2 overflow-x-auto pb-1 text-xs no-scrollbar items-center">
+            {ALL_CASE_IDS.map((cId) => {
+              const info = CASE_LABELS[cId] || { name: cId, date: '' };
+              const isSelected = cId === caseId;
+              return (
+                <Link
+                  key={cId}
+                  href={`/field/${cId}`}
+                  className={`px-3 py-1.5 rounded-lg shrink-0 whitespace-nowrap transition-all min-h-[48px] flex flex-col justify-center ${
+                    isSelected
+                      ? 'bg-stone-900 text-white font-bold shadow-sm ring-1 ring-stone-900'
+                      : 'bg-white border border-stone-300 text-stone-700 hover:bg-stone-100 hover:border-stone-400'
+                  }`}
+                >
+                  <span className="text-xs font-semibold leading-tight">{info.name}</span>
+                  <span className={`text-[10px] font-mono leading-tight mt-0.5 ${isSelected ? 'text-stone-300' : 'text-stone-500'}`}>
+                    {info.date}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
 
