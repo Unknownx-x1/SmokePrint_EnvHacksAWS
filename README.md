@@ -22,15 +22,6 @@ When an ambient monitor turns red, municipal enforcement teams often face a crit
 
 ---
 
-## 📸 Interface Preview
-
-| Officer Desktop Interface (`/officer`) | Field Inspector Mobile (`/field/[caseId]`) |
-| :---: | :---: |
-| ![Officer Desk](docs/screenshots/officer_dispatch_desktop.png) | ![Field Mobile](docs/screenshots/field_episode_switcher_fixed.png) |
-| *Incident telemetry, MapLibre transport geometry, continuous time-series, and candidate triage table.* | *390px mobile-optimized route checklist, facility status audits, and target inspection protocols.* |
-
----
-
 ## 🔬 Core Methodology & Decision Pipeline
 
 ```
